@@ -4,61 +4,105 @@
   box-sizing: border-box;
 }
 
-
-
 body {
-  background-color: black;
   margin: 0px;
-  font-family: 'PT Serif', serif;
-  font-size: 10px;
+}
+
+
+
+#wrapper {
+  background-color: blueviolet;
+}
+
+
+/* The side navigation menu */
+
+#left  {
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  position: fixed; /* Stay in place */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  height: 100%; /* 100% Full-height */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-color: red;
+}
+
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #111; /* Black*/
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 70px;
+  position: fixed; /* Stay in place */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  height: 100%; /* 100% Full-height */
+  width: 200px; /* 0 width - change this with JavaScript */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #4CAF50;
   color: white;
 }
 
-main { 
-  padding: 30px;
-}
-@media screen and (min-width: 480px) { 
-
-  main { 
-    margin: 25px 2s5px;
-  }
-
-  .btn-menus {
-    max-width: 50%; 
-  }
-}
-
-h1 { 
-  font-size: 40px;
-}
-
-.navbar {
-  width: 100%;
-  padding: 10px;
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
   color: white;
-  border-bottom: 1px solid white;
 }
 
-.background-image {
-  background-image: url("images/wildtextures-deep-grass.jpg");
-  filter: blur(50px);
-  height: 100vh;
-  background-position: absolute;
-  top: 0px;
-  opacity: 0.3;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
 }
 
-.btn-menus {  
-  margin: 15px 0px;
-  border: 3px solid white;
-  padding: 15px; 
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
 }
 
-.btn-menus:hover {  s
-  border: 3px solid white;
-  padding: 15px; 
-  background-color: white;
-  color: black; 
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+} 
+
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+  z-index: 1;
 }
