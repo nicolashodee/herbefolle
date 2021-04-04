@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background-color: black;
+  margin: 0px;
+  font-family: 'PT Serif', serif;
+  font-size: 10px;
+  color: white;
+}
+
+main { 
+  padding: 30px;
+}
+@media screen and (min-width: 480px) { 
+
+  main { 
+    margin: 25px 2s5px;
+  }
+
+  .btn-menus {
+    max-width: 50%; 
+  }
+}
+
+h1 { 
+  font-size: 40px;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.background-image {
+  background-image: url("images/wildtextures-deep-grass.jpg");
+  filter: blur(50px);
+  height: 100vh;
+  background-position: absolute;
+  top: 0px;
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-menus {  
+  margin: 15px 0px;
+  border: 3px solid white;
+  padding: 15px; 
+}
+
+.btn-menus:hover {  s
+  border: 3px solid white;
+  padding: 15px; 
+  background-color: white;
+  color: black; 
+}
