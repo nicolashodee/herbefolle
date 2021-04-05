@@ -10,24 +10,24 @@
 </head>
 <body>
   
-
-  <div id="left">
-    <img id="menuIcon" onclick="openNav()" src="https://static1.squarespace.com/static/516d6641e4b09fa24e7ba51b/t/5e80ad1ffa919e2e91589503/1585491232974/menu_desktop.svg">
+  <div id="container">
     
-  </div>  
+    <!-- The side bar which sticks to the left -->
+    <div class="burger" onclick="toggleMenu()">
+      <img id="burger-icon" class="burger-icon" src="https://static1.squarespace.com/static/516d6641e4b09fa24e7ba51b/t/5e80ad1ffa919e2e91589503/1585491232974/menu_desktop.svg">
+    </div>
 
-  <div id="wrapper">
-    <div id="mySidenav" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a class="active" href="#home">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
+    <!-- The side menu appearing/disapearring when clicking the burger icon -->
+    <div id="menu" class="menu">
+      <div class="menu-item active"><a href="#home">Accueil</a></div>
+      <div class="menu-item"><a href="#news">Les Menus</a></div>
+      <div class="menu-item"><a href="#contact">Les activités</a></div>
+      <div class="menu-item"><a href="#about">A propos</a></div>
+      <div class="menu-item"><a href="#about">Contact</a></div>
     </div>
     
-    <div id="main" class="content">
+    <div id="content">
       <h2>Bienvenue à l'herbe Folle</h2>
-      
       <p>Du frais, du sain, du savoureux, la rencontre de goûts simples et de petits plats recherchés.</p>
       <p>à Aix en Provence</p>
       <div class="btn-menus">&rarr; Voir les menus</div>
@@ -35,9 +35,6 @@
       <div class="btn-menus desktop-only">&rarr; Contact</div>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </div>
-  </div>
-
-  
 
   
 </body>

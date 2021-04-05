@@ -1,13 +1,23 @@
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
+console.log("JS loaded");
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  document.body.style.backgroundColor = "white";
-} 
+let toggleMenuStatus = false ; // check if the menu is expanded or not, false when opening the page
+
+let toggleMenu = function () {
+  
+  if (toggleMenuStatus == false) {
+    let getBurger = document.getElementById("burger");
+    let getBurgerIcon = document.querySelector("#burger-icon");  
+    let getMenu = document.getElementById("menu"); 
+
+    console.log(getBurgerIcon.classList);
+
+    getMenu.classList.toggle("menu--active"); 
+    getBurgerIcon.classList.toggle("active"); 
+
+    console.log("menu open");
+  }
+
+
+  // console.log(toggleMenuStatus)
+
+}
