@@ -1,0 +1,17 @@
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.bg-red { 
+  background-color:red ;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-yellow { 
+  background-color: yellow;
+}

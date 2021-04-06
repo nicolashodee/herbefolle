@@ -9,15 +9,7 @@ let toggleMenu = function () {
     let getBurgerIcon = document.querySelector("#burger-icon");  
     let getMenu = document.getElementById("menu"); 
 
-    console.log(getBurgerIcon.classList);
-
     getMenu.classList.toggle("menu--active"); 
     getBurgerIcon.classList.toggle("active"); 
-
-    console.log("menu open");
   }
-
-
-  // console.log(toggleMenuStatus)
-
 }
