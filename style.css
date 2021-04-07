@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 
 * {
   box-sizing: border-box;
@@ -9,8 +10,9 @@ body, html {
   margin: 0px;
   font-family: 'Abril Fatface', cursive;
   font-size: 15px;
-  background-color: rgb(255, 231, 211);
+  background-color: rgb(225, 225, 225);
 }
+
 
 #container  {
   display: flex;
@@ -32,13 +34,14 @@ body, html {
 
 
 .burger {
-  background-color: black;
+  background-color: rgb(0, 26, 0);
   padding: 5px;
   color: white;
   border-right: 3px solid green;
   height: 100%;
 }
   .burger-icon {
+    z-index: 1;
     padding: 3px;
     transition: 0.3s;
   }
@@ -47,6 +50,17 @@ body, html {
     transition: 0.3s;
   }
 
+#website-title {
+  position: fixed;
+  transform: rotate(-90deg);
+  z-index: 2;
+  bottom: 170px;
+  left: -170px;
+  font-size: 50px;
+  font-family: 'New Tegomin';
+  color: yellowgreen;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -54,6 +68,7 @@ body, html {
   background-color: black;
   padding-top: 15px;
   width: 0px; /* we change this in Javascript when clicking the burger */
+  height: 0px;
   transition: 0.3s;
   visibility: hidden;
   height: 100%;
@@ -61,7 +76,7 @@ body, html {
 
   
   .menu--active { 
-    width: 400px;
+    width: 200px;
     visibility: visible;
     transition: 0.3s;
   }
@@ -94,6 +109,18 @@ body, html {
 /* RESPONSIVE MEDIA QUERIES */
 
 @media only screen and (max-width: 600px) {
+
+  #website-title {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 100px;
+    font-size: 30px;
+    font-family: 'New Tegomin';
+    color: yellowgreen;
+    transform: rotate(0deg);
+  }
+
   .container-flex {
     flex-direction: column;
     flex-wrap: wrap;
@@ -106,14 +133,18 @@ body, html {
   }
 
 
-    #menu {
+    .menu {
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-evenly;
       padding-top: 0px;
+      height: 0px;
+      transition: 0.3s ease-in;
     }
       .menu--active { 
         width: 100%;
+        height: auto;
+        transition: 0.3s ease-out;
       }
 
       .menu-item {
@@ -136,6 +167,10 @@ body, html {
     #content-menu {
       display: grid;
 
+    }
+
+    body h2 {
+      font-size: 30px;
     }
 }
 
@@ -200,4 +235,80 @@ body, html {
   filter: none;
   -webkit-filter: grayscale(0); /* Old WebKit */
   transition: 0.3s;
+}
+
+
+#content-index { 
+  position: relative;
+  height: 100vh;
+  z-index: 0;
+  background-color: rgba(48, 101, 48, 1);
+  padding: 20px;
+}
+/* STYLING FOR THE HOMEPAGE */
+
+.bg-index { 
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url(images/wildtextures-deep-grass.jpg);
+  background-size: cover;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.1;
+  filter: blur(1px);
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* STYLING FOR MERCREDI / JEUDI / VENDREDI PAGES */
+
+.content-jour { 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 30px;
+  padding-bottom: 50px;
+  height: auto;
+  background-color: rgb(255, 234, 228) ;
+}
+
+.content-jour img {
+  max-width: 250px;
+}
+
+
+h1  {
+  font-size: 200px;
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 80px;
+}
+
+.up { 
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+
+p {
+  font-size: 20px;
+  width: 50%;
+}
+
+.btn-medium {
+  color: black;
+  font-size: 20px;
+  padding: 5px;
+  border: 5px solid black;
+  width: 250px;
+  margin: 10px 0px;
+}
+
+.btn-medium:hover {
+  background-color: black;
+  color: white;
 }
