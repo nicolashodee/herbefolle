@@ -11,6 +11,7 @@ body, html {
   font-family: 'Abril Fatface', cursive;
   font-size: 15px;
   background-color: rgb(225, 225, 225);
+  padding-bottom: 0px;
 }
 
 
@@ -39,6 +40,7 @@ body, html {
   color: white;
   border-right: 3px solid green;
   height: 100%;
+  width: 55px;
 }
   .burger-icon {
     z-index: 1;
@@ -280,7 +282,7 @@ body, html {
 
 
 h1  {
-  font-size: 200px;
+  font-size: 100px;
   padding: 0px;
   margin: 0px;
 }
@@ -296,19 +298,221 @@ h2 {
 
 p {
   font-size: 20px;
-  width: 50%;
+  width: 100%;
+}
+
+.day {
+  margin: 5px 15px 5px 5px;
 }
 
 .btn-medium {
   color: black;
   font-size: 20px;
-  padding: 5px;
-  border: 5px solid black;
+  border: 1px solid black;
   width: 250px;
   margin: 10px 0px;
+  padding: 2px 5px;
 }
 
 .btn-medium:hover {
   background-color: black;
   color: white;
 }
+
+.content-vertical { 
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.mardi, .mercredi, .jeudi, .vendredi { 
+  position: relative;
+  display: flex;
+  flex-flow: row ;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10%;
+  background-color: rgb(184, 191, 184);
+  height: 80vh;
+  width: 100%;
+  color: rgb(40, 40, 40);
+  z-index: 0;
+}
+
+.day-detail {
+  position: relative;
+  padding-left: 25px;
+  margin-right: 55px;
+}
+
+.day-photo img {
+  position: absolute;
+  max-width: 150px;
+  right: -100px;
+  bottom: 0px;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.day-name { 
+  margin-right: 15px;
+}
+
+.week-name { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  height: 25vh;
+  width: 100%;
+  color: white;
+  background-color: black;
+  position: sticky;
+  top: 0px;
+}
+
+.vertical-bar {
+  width: 5px;
+  height: 100%;
+  background-color: black;
+}
+
+.image-bg {
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 2;
+}
+
+.image-1 { 
+  background-image: url(images/palourdes.jpg);
+}
+.image-2 { 
+  background-image: url(images/garlic.jpg);
+}
+.image-3 { 
+  background-image: url(images/Scale_Common_Roach.JPG);
+}
+/* NEW NAV */
+
+.nav-burger { 
+  position: fixed;
+  left: 10px;
+  z-index: 1000;
+}
+
+.nav-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.nav-overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.nav-overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-overlay a:hover, .nav-overlay a:focus {
+  color: #f1f1f1;
+}
+
+.nav-overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .nav-overlay a {font-size: 20px}
+  .nav-overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+/* STYLE FOR NEW INDEX PAGE */
+
+.wrapper-index { 
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.colonne { 
+  position: relative;
+  flex-grow: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;s
+}
+
+.index-overlay {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease-in;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+}
+
+.index-overlay:hover {
+  opacity: 0.8;
+}
+
+.overlay1 {
+  background-color: tomato;
+}
+.overlay2 {
+  background-color: wheat;
+}
+.overlay3 {
+  background-color: rgb(177, 255, 247);
+}
+
+
+
+.colonne1 {
+  background-image: url(images/garlic.jpg);
+  background-size: cover;
+}
+.colonne2 {
+  background-image: url(images/brunch.jpg);
+  background-size: cover;
+}
+.colonne3 {
+  background-image: url(images/palourdes.jpg);
+  background-size: cover;
+}
+
