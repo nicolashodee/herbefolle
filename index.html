@@ -5,87 +5,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-  <title>Bienvenue sur le site de l'Herbe Folle</title>
+  <title>l'Herbe Folle, cantine bio à Aix en Provence</title>
   <script src="main.js" defer></script>
 </head>
+
 <body>
 
-  <div id="website-title">L'HERBE FOLLE</div>
-  
-  <div class="container-flex"> 
+  <!-- THE MENU -->
+  <nav>
+    <!-- The burger icon -->
+    <div style="font-size:60px;cursor:pointer; color: white;" onclick="openNav()" class="nav-burger">&#9776;</div>
 
-    <div id="nav">
-      <!-- The side bar which sticks to the left -->
-      <div class="burger" onclick="toggleMenu()">
-        <div><img id="burger-icon" class="burger-icon" src="https://static1.squarespace.com/static/516d6641e4b09fa24e7ba51b/t/5e80ad1ffa919e2e91589503/1585491232974/menu_desktop.svg"></div>
-        
-      </div>
-  
-      <!-- The side menu appearing/disapearring when clicking the burger icon -->
-      <div id="menu" class="menu">
-        <div class="menu-item active"><a href="#home">Accueil</a></div>
-        <div class="menu-item"><a href="#news">Les Menus</a></div>
-        <div class="menu-item"><a href="#contact">Les activités</a></div>
-        <div class="menu-item"><a href="#about">A propos</a></div>
-        <div class="menu-item"><a href="#about">Contact</a></div>
+    <!-- The overlay content appearing when clicking the burger icon -->
+    <div id="myNav" class="nav-overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="nav-overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
       </div>
     </div>
-  
-    <div id="content-menu"> 
+  </nav>
 
-      <!-- CELL 1 -->
-      <div class="grid-cell">
-          <img src="images/menus/2018-06-19-13.54.34_resized-766x1024.jpg">
-          <a href="mercredi.html">
-            <div class="overlay">
-              <div class="text">Cette semaine</div>
-            </div>
-          </a>
-      </div>
-      <!-- CELL 2 -->
-      <div class="grid-cell">
-        <img src="images/menus/IMG_20200616_160333552.jpg">
-        <div class="overlay">
-          <div class="text">Vos plats préférés</div>
+  <div class="homepage-wrapper">
+    <div class="homepage-column col1">
+      <a href="">
+        <div class="homepage-overlay overlay1">
+          <div class="text">Cette semaine</div>
         </div>
-      </div>
-      <!-- CELL 3 -->
-      <div class="grid-cell">
-        <img src="images/menus/IMG_20201202_111753409.jpg">
-        <div class="overlay"> <!-- caption effect -->
-          <div class="text">Espace traiteur</div>
+      </a>
+    </div>
+    <div class="homepage-column col2">
+      <a href="">
+        <div class="homepage-overlay overlay2">
+          <div class="text">Les brunchs</div>
         </div>
-      </div>
-      <!-- CELL 4 -->
-      <div class="grid-cell">
-        <img src="images/menus/IMG_20200527_154917171.jpg">
-        <div class="overlay">
-          <div class="text">Le lieu</div>
-        </div>
-      </div>
-      <!-- CELL 5 -->
-      <div class="grid-cell">
-        <img src="images/menus/IMG_20201120_121239293 copy.jpg">
-        <div class="overlay">
-          <div class="text">Les activités</div>
-        </div>
-      </div>
-      <!-- CELL 6 -->
-      <div class="grid-cell">
-        <img src="images/menus/2019-05-23-09.21.32-1022x1024.jpg">
-        <div class="overlay">
+      </a>
+    </div>
+    <div class="homepage-column col3">
+      <a href="">
+        <div class="homepage-overlay overlay3">
           <div class="text">Contact</div>
         </div>
-      </div>
-      
-
+      </a>
     </div>
-
+    
 
 
   </div>
-
-
-  
 </body>
 </html>
