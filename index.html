@@ -4,50 +4,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
-  <title>Bienvenue sur le site de l'Herbe Folle</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen"/>
+  <!-- CSS animations library, yeah! -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+  
+  <title>l'Herbe Folle, cantine bio à Aix en Provence</title>
   <script src="main.js" defer></script>
 </head>
+
 <body>
 
-  <div id="website-title">L'HERBE FOLLE</div>
-  
-  <div class="container-flex">  
-   
-    <!-- NAV BAR -->
-    <div id="nav">
-      <!-- The side bar which sticks to the left -->
-      <div class="burger" onclick="toggleMenu()">
-        <div><img id="burger-icon" class="burger-icon" src="https://static1.squarespace.com/static/516d6641e4b09fa24e7ba51b/t/5e80ad1ffa919e2e91589503/1585491232974/menu_desktop.svg"></div>
-        
-      </div>
-  
-      <!-- The side menu appearing/disapearring when clicking the burger icon -->
-      <div id="menu" class="menu">
-        <div class="menu-item active"><a href="index.html">Accueil</a></div>
-        <div class="menu-item"><a href="menus.html">Les Menus</a></div>
-        <div class="menu-item"><a href="mercredi.html">Mercredi</a></div>
-        <div class="menu-item"><a href="#about">A propos</a></div>
-        <div class="menu-item"><a href="#about">Contact</a></div>
+  <!-- THE MENU -->
+  <nav>
+    <!-- The burger icon -->
+    <div style="font-size:60px;cursor:pointer; color: white;" onclick="openNav()" class="nav-burger">&#9776;</div>
+
+    <!-- The overlay content appearing when clicking the burger icon -->
+    <div id="myNav" class="nav-overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="nav-overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
       </div>
     </div>
-    <!-- END OF NAVBAR -->
+  </nav>
 
+  <div class="homepage-wrapper">
+    <div class="homepage-column col1">
+      <a href="cettesemaine.html">
+        <div class="homepage-overlay overlay1">
+          <div class="text">Cette semaine</div>
+        </div>
+      </a>
+    </div>
+    <div class="homepage-column col2">
+      <a href="">
+        <div class="homepage-overlay overlay2">
+          <div class="text">Les brunchs</div>
+        </div>
+      </a>
+    </div>
+    <div class="homepage-column col3">
+      <a href="about.html">
+        <div class="homepage-overlay overlay3">
+          <div class="text">A propos</div>
+        </div>
+      </a>
+    </div>
     
-    <div id="content-index">
-      <div class="text-index">
-        <h2>Du frais, du sain, du savoureux, la rencontre de goûts simples et de petits plats recherchés.</h2>
-        <p></p>
-        <p>à Aix en Provence</p>
-        <div class="btn-medium">&rarr; Voir les menus</div>
-        <div class="btn-medium">&rarr; Les brunchs</div>
-        <div class="btn-medium">&rarr; Contact</div>
-      </div>
-      <div class="bg-index"></div>
-      
-    </div>
 
 
-  
+  </div>
 </body>
 </html>

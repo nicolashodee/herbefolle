@@ -1,0 +1,193 @@
+$bg-color: rgb(0, 135, 135); 
+
+header { 
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  background-color: $bg-color;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  .container { 
+    flex-direction: column;
+    padding: 10px; 
+    margin: 0px;
+  }
+}
+
+
+
+#find-us {
+  display: flex;
+  flex-direction: row;
+  margin: 100px 0px;
+
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .horaires { 
+    position: relative;
+    background-color: $bg-color;
+    padding: 35px;
+    min-width: 300px;
+    margin-right: 25px;
+  }
+  .title {
+    font-size: 40px;
+    top: -35px;
+    left: 20px;
+    position: absolute; 
+    text-shadow: -5px 5px 5px rgba(0,0,0,0.1);
+  }
+
+  li {
+    margin: 10px 0px;
+  }
+
+  .left { 
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    align-items: center;
+  }
+
+  .list-item {
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 17px;
+    padding: 5px;
+  }
+
+  
+
+  div span { 
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:25px;
+    height:25px;
+    margin-right: 10px;
+    border-radius:50%;
+    background-color:#000;
+    color:#fff;
+  }
+
+}
+
+#comment { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid red;
+  height: 100%;
+
+  .number {
+    
+    padding: 10px;
+    vertical-align: center;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+}
+
+.credits {
+  color: grey;
+}
+
+
+
+
+#historique {
+
+  h1 {
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+  }
+
+  .category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 30px 0px;
+    min-height: 200px;
+    height: fit-content;
+    opacity: 0.3;
+
+    .left {
+      min-width: 400px;
+      border-right: 1px solid black;
+    }
+    .right {
+      flex-shrink: 1;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    h1 {
+      border: 0px;
+      padding-bottom: 0px;
+    }
+
+    .category {
+      flex-direction: column;
+      margin: 0px 0px;
+
+      .left {
+        border-bottom: 1px solid black;
+        border-right: 0px;
+        margin-bottom: 20px;
+      }
+    }
+
+    
+
+    p { 
+      padding: 0px
+    }
+  }
+
+  .active {
+    opacity: 1;
+  }
+
+}
+
+#lelieu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  min-height: 50vh;
+  margin-top: 100px;
+  margin-bottom: 30px;
+
+  #title-galerie { 
+    position: absolute;
+    top: -35px;
+    left: 50%s;
+  }
+}
+
+.row-full {
+  
+}
+
