@@ -1,0 +1,46 @@
+/* HOME PAGE LAYOUT */
+
+.homepage-wrapper { 
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+ }
+
+.homepage-column { 
+  position: relative;
+  flex-grow: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+  .col1 {background-image: url(./images/garlic.jpg);}
+  .col2 {background-image: url(./images/brunch.jpg);}
+  .col3 {background-image: url(./images/palourdes.jpg);}
+
+/* OVERLAY EFFECT */
+
+.homepage-overlay {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease-in;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+}
+  .homepage-overlay:hover {opacity: 0.8;}
+  .overlay1 {background-color: tomato;}
+  .overlay2 {background-color: wheat;}
+  .overlay3 {background-color: rgb(177, 255, 247);}
