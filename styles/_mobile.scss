@@ -1,0 +1,26 @@
+/* RESPONSIVE MEDIA QUERIES */
+
+@media only screen and (max-width: 500px) {
+
+  p {font-size: 15px;}
+  h1 {font-size: 30px;}
+  h2 {font-size: 25px;}
+  
+  
+
+  /* MENU */
+  .nav-overlay a {font-size: 40px}
+  .nav-overlay .closebtn {font-size: 40px; top: 15px;right: 35px;}
+
+  /* HOMEPAGE */
+  .homepage-wrapper {flex-direction: column;}
+  .homepage-column {
+    max-height: 33vh;
+  }
+
+  /* CETTE SEMAINE */
+  .day {flex-direction: column; height: auto;}
+  .day-detail{padding: 0px; padding: 0px; margin: 10px 0px;}
+  .parallax-banner{height: 30vh;}
+}
+

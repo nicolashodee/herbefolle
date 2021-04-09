@@ -1,0 +1,55 @@
+/* CETTE SEMAINE LAYOUT */
+
+.day { 
+  position: relative;
+  display: flex;
+  flex-flow: row ;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10%;
+  background-color: rgb(255, 255, 255);
+  height: 50vh;
+  width: 100%;
+  color: rgb(40, 40, 40);
+  z-index: 0;
+}
+
+.day-detail {
+  position: relative;
+  padding-left: 25px;
+  margin-right: 55px;
+}
+
+.day-title {margin-right: 15px;}
+
+.week-name { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  height: 25vh;
+  width: 100%;
+  color: white;
+  background-color: tomato;
+  position: sticky;
+  top: 0px;
+}
+
+.vertical-bar {
+  width: 5px;
+  height: 100%;
+  background-color: black;
+}
+
+
+.parallax-banner {
+  height: 30vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 2;
+}
+
+  .image-1 {background-image: url(images/palourdes.jpg);}
+  .image-2 {background-image: url(images/garlic.jpg);}
+  .image-3 {background-image: url(images/Scale_Common_Roach.JPG);}
