@@ -6,17 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
   <title>A propos</title>
+  <script src="main.js" defer></script>
 </head>
 <body>
 
-  <header>
-    <h1>A propos</h1>
+  <header class="about-header">
+    <div><h1>A propos</h1></div>  
   </header>
 
-  <div class="container">
+  <main class="container">
 
     <section id="concept">
-      <div><h2>Une cuisine de saison en livraison. </h2></div>
+      <div><h2 class="text">Une cuisine de saison <span id="text"></span><span class="text__decorator">_</span></h2></div>
       <div>
         <h3>à Aix en Provence.</h3> 
         <h3>Des compositions saines et simples, composées autour des végétaux, accompagnées parfois de viande ou de poisson.</h3>
@@ -25,7 +26,7 @@
       <div id="find-us" class="flex-row">
 
         <div class="horaires left">
-          <div class="title">Quand ? </div>
+          <div class="title">Quand ?</div>
           <div>
             <p>du Mardi au Vendredi, midi et soir</p>
             <p>Hors vacances scolaires et jours fériés</p>
@@ -96,7 +97,7 @@
       </div>
     </section>
 
-  </div>
+  </main>
 
   <footer>
     <!-- ROW 1 -->

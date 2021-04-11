@@ -1,12 +1,14 @@
-$bg-color: rgb(0, 135, 135); 
+$bg-color: rgb(216, 119, 90); 
 
-header { 
+.about-header {
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  height: 25vh;
-  background-color: $bg-color;
+  background:linear-gradient(0deg, rgba(255, 12, 12, 0.4), rgba(61, 255, 51, 0.1)), url(images/Aix-En-Provence.jpg);
+  background-size: cover;
+  min-height: 60vh;
 }
 
 
