@@ -1,0 +1,100 @@
+$bg-color: rgb(255, 169, 39); 
+
+
+
+
+.rectangle {
+  margin: 15px 15px;
+  position: relative;
+  padding: 25px 45px;
+}
+
+.rectangle-large {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 45px 15px;
+  position: relative;
+  padding: 25px 45px;
+  width: 40%;
+}
+    
+.title-left {
+  font-size: 30px; 
+  position: absolute;
+  top: -25px;
+  left: 20px;
+}
+
+.title-center {
+  font-size: 30px; 
+  position: absolute;
+  top: -35px;
+  left: 100px;
+}
+
+.bg-color {
+  background-color: $bg-color;
+}
+
+.border-color {
+  border: 3px solid $bg-color;
+}
+
+
+
+
+#achat {
+  position: relative;
+  padding: 15px 35px;
+  margin: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.presentation {
+  margin: 40px 0px;
+}
+
+.tip {
+  position: relative;
+  border: 3px solid $bg-color; 
+  border-radius: 15px;
+  background-color: rgb(255, 238, 217);
+  margin: 20px 45px;
+  height: fit-content;
+
+  .icon { 
+    position: absolute;
+    top:-30px; 
+    left: -30px; 
+    background-color: $bg-color;
+    padding: 10px;
+    border-radius: 30px;
+  }
+}
+
+#galerie-brunch { 
+  background-color: grey;
+  width: 80vw;
+  min-height: 80vh;
+}
+
+.brunch-header {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(0deg, rgba(255, 134, 90, 0.5), rgba(255, 84, 84, 0.1)), url(images/brunch2.jpg);
+  background-size: cover;
+  min-height: 60vh;
+}
+
+@media only screen and (max-width: 800px) {
+ .flex-mobile {
+   flex-direction: column;
+ }
+}
