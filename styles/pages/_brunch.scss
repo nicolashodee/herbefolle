@@ -1,0 +1,66 @@
+$primary-color: rgb(255, 169, 39); 
+$secondary-color:  rgb(255, 123, 121); 
+$header-image: "../images/brunch2.jpg";
+
+.rectangle {
+  margin: 15px 15px;
+  position: relative;
+  padding: 25px 45px;
+}
+    
+.title {
+  font-size: 30px; 
+  position: absolute;
+  top: -25px; left: 20px;
+}
+
+.bg {
+  &--primary {background-color: $primary-color;}
+  &--secondary {background-color: $secondary-color;}  
+} 
+
+.border{
+  &--primary {border: 3px solid $primary-color;}
+  &--secondary {border: 3px solid $secondary-color;}
+}
+
+
+
+
+#achat {
+  position: relative;
+  padding: 15px 35px;
+  margin: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+}
+
+.presentation {
+  margin: 40px 0px;
+}
+
+.tip {
+  position: relative;
+  border-radius: 15px;
+  background-color: rgb(255, 238, 217);
+  margin: 20px 45px;
+  height: fit-content;
+
+  .icon { 
+    position: absolute;
+    top:-30px; 
+    left: -30px; 
+    background-color: $bg-color;
+    padding: 10px;
+    border-radius: 30px;
+  }
+}
+
+#galerie-brunch { 
+  background-color: grey;
+  width: 80vw;
+  min-height: 80vh;
+}
+
+
