@@ -6,11 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen"/>
-  <!-- CSS animations library, yeah! -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
-  
   <title>l'Herbe Folle, cantine bio à Aix en Provence</title>
-  <script src="main.js" defer></script>
+  <script src="js/main.js" defer></script>
   <!-- IMPORTING GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 </head>
@@ -20,21 +17,7 @@
     l'HERBE FOLLE
   </div>
   <!-- THE MENU -->
-  <nav>
-    <!-- The burger icon -->
-    <div onclick="openNav()" class="nav-burger">&#9776;</div>
-
-    <!-- The overlay content appearing when clicking the burger icon -->
-    <div id="myNav" class="nav-overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="nav-overlay-content">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
-    </div>
-  </nav>
+  
   <!-- THE CONTENT -->
   <div class="homepage-wrapper">
     <div class="homepage-column col1">
@@ -59,8 +42,9 @@
       </a>
     </div>
   </div>
+
   <!-- TEXT DISPLAYING ON THE INTRO -->
-  <div class="intro">
+  <div class="homepage-intro">
     <div class="intro-text">
       <h1 class="hide">
         <span class="text">Cantine Bio</span>
