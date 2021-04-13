@@ -7,112 +7,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen"/>
   <title>Le menu de cette semaine</title>
-  <script src="main.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/parallax.js" defer></script>
+  <!-- IMPORTING GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 </head>
 
 <body>
   <!-- THE MENU -->
   <nav>
-    <!-- The burger icon -->
-    <div style="font-size:60px;cursor:pointer; color: white;" onclick="openNav()" class="nav-burger">&#9776;</div>
-
-    <!-- The overlay content appearing when clicking the burger icon -->
-    <div id="myNav" class="nav-overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="nav-overlay-content">
-        <a href="#">A propos</a>
-        <a href="#">Cette semaine</a>
-        <a href="#">Les brunchs</a>
-        <a href="#">Archives</a>
-        <a href="#">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Page title -->
-  <div class="week-name">
-    <h1>Semaine du 5 au 11 Avril</h1>
-  </div>
-
-  <!-- MARDI -->
-  <section id="mardi" class="day">
-
-    <div class="day-title"><h2>Mardi</h2></div>
-    <div class="vertical-bar"></div>
-    <div class="day-detail">
-      <div>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.s</p>
-      </div>
-      <a href="mailto:contact@nicolashodee.com?subject=Commande pour mardi"><div class="btn-medium">&rarr; Je commande</div></a>
-    </div>  
-
-  </section>
-  <section class="parallax-banner image-1"></section>
-
-  <!-- MERCREDI -->
-  <section id="mercredi" class="day">
-
-    <div class="day-title"><h2>Mercredi</h2></div>
-    <div class="vertical-bar"></div>
-    <div class="day-detail">
-      <div>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.s</p>
-      </div>
-      <div class="btn-medium">&rarr; Je commande</div>
+    <div class="top-bar">
+      <a href="index.html"><div id="site-title">l'HERBE FOLLE</div></a>
+      
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>  
     </div>
 
-  </section>
-  <section class="parallax-banner image-2"></section>
-
-  <!-- JEUDI -->
-  <section id="jeudi" class="day">
-
-    <div class="day-title"><h2>Jeudi</h2></div>
-    <div class="vertical-bar"></div>
-    <div class="day-detail">
-      <div>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.s</p>
-      </div> 
-      <div class="btn-medium">&rarr; Je commande</div>
-    </div>
-
-  </section>
-  <section class="parallax-banner image-3"></section>
-
-  <!-- VENDREDI -->
-  <section id="vendredi" class="day">
+    <ul class="nav-links">
+      <li><a href="about.html">A propos</a></li>
+      <li><a href="thisweek.html">Menu de la semaine</a></li>
+      <li><a href="brunch.html">Les brunchs</a></li>
+      <li><a href="archives.html">Archives</a></li>
+    </ul>
     
-    <div class="day-title"><h2>Vendredi</h2></div>
-    <div class="vertical-bar"></div>
-    <div class="day-detail">
-      <div>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.s</p>
-      </div>
-      <div class="btn-medium">&rarr; Je commande</div>
+    
+    
+  </nav>
+  
+  <!-- THE HEADER -->
+  <div class="thisweek__header">
+    <div><span>Semaine du 12 au 16 avril</span></div>
+    
+    <div id="parallax1" class="parallax1 image-header position1">
+      <img id="parallax2" src="images/brunch3.jpg" class="parallax2" style="max-height: 500px;" alt="">
     </div>
+    <div id="" class="image-header position2">
+      <img src="images/eggs.jpg" class="" style="max-height: 500px;" alt="">
+    </div>
+  </div>
+  
+  <!-- THE CONTENT -->
+  <main>
+    <div class="thisweek__content">
+      <div>Publié le 5 Avril 2021</div>
+      <div class="thisweek__text">
+        
+        <article>
+          <p>
+            Bonjour, 
+            Grande nouvelle! L’Herbe Folle ouvre ses cuisines le samedi, avec un plat choisi par l’un d’entre vous, à tour de rôle.
+            Cette semaine, l’Herbe Folle vous propose de prolonger le voyage avec:
+          </p>
+          <oul>
+            <li><u>Mardi:</u> le plat du retour de marché; des asperges, quelques courgettes juste revenues, des herbes fraîches, de la betterave crue à la coriandre, du parmesan et un oeuf mollet, un bon pain frais au thym et à l’huile d’olives…</li>
+            <li>Mercredi: Un petit tour par le Sénégal,avec un épicé mafé de boeuf (attention! allergiques aux arachides s’abstenir!), accompagné de carottes rôties, de pommes de terre à la vapeur et d’une douce romaine;</li>
+            <li>Jeudi: la route des épices nous amène en Inde, avec un curry de légumes au lait de coco, servi avec du riz et un naan au fromage et à la coriandre;</li>
+            <li>Vendredi: on clôt notre tour du monde par un pôke bowl poisson et crevettes. La composition dépendra des fruits que j’arrive à trouver (le principe étant toujours de ne pas consommer de produits à impact écologique important) mais les alliances seront succulentes, n’en doutez pas!</li>
+            <li>Samedi: ce samedi, c’est le poulet Marbella qui est à l’honneur!</li>
+          </ul>
+          <p>
+            Pour les desserts, je pense à un blanc manger aux fraises accompagné d’un biscuit à la noix de coco. Il y aura aussi très probablement une tarte fraîche aux kiwis.
+          </p>
+          <p>A très vite!</p>
+          <div class="btn--medium">&rarr; Je commande !</div>
+        </article>
 
-  </section>
-
+      </div>
+      <div class="thisweek__images">
+        
+      </div>
+    </div>
+  </main>
+  
+  <!-- THE FOOTER -->
   <footer>
     <!-- ROW 1 -->
-    <div class="flex-row space-between text-strong">
+    <div class="footer__info flex-row space-between text-strong">
       <div>
-          <p>L'herbe Folle - Cantine Bio à Aix en Provence</p>
-          <p><a>contact@nicolashodee.com</a> | +33 6 60 17 97 29</p>
+          <p style="font-size: 13px;">L'herbe Folle - Café d'hôte à Aix en Provence</p>
+          <ul>
+            <li>email: <a href="mailto:contact@lherbefolle.net">contact@lherbefolle.net</a></li>
+            <li>fixe: <a href="tel:+33486313417">04.86.31.34.17</a></li>
+            <li>mobile: <a href="tel:+33625334913">06.25.33.49.13</a></li>
+          </ul>
       </div>
-      <div>
-        <p>Facebook | Instagram | Ubereats</p>
+      <div class="footer__social">
+        <ul>
+          <li> <a href="https://goo.gl/maps/AbcdYEoqVkxavS3K9" target="_blank"><i class="fas fa-map-marker-alt"></i> Google Maps</a></li>
+          <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/lherbefolle.aix/" target="_blank"> Instagram</a></li>
+          <li><i class="fab fa-tripadvisor"></i> TripAdvisor</li>
+        </ul>
       </div>
     </div>
 
     <!-- ROW 2 -->
     <div class="flex-row space-between credits">
       <div><p>Copyright 2021 Denis Hayoun. All Rights Reserved</p></div>
-      <div><p>Réalisation site internet : <a href="http://www.nicolashodee.com" target="_blanks">Nicolas Hodée Photographie</a></p></div>
+      <div><p>Réalisation site internet : <a href="http://www.nicolashodee.com" target="_blanks">www.nicolashodee.com</a></p></div>
     </div>
       
   </footer>
-  
+
 </body>
 
 </html>

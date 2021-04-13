@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,600;1,300&family=Zilla+Slab+Highlight&display=swap'); // font-family: 'Montserrat', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap'); // font-family: 'Libre Franklin', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap'); // font-family: 'Kalam', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
 // SASS IMPORT
 @import "./pages/about";
@@ -13,6 +13,9 @@
 @import "./pages/index"; 
 @import "./menu"; 
 @import "./mobile";
+@import "./pages/thisweek2";
+@import "./pages/buy";
+
 
 
 
@@ -31,27 +34,119 @@ body, html {
   font-family: 'Abril Fatface', cursive;
   font-size: 15px;
   background-color: rgb(225, 225, 225);
+  height: auto;
+}
+
+main {
+    /* make sure to cover the screen */
+  height: 100%;
+  /* need a solid bg to hide the footer */
+  background-color: rgb(225, 225, 225);
+
+  /* put on top */
+  position: relative;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
 h1  {font-size: 40px; padding: 0px; margin: 0px;}
 h2  {font-size: 60px;}
 h3  {font-size: 20px; color: rgb(135, 135, 135); text-align: center;}
-p   {font-size: 15px; padding: 15px;  }
+p   {font-size: 15px; padding: 15px 0px; }
 .font--small {font-size: 10px}
+
+#site-title {
+  font-size: 20px;
+  letter-spacing: 5px;
+}
 
 
 /************ BUTTONS & LINKS ***********
 ******************************************/
 
-a         {color: white;}
+a         {text-decoration: none;}
 a:hover   {color: white;}
-a:visited {color: grey; text-decoration: none;}
+a:visited {color: white;}
 
-.btn--medium {color: black; font-size: 20px;border: 1px solid black; width: 250px; margin: 30px 0px; padding: 2px 5px;}
+.btn--medium {color: black; font-size: 20px; border: 1px solid black; width: 250px; margin: 30px 0px; padding: 3px 5px; }
 .btn--medium:hover {background-color: black; color: white;}
 
+// NAV BAR
 
+nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(52, 0, 0);
+  color: white;
+  
+
+  a {color: white;}
+  a:hover {color: black;}
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 15px ;
+  z-index: 1010;
+  background-color: rgb(63, 28, 0);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  &--right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+  }
+}
+
+.line { 
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+// styling for the "buy" button in the navbar
+.btn--nav {color: white; font-size: 15px; border: 1px solid white; width: 250px; padding: 2px; width: 170px; margin-right: 25px; text-align: center; cursor: pointer; display: flex; flex-direction: row; align-items: center; justify-content: center;}
+.btn--nav:hover {background-color: white; color: black;}
+
+.hamburger { 
+  cursor: pointer;
+}
+.nav-links {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 1s all ease-out;
+  background-color: rgba(85, 4, 4, 0.9);
+  clip-path: circle(100px at 110% 0%);
+  -webkit-clip-path: circle(100px at 110% 0%); 
+  z-index: 1000;
+  font-size: 25px;
+}
+
+.nav-links.open {
+  display: flex;
+  clip-path: circle(2500px at 90% 0%);
+  -webkit-clip-path: circle(2500px at 90% 0%); 
+  transition: 1s all ease-out;
+}
+
+@media screen and (max-width: 800px) {
+  
+}
 
 // FLEX STYLING
 
@@ -76,28 +171,66 @@ a:visited {color: grey; text-decoration: none;}
 
 //HEADER AND FOOTER STYLING
 
+
 header { 
+  position: relative;
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: center;
   align-items: center;
-  background:linear-gradient(0deg, rgba(255, 134, 90, 0.5), rgba(255, 84, 84, 0.1)), url($header-image);
+  min-height: 40vh;
+  z-index: 1;
+  
+  .header--overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header--overlay.buy {background-image: linear-gradient(-45deg, rgba(245, 246, 252, 0.22), rgba(117, 19, 19, 0.33));}
+  .header--overlay.brunch {background-image: linear-gradient(-45deg, rgba(19, 46, 194, 0.52), rgba(40, 117, 19, 0.73));}
+}
+
+header.header__buy {
+  background-image: url("../images/pan.jpg");
+  background-position: top;
   background-size: cover;
-  min-height: 30vh;
+}
+header.header__brunch {
+  background-image: url("../images/brunch.jpg");
+  background-position: top;
+  background-size: cover;
 }
 
 footer { 
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   padding: 25px;
   color: rgb(230, 230, 230);
-  position: relative;
   background-color: rgb(0, 53, 53);
   min-height: 200px;
   display: flex; 
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  z-index: 0;
+
+  a {
+    color: white;
+    &:hover {
+      color: grey; 
+    }
+  }
   
   p {
     font-size: 13px;
@@ -106,12 +239,19 @@ footer {
   ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
     list-style: none;
     flex-wrap: wrap;
 
     li {
       margin: 5px 15px;
     }
+  }
+
+  .footer__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
 }

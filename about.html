@@ -6,14 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
   <title>A propos</title>
-  <script src="main.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
 
+  <!-- THE MENU -->
+  <nav>
+    <div class="top-bar">
+      <a href="index.html"><div id="site-title">l'HERBE FOLLE</div></a>
+      
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>  
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="about.html">A propos</a></li>
+      <li><a href="thisweek.html">Menu de la semaine</a></li>
+      <li><a href="brunch.html">Les brunchs</a></li>
+      <li><a href="archives.html">Archives</a></li>
+    </ul>
+    
+    
+    
+  </nav>
+  <!-- THE HEADER -->
   <header class="about-header">
     <div><h1>A propos</h1></div>  
   </header>
-
+  <!-- THE CONTENT -->
   <main class="container">
 
     <section id="concept">
@@ -98,23 +121,31 @@
     </section>
 
   </main>
-
+  <!-- THE FOOTER -->
   <footer>
     <!-- ROW 1 -->
-    <div class="flex-row space-between text-strong">
+    <div class="footer__info flex-row space-between text-strong">
       <div>
-          <p>L'herbe Folle - Cantine Bio à Aix en Provence</p>
-          <p><a>contact@nicolashodee.com</a> | +33 6 60 17 97 29</p>
+          <p style="font-size: 13px;">L'herbe Folle - Café d'hôte à Aix en Provence</p>
+          <ul>
+            <li>email: <a href="mailto:contact@lherbefolle.net">contact@lherbefolle.net</a></li>
+            <li>fixe: <a href="tel:+33486313417">04.86.31.34.17</a></li>
+            <li>mobile: <a href="tel:+33625334913">06.25.33.49.13</a></li>
+          </ul>
       </div>
-      <div>
-        <p>Facebook | Instagram | Ubereats</p>
+      <div class="footer__social">
+        <ul>
+          <li> <a href="https://goo.gl/maps/AbcdYEoqVkxavS3K9" target="_blank"><i class="fas fa-map-marker-alt"></i> Google Maps</a></li>
+          <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/lherbefolle.aix/" target="_blank"> Instagram</a></li>
+          <li><i class="fab fa-tripadvisor"></i> TripAdvisor</li>
+        </ul>
       </div>
     </div>
 
     <!-- ROW 2 -->
     <div class="flex-row space-between credits">
       <div><p>Copyright 2021 Denis Hayoun. All Rights Reserved</p></div>
-      <div><p>Réalisation site internet : <a href="http://www.nicolashodee.com" target="_blanks">Nicolas Hodée Photographie</a></p></div>
+      <div><p>Réalisation site internet : <a href="http://www.nicolashodee.com" target="_blanks">www.nicolashodee.com</a></p></div>
     </div>
       
   </footer>
