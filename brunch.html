@@ -6,14 +6,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+  <script src="js/main.js" defer></script>
+  <!-- IMPORTING GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
   <title>Les Brunchs</title>
 </head>
 
 <body>
-  <header>
-    <div><h1>Le dimanche devient le rendez-vous du brunch de l’Herbe Folle!</h1></div>
-  </header>
 
+  <!-- THE MENU -->
+  <nav>
+    <div class="top-bar">
+      <a href="index.html"><div id="site-title">l'HERBE FOLLE</div></a>
+      
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>  
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="about.html">A propos</a></li>
+      <li><a href="thisweek.html">Menu de la semaine</a></li>
+      <li><a href="brunch.html">Les brunchs</a></li>
+      <li><a href="archives.html">Archives</a></li>
+    </ul>
+    
+    
+    
+  </nav>
+  <!-- THE HEADER -->
+  <header class="header__brunch">
+    <div class="header--overlay brunch">
+      <h1 style="color: rgb(223, 223, 223);">Le dimanche devient le rendez-vous du brunch de l’Herbe Folle!</h1>
+    </div>
+  </header>
+  <!-- THE CONTENT -->
   <main class="container">
 
     <h3>Du frais, du sain, du savoureux, la rencontre de goûts simples et de petits plats recherchés. </h3>
@@ -149,23 +179,24 @@
       </div>
     </section> 
 
-    </main>
-
+  </main>
+  <!-- THE FOOTER -->
   <footer>
     <!-- ROW 1 -->
-    <div class="flex-row space-between text-strong">
+    <div class="footer__info flex-row space-between text-strong">
       <div>
-          <p>L'herbe Folle - Cantine Bio à Aix en Provence</p>
+          <p style="font-size: 13px;">L'herbe Folle - Café d'hôte à Aix en Provence</p>
           <ul>
-            <li>email: contact@lherbefolle.net</li>
-            <li>tel: 04.86.31.34.17</li>
+            <li>email: <a href="mailto:contact@lherbefolle.net">contact@lherbefolle.net</a></li>
+            <li>fixe: <a href="tel:+33486313417">04.86.31.34.17</a></li>
+            <li>mobile: <a href="tel:+33625334913">06.25.33.49.13</a></li>
           </ul>
       </div>
-      <div>
+      <div class="footer__social">
         <ul>
-          <li>Facebook</li>
-          <li>Instagram</li>
-          <li>TripAdvisor</li>
+          <li> <a href="https://goo.gl/maps/AbcdYEoqVkxavS3K9" target="_blank"><i class="fas fa-map-marker-alt"></i> Google Maps</a></li>
+          <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/lherbefolle.aix/" target="_blank"> Instagram</a></li>
+          <li><i class="fab fa-tripadvisor"></i> TripAdvisor</li>
         </ul>
       </div>
     </div>
@@ -173,7 +204,7 @@
     <!-- ROW 2 -->
     <div class="flex-row space-between credits">
       <div><p>Copyright 2021 Denis Hayoun. All Rights Reserved</p></div>
-      <div><p>Réalisation site internet : <a href="http://www.nicolashodee.com" target="_blanks">Nicolas Hodée Photographie</a></p></div>
+      <div><p>Réalisation site internet : <a href="http://www.nicolashodee.com" target="_blanks">www.nicolashodee.com</a></p></div>
     </div>
       
   </footer>

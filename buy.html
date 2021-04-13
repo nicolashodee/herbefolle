@@ -1,62 +1,129 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Document</title>
 </head>
 <body>
-  <header>
-    <h1>On passe en cuisine ! </h1>
+  <!-- THE MENU -->
+  <nav>
+    <div class="top-bar">
+      <a href="index.html"><div id="site-title">l'HERBE FOLLE</div></a>
+      
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>  
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="about.html">A propos</a></li>
+      <li><a href="thisweek.html">Menu de la semaine</a></li>
+      <li><a href="brunch.html">Les brunchs</a></li>
+      <li><a href="archives.html">Archives</a></li>
+    </ul>
+    
+    
+    
+  </nav>
+
+  <header class="header__buy">
+    <div class="header--overlay buy">
+      <h1>On passe en cuisine ?</h1>
+    </div>
+    
   </header>
 
-  <main>
+  <main class="container">
     <section id="presentation">
-      <h2>les inspirations de la semaine vous ont mis en apétit ?</h2>
-      <p>Pour passer commande, rien de plus simple. Ca se passe ci dessous : </p>
+      <h3>les inspirations de la semaine vous ont mis en apétit ?</h3>
+      <h3>Pour passer commande, rien de plus simple. Ca se passe ci dessous : </h3>
     </section>
 
     <section id="achat">
-      <div class="store">
-        <div id="telephone">
-          
+      <div class="buy__store flex-mobile">
+        <!-- TELEPHONE -->
+        <div id="telephone" class="flex-column ">
           <div class="title">Par téléphone</div>
-          <div class="content">
-            <p>envoyez moi un message au 06.60.17.97.29 avec les infos suivantes</p>
-            <ul>
-              <li>Jour souhaité</li>
-              <li>Repas du midi, ou du soir (si applicable)</li>
-              <li>Nombre de portions (précisez si enfant ou adulte)</li>
-              <li>Mode de livraison souhaité (voir conditions)</li>
-            </ul>
+          <div class="buy-content padded">
+            <div>envoyez moi un message au 06.60.17.97.29 avec les infos suivantes</div>
+            <div>
+              <ul>
+                <li>Jour souhaité</li>
+                <li>Repas du midi, ou du soir (si applicable)</li>
+                <li>Nombre de portions (précisez si enfant ou adulte)</li>
+                <li>Mode de livraison souhaité (voir conditions)</li>
+              </ul>
+            </div>
           </div>
-
+          <div id="call">
+            <div id="" class="btn-tel"><i class="fa fa-phone" style="font-size:24px"></i> &#8239; &#8239;Téléphone portable</div>
+            <div id="" class="btn-tel"><i class="fa fa-phone" style="font-size:24px"></i> &#8239; &#8239;Téléphone fixe</div>
+          </div>
         </div>
-        <div id="online">
+        <!-- ONLINE -->
+        <div id="online" class="flex-row padded">
           <div class="title">En ligne</div>
-          <div class="content"> 
-            Cliquez ici pour accéder à la liste des options disponibles. 
+          <div class="buy-content"> 
+            <div class="btn--buy">&rarr;  Payer en ligne</div>
+            <div>(disponible prochainement)</div>
           </div>
         </div>
-        <div id="email">
+        <!-- EMAIL -->
+        <div id="email" class="flex-row padded">
           <div class="title">Par email</div>
-          <div class="content">
+          <div class="buy-content">
             Cliquez sur le bouton ci dessous, un email pré-rempli va s'ouvrir; 
           </div>
+          <div class="btn--buy">&rarr;  Envoyer un email</div>
+          
         </div>
       </div>
       <div id="conditons">
-        <div class="title">
+        <div>
           
+
         </div>
       </div>
     </section>
 
   </main>
 
+  <!-- THE FOOTER -->
   <footer>
+    <!-- ROW 1 -->
+    <div class="footer__info flex-row space-between text-strong">
+      <div>
+          <p style="font-size: 13px;">L'herbe Folle - Café d'hôte à Aix en Provence</p>
+          <ul>
+            <li>email: <a href="mailto:contact@lherbefolle.net">contact@lherbefolle.net</a></li>
+            <li>fixe: <a href="tel:+33486313417">04.86.31.34.17</a></li>
+            <li>mobile: <a href="tel:+33625334913">06.25.33.49.13</a></li>
+          </ul>
+      </div>
+      <div class="footer__social">
+        <ul>
+          <li> <a href="https://goo.gl/maps/AbcdYEoqVkxavS3K9" target="_blank"><i class="fas fa-map-marker-alt"></i> Google Maps</a></li>
+          <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/lherbefolle.aix/" target="_blank"> Instagram</a></li>
+          <li><i class="fab fa-tripadvisor"></i> TripAdvisor</li>
+        </ul>
+      </div>
+    </div>
 
+    <!-- ROW 2 -->
+    <div class="flex-row space-between credits">
+      <div><p>Copyright 2021 Denis Hayoun. All Rights Reserved</p></div>
+      <div><p>Réalisation site internet : <a href="http://www.nicolashodee.com" target="_blanks">www.nicolashodee.com</a></p></div>
+    </div>
+      
   </footer>
+  
 </body>
 </html>

@@ -1,0 +1,77 @@
+
+
+.buy__store {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 1 0 100%;
+
+  >div {
+    margin: 50px 50px;
+    min-height: 150px;
+  }
+  
+  div.padded {
+    padding: 50px;
+    background-color: burlywood;
+    
+  }
+}
+#online, #email, #telephone {
+  position: relative;
+}
+
+#presentation {
+  padding: 20px 0px;
+}
+
+.buy-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: space-around;
+  
+}
+
+.btn--buy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute; 
+  bottom: 0px; 
+  left: 0px;
+  color: white;
+  background-color: black; 
+  font-size: 20px; 
+  width: 100%; 
+  padding: 3px 5px; 
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn--buy:hover {background-color: white; color: black;}
+
+#call {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  
+  
+  .btn-tel {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-around;
+    color: white;
+    background-color: black; 
+    font-size: 20px; 
+    width: 100%; 
+    padding: 3px 5px; 
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .btn-tel:hover {background-color: white; color: black;}
+
+}

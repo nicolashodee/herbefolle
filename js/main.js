@@ -1,12 +1,12 @@
 //NEW NAV BAR
 
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+const hamburger = document.querySelector('.hamburger'); 
+const navLinks = document.querySelector('.nav-links'); 
+const links = document.querySelectorAll('.nav-links li'); 
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('open')
+}); 
 
 // TYPING EFFECT 
 
