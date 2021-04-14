@@ -350,7 +350,7 @@
 }
 
 .bg--secondary {
-  background-color: #ff7b79;
+  background-color: #c6967d;
 }
 
 .border--primary {
@@ -358,12 +358,12 @@
 }
 
 .border--secondary {
-  border: 3px solid #ff7b79;
+  border: 3px solid #c6967d;
 }
 
 #achat {
   position: relative;
-  padding: 15px 35px;
+  padding: 35px 35px;
   margin: 25px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,12 +381,11 @@
 
 .tip {
   position: relative;
+  padding: 15px;
   border-radius: 15px;
-  background-color: #ffeed9;
+  background-color: #dadada;
   margin: 20px 45px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: auto;
 }
 
 .tip .icon {
@@ -402,6 +401,22 @@
   background-color: grey;
   width: 80vw;
   min-height: 80vh;
+}
+
+#onselache {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 /* HOME PAGE LAYOUT */
@@ -743,21 +758,31 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-preferred-size: 1 0 100%;
-      flex-basis: 1 0 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .buy__store > div {
-  margin: 50px 50px;
-  min-height: 150px;
+  min-width: 30%;
+  margin: 15px 15px;
 }
 
 .buy__store div.padded {
-  padding: 50px;
+  padding: 20px;
   background-color: burlywood;
+}
+
+.buy__store div.padded-grey {
+  padding: 20px;
+  background-color: #939393;
+}
+
+@media screen and (max-width: 800px) {
+  .buy__store > div {
+    min-width: 30%;
+    margin: 25px 15px;
+    min-height: 250px;
+  }
 }
 
 #online, #email, #telephone {
@@ -827,19 +852,94 @@
           align-items: center;
 }
 
-#call .btn-tel {
+#call a.btn-tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   background-color: black;
   font-size: 20px;
   width: 100%;
   padding: 3px 5px;
-  text-align: center;
   cursor: pointer;
+  height: 100%;
 }
 
 #call .btn-tel:hover {
   background-color: white;
   color: black;
+}
+
+#conditions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 30px;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #c2c2c2;
+}
+
+#conditions .carrot {
+  border-radius: 30px 0px 0px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 15px;
+  background-color: white;
+}
+
+#conditions .text {
+  padding: 15px 10px 15px 25px;
+}
+
+#conditions .text p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+  #conditions #conditions {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #conditions .carrot {
+    border-radius: 30px 30px 0px 0px;
+    width: 100%;
+  }
 }
 
 /************ GENERAL STYLING ***********
