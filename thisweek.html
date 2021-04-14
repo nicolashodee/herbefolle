@@ -18,12 +18,23 @@
   <nav>
     <div class="top-bar">
       <a href="index.html"><div id="site-title">l'HERBE FOLLE</div></a>
-      
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>  
+      <div class="top-bar--right">
+        <a href="buy.html"><div class="animate btn--nav">Réserver maintenant</div></a>
+        <!-- NEW HAMBURGER -->
+        <div class="animate hamburger">
+          <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="30" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+          </svg>
+        </div>
+      </div>
     </div>
 
     <ul class="nav-links">
@@ -32,14 +43,12 @@
       <li><a href="brunch.html">Les brunchs</a></li>
       <li><a href="archives.html">Archives</a></li>
     </ul>
-    
-    
-    
+
   </nav>
   
   <!-- THE HEADER -->
   <div class="thisweek__header">
-    <div><span>Semaine du 12 au 16 avril</span></div>
+    <div id="semaine-title"><span >Semaine du 12 au 16 avril</span></div>
     
     <div id="parallax1" class="parallax1 image-header position1">
       <img id="parallax2" src="images/brunch3.jpg" class="parallax2" style="max-height: 500px;" alt="">
@@ -50,7 +59,7 @@
   </div>
   
   <!-- THE CONTENT -->
-  <main>
+  <main class="container">
     <div class="thisweek__content">
       <div>Publié le 5 Avril 2021</div>
       <div class="thisweek__text">

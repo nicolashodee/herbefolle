@@ -1,7 +1,6 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,22 +8,39 @@
   <link rel="stylesheet" href="styles/style.css">
   <link href="./assets/fontawesome/css/all.css" rel="stylesheet">
   <script src="https://use.fontawesome.com/4c85fb25a3.js"></script>
-
+  <!-- IMPORTING GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  
+  <script src="js/main.js" defer></script>
   <title>Commande | l'Herbe Folle</title>
 </head>
+
 <body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor"></div>
   <!-- THE MENU -->
   <nav>
     <div class="top-bar">
       <a href="index.html"><div id="site-title">l'HERBE FOLLE</div></a>
-      
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>  
+      <div class="top-bar--right">
+        <a href="buy.html"><div class="animate btn--nav">Réserver maintenant</div></a>
+        <!-- NEW HAMBURGER -->
+        <div class="animate hamburger">
+          <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="30" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+          </svg>
+        </div>
+      </div>
     </div>
-
     <ul class="nav-links">
       <li><a href="about.html">A propos</a></li>
       <li><a href="thisweek.html">Menu de la semaine</a></li>
@@ -32,18 +48,16 @@
       <li><a href="archives.html">Archives</a></li>
     </ul>
     
-    
-    
   </nav>
-
+  <!-- THE HEADER -->
   <header class="header__buy">
     <div class="header--overlay buy">
       <h1>On passe en cuisine ?</h1>
     </div>
-    
   </header>
-
+  <!-- THE CONTENT -->
   <main class="container">
+
     <section id="presentation">
       <h3>les inspirations de la semaine vous ont mis en apétit ?</h3>
       <h3>Pour passer commande, rien de plus simple. Ca se passe ci dessous : </h3>
@@ -52,7 +66,7 @@
     <section id="achat">
       <div class="buy__store flex-mobile">
         <!-- TELEPHONE -->
-        <div id="telephone" class="flex-column ">
+        <div id="telephone" class="flex-column animate">
           <div class="title">Par téléphone</div>
           <div class="buy-content padded">
             <div>envoyez moi un message avec les infos suivantes</div>
@@ -71,7 +85,7 @@
           </div>
         </div>
         <!-- EMAIL -->
-        <div id="email" class="flex-row padded">
+        <div id="email" class="flex-row padded animate">
           <div class="title">Par email</div>
           <div class="buy-content">
             Cliquez sur le bouton ci dessous, un email pré-rempli va s'ouvrir; 
@@ -80,7 +94,7 @@
           
         </div>
         <!-- ONLINE -->
-        <div id="online" class="flex-row padded-grey">
+        <div id="online" class="flex-row padded-grey animate">
           <div class="title">En ligne</div>
           <div class="buy-content"> 
             <div class="btn--buy">&rarr;  Payer en ligne</div>
@@ -108,8 +122,6 @@
     </section>
    
   </main>
-  
-
   <!-- THE FOOTER -->
   <footer>
     <!-- ROW 1 -->

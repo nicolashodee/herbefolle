@@ -31,6 +31,7 @@
 }
 
 body, html {
+  cursor: none;
   font-family: 'Abril Fatface', cursive;
   font-size: 15px;
   background-color: rgb(225, 225, 225);
@@ -71,6 +72,27 @@ a:visited {color: white;}
 
 .btn--medium {color: black; font-size: 20px; border: 1px solid black; width: 250px; margin: 30px 0px; padding: 3px 5px; }
 .btn--medium:hover {background-color: black; color: white;}
+
+// CURSOR 
+.cursor {
+  width: 1rem;
+  height: 1rem;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1020;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: 0.1s all ease-out;
+  transform-origin: 100% 100%;
+}
+
+.cursor.active {
+  transform: scale(2);
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0 );
+}
+
 
 // NAV BAR
 
