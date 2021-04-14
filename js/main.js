@@ -1,48 +1,34 @@
-//NEW NAV BAR
-
+// NEW NAV BAR
 const hamburger = document.querySelector('.hamburger'); 
 const navLinks = document.querySelector('.nav-links'); 
 const links = document.querySelectorAll('.nav-links li'); 
+const allLinks = document.querySelectorAll('a'); 
 
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('open')
 }); 
 
-// TYPING EFFECT 
 
-var wordList = ['à la pause dej', '', 'chez soi', 'en livraison'];
-var characterPosition = 0, wordPosition = 0;
-var typeSpeed = 200, eraseSpeed = typeSpeed/2;
 
-function typeWord() {
-  if (characterPosition < wordList[wordPosition].length) {
-    document.getElementById("text").innerHTML += wordList[wordPosition].charAt(characterPosition);
-    characterPosition++;
-    setTimeout(typeWord, typeSpeed);
-  } else {
-  	setTimeout(eraseWord, eraseSpeed);
-  }
+// CURSOR 
+let mouseCursor = document.querySelector(".cursor"); 
+
+window.addEventListener('mousemove', cursor); //
+function cursor(e) {
+  mouseCursor.style.top = e.pageY + 'px';
+  mouseCursor.style.left = e.pageX + 'px';
 }
 
-function eraseWord() {
-	if (characterPosition >= 0) {
-      var word = wordList[wordPosition].toString().substring(0, characterPosition);
-      document.getElementById("text").innerHTML = word;
-      characterPosition--;
-      setTimeout(eraseWord, eraseSpeed);
-  } else {
-    wordPosition++;
-    if (wordPosition >= wordList.length) wordPosition = 0;
-    setTimeout(typeWord, typeSpeed);
-  }
-}
+hamburger.addEventListener('mouseover', () => {mouseCursor.classList.add("active")});
+hamburger.addEventListener('mouseout', () => {mouseCursor.classList.remove("active")});
 
-setTimeout(typeWord, typeSpeed);
+allLinks.forEach( link => {
+  link.addEventListener('mouseover', () => {mouseCursor.classList.add("active")});
+  link.addEventListener('mouseout', () => {mouseCursor.classList.remove("active")});
+});
 
-// INTRO EFFECT 
 
-const tl = gsap.timeline({ defaults: {ease: 'power1.out'} }); //initializing a timeline
 
-tl.to(".text", {y: "0%", duration: 1, stagger: 0.25});
-tl.to(".slider", {y: "-100%", duration: 1.5, delay: 0.5}); 
-tl.to(".homepage-intro", {y: "-100%", duration: 1}, "-=1")
+
+
+

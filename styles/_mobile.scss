@@ -9,6 +9,9 @@
 
   /* HOMEPAGE */
   .homepage-wrapper {flex-direction: column;}
+  .homepage-overlay {
+    opacity: 0.7;
+  }
   .homepage-column {
     max-height: 33vh;
   }
