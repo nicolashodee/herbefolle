@@ -1,5 +1,5 @@
 $primary-color: rgb(255, 169, 39); 
-$secondary-color:  rgb(255, 123, 121); 
+$secondary-color:  rgb(198, 150, 125); 
 $header-image: "../images/brunch2.jpg";
 
 .rectangle {
@@ -29,7 +29,7 @@ $header-image: "../images/brunch2.jpg";
 
 #achat {
   position: relative;
-  padding: 15px 35px;
+  padding: 35px 35px;
   margin: 25px 0px;
   display: flex;
   flex-direction: column;
@@ -42,10 +42,11 @@ $header-image: "../images/brunch2.jpg";
 
 .tip {
   position: relative;
+  padding: 15px;
   border-radius: 15px;
-  background-color: rgb(255, 238, 217);
+  background-color: rgb(218, 218, 218);
   margin: 20px 45px;
-  height: fit-content;
+  height: auto;
 
   .icon { 
     position: absolute;
@@ -63,4 +64,10 @@ $header-image: "../images/brunch2.jpg";
   min-height: 80vh;
 }
 
+#onselache {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 
