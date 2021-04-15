@@ -1,190 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+  <!-- FONT AWESOME  -->
+  <link href="./assets/fontawesome/css/all.css" rel="stylesheet">
+  <script src="https://use.fontawesome.com/4c85fb25a3.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen"/>
+  <title>Les brunchs de l'herbe Folle</title>
   <script src="js/main.js" defer></script>
+  <script src="js/brunch.js" defer></script>
   <!-- IMPORTING GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-  <title>Les Brunchs</title>
 </head>
 
 <body>
-
+  
   <!-- THE MENU -->
   <nav>
     <div class="top-bar">
       <a href="index.html"><div id="site-title">l'HERBE FOLLE</div></a>
-      
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>  
+      <div class="top-bar--right">
+        <a href="buy.html"><div class="animate btn--nav">Réserver maintenant</div></a>
+        <!-- NEW HAMBURGER -->
+        <div class="animate hamburger">
+          <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="30" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+          </svg>
+        </div>
+      </div>
     </div>
-
-    <ul class="nav-links">
-      <li><a href="about.html">A propos</a></li>
-      <li><a href="thisweek.html">Menu de la semaine</a></li>
-      <li><a href="brunch.html">Les brunchs</a></li>
-      <li><a href="archives.html">Archives</a></li>
-    </ul>
     
-    
+      <ul class="nav-links">
+        <li><a href="about.html"><h2>A propos</h2></a></li>
+        <li><a href="thisweek.html"><h2>Menu de la semaine</h2></a></li>
+        <li><a href="brunch.html"><h2>Les brunchs</h2></a></li>
+        <li><a href="brunch.html"><h2>Espace traiteur</h2></a></li>
+        <li><a href="archives.html"><h2>Archives</h2></a></li>
+      </ul>
     
   </nav>
+  
   <!-- THE HEADER -->
   <header class="header__brunch">
     <div class="header--overlay brunch">
-      <h1 style="color: rgb(223, 223, 223);">Le dimanche devient le rendez-vous du brunch de l’Herbe Folle!</h1>
+      <h2>Vous n'y résisterez pas !</h2>
     </div>
   </header>
   <!-- THE CONTENT -->
   <main class="container">
 
-    <h3>Du frais, du sain, du savoureux, la rencontre de goûts simples et de petits plats recherchés. </h3>
-    <p>Des produits de saison, les fruits et légumes de Ludivine et Jérôme, nos maraîchers, le pain biologique de chez Noé, et tant d’autres produits issus d’une agriculture locale, biologique ou raisonnée. </p>
-
-
-    <section class="presentation">
+    <section class="main-title">
+      <div><h3>Le dimanche devient le rendez vous du brunch !</h3></div>
       
-      <div class="brunch space-between flex-row flex-mobile">
-        <!-- AU MENU -->
-        <div class="rectangle bg--primary">
-          
-          <div class="title">Au menu</div>
-  
-          <div>
-            <ul>
-              <li>3 pancakes </li>
-              <li>1 carrot cake</li> 
-              <li>1 yaourt végétal et granola</li> 
-              <li>2 tartinades</li> 
-              <li>1 tartine truite fumée bio du moulin de Caoulet/ricotta de chez Castellano</li> 
-              <li> oeuf brouillé et bacon</li> 
-              <li>1 pain frais</li>
-              <li>et une boisson fraiche maison pour accompagner le tout (on vous laisse le plaisir de l’odeur du café frais)</li>
-            </ul>
-          </div>
-        </div>
-        <div class="flex-column space-evenly">
-          <!-- QUAND -->
-          <div class="rectangle bg--secondary">
-            <div class="title">
-              Quand ?
-            </div>
-    
-            <div>
-              Dimanche 20 Mars 
-            </div>
-          </div>
-          <!-- OU? -->
-          <div class="rectangle bg--secondary">
-            <div class="title">
-              Où ?
-            </div>
-    
-            <div> 
-              Les brunchs sont à récupérer dans notre jardin entre 10h et 12h30
-            </div>
-          </div>
-        </div>
-
-      </div>
-      
+      <h4 class="accent-color">Important: Nous utilisons exclusivement des produits frais, pensez à commander au plus tard le samedi midi.</h4>
     </section>
-    
-    <section>
-      <div id="onselache" class="flex-row flex-mobile">
-        <!-- ON SE LACHE -->
-        <div id="achat" class="bg--primary">
-          <div class="title">On se lache !</div>
-  
-          <div>
-        
-            <div>
-              <ul>
-                <li>18 euros pour les adultes</li>
-                <li>10 euros pour les enfants</li>
-              </ul>
-            </div>
-  
-            <div class="flex-column">
-              <div class="btn--medium">&rarr; Je commande</div>
-              <div>commandez au plus tard samedi midi</div>
-            </div>
-          </div>
-        </div>
-        <!-- ALLERGIES -->
-        <div class="tip border--secondary">
-  
-          <div class="icon ">
-            <svg height="30px" version="1.1" id="Layer_1" color="$primary-color"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-  <g>
-  <g>
-    <path d="M501.362,383.95L320.497,51.474c-29.059-48.921-99.896-48.986-128.994,0L10.647,383.95
-      c-29.706,49.989,6.259,113.291,64.482,113.291h361.736C495.039,497.241,531.068,433.99,501.362,383.95z M256,437.241
-      c-16.538,0-30-13.462-30-30c0-16.538,13.462-30,30-30c16.538,0,30,13.462,30,30C286,423.779,272.538,437.241,256,437.241z
-       M286,317.241c0,16.538-13.462,30-30,30c-16.538,0-30-13.462-30-30v-150c0-16.538,13.462-30,30-30c16.538,0,30,13.462,30,30
-      V317.241z"/>
-  </g>
-  </g>
-  <g>
-  </g>
-  <g>
-  </g>
-  <g>
-  </g>
-  <g>
-  </g>
-  <g>
-  </g>
-  <g>
-  </g>
-  <g>
-  </g>
-  <g>
-  </g>
-  <g>
-  </g>
-  <g>
-  </g>
-  <g>
-  </g>
-  <g>
-  </g>
-  <g>
-  </g>
-  <g>
-  </g>
-  <g>
-  </g>
-            </svg>
-          </div>
-  
-          <div>
-            <p>
-            Pour les enfants, le menu est le même mais les portions adaptées. <br>
-            Informez-nous de vos besoins, intolérances ou allergies, nous modifierons le menu pour qu’il vous corresponde.
-            </p>
-          </div>
-      
-        </div>
-      </div>
-    </section> 
 
+    <div class="brunch__left"><h1>Au menu</h1></div>
+    <section class="buy__section">
+      <ul>
+        <li>3 pancakes </li>
+        <li>1 carrot cake</li> 
+        <li>1 yaourt végétal et granola</li> 
+        <li>2 tartinades</li> 
+        <li>1 tartine truite fumée bio du moulin de Caoulet/ricotta de chez Castellano</li> 
+        <li> oeuf brouillé et bacon</li> 
+        <li>1 pain frais</li>
+        <li>et une boisson fraiche maison pour accompagner le tout (on vous laisse le plaisir de l’odeur du café frais)</li>
+      </ul>
+        
+      </div>
+    </section>
+    <div class="brunch__left"><h1>Prochaines dates</h1></div>
+    <section class="buy__section">
+      <div>
+        <ul>
+          <li>Dimanche 26 Mars</li>
+          <li>Dimanche 2 Avril</li> 
+        </ul>
+        <p>Les brunchs sont à récupérer dans notre jardin entre 10h et 12h30</p>
+        <a href="brunch.html" class="btn--buy"><div>Je commande !</div></a>
+      </div>
+      
+          
+    </section>
+   
   </main>
   <!-- THE FOOTER -->
   <footer>
     <!-- ROW 1 -->
     <div class="footer__info flex-row space-between text-strong">
       <div>
-          <p style="font-size: 13px;">L'herbe Folle - Café d'hôte à Aix en Provence</p>
+          <h4>L'herbe Folle - Café d'hôte à Aix en Provence</h4>
           <ul>
             <li>email: <a href="mailto:contact@lherbefolle.net">contact@lherbefolle.net</a></li>
             <li>fixe: <a href="tel:+33486313417">04.86.31.34.17</a></li>
@@ -194,8 +112,8 @@
       <div class="footer__social">
         <ul>
           <li> <a href="https://goo.gl/maps/AbcdYEoqVkxavS3K9" target="_blank"><i class="fas fa-map-marker-alt"></i> Google Maps</a></li>
-          <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/lherbefolle.aix/" target="_blank"> Instagram</a></li>
-          <li><i class="fab fa-tripadvisor"></i> TripAdvisor</li>
+          <li> <a href="https://www.instagram.com/lherbefolle.aix/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://www.tripadvisor.fr/" target="_blank"><i class="fab fa-tripadvisor"></i> TripAdvisor</a></li>
         </ul>
       </div>
     </div>
@@ -203,10 +121,11 @@
     <!-- ROW 2 -->
     <div class="flex-row space-between credits">
       <div><p>Copyright 2021 Denis Hayoun. All Rights Reserved</p></div>
-      <div><p>Réalisation site internet : <a href="http://www.nicolashodee.com" target="_blanks">www.nicolashodee.com</a></p></div>
+      <div><p>Réalisation site internet : <a href="http://www.nicolashodee.com" target="_blank">www.nicolashodee.com</a></p></div>
     </div>
       
   </footer>
   
 </body>
+
 </html>
