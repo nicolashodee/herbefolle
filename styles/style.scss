@@ -1,10 +1,5 @@
 // FONTS
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,600;1,300&family=Zilla+Slab+Highlight&display=swap'); // font-family: 'Montserrat', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 
 // SASS IMPORT
 @import "./pages/about";
@@ -31,7 +26,6 @@
 }
 
 body, html {
-  cursor: none;
   font-family: 'Abril Fatface', cursive;
   font-size: 15px;
   background-color: rgb(225, 225, 225);
