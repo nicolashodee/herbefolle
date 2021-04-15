@@ -1,13 +1,20 @@
+nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
 // HAMBURGER STYLING
 .ham {
-  cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   transition: transform 400ms;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  // max-height: 25px;
 }
 .hamRotate.active {
   transform: rotate(45deg);
@@ -18,7 +25,7 @@
 .line {
   fill:none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke:rgb(255, 255, 255);
+  stroke: white; 
   stroke-width:5.5;
   stroke-linecap:round;
 }
@@ -34,4 +41,99 @@
 }
 .ham4.active .bottom {
   stroke-dashoffset: -68px;
+}
+
+// NAV BAR
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  z-index: 100;
+
+  &--right {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+  }
+
+  #site-title {
+    font-family: 'Cardo', serif;
+    color: $primary-text-color;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;}
+}
+
+.line { 
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+// styling the "buy" button in the navbar
+.btn--nav {
+  //positioning
+  width: 200px; 
+  padding: 6px; 
+  margin-right: 25px;
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center;
+
+  // style
+  font-family: 'Josefin Sans', sans-serif;
+  color: $primary-text-color; 
+  font-size: 15px; 
+  font-weight: bolder;
+  border: 1px solid $primary-text-color; 
+  text-align: center; 
+  cursor: pointer; 
+}
+
+.btn--nav:hover {
+  background-color: $dark-primary-color; 
+  color: $light-primary-color;
+}
+
+.hamburger { 
+  height: 2rem;
+  width: 2rem;
+  background-color: $dark-primary-color;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+.nav-links {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 1s all ease-out;
+  background-color: rgb(0, 58, 38);
+  clip-path: circle(100px at 150% 0%);
+  -webkit-clip-path: circle(100px at 150% 0%); 
+  z-index: 99;
+}
+
+.nav-links.open {
+  display: flex;
+  clip-path: circle(2500px at 90% 0%);
+  -webkit-clip-path: circle(2500px at 90% 0%); 
+  transition: 1s all ease-out;
 }
