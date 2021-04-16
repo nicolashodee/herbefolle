@@ -1,0 +1,36 @@
+.archives { 
+  display: flex;
+  flex-flow: row wrap; 
+  justify-content: center;
+  align-items: flex-start;
+  flex-basis: 33%;
+}
+.article__archive {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 30%;
+  margin-right: 0;
+  padding: 15px;
+  margin: 30px 30px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  z-index: 2;
+  div { 
+    margin: 10px;
+  }
+  .pastweek-image {
+    
+    img {
+      max-height: 150px;
+    }
+  }
+}
+.archives_navigation {
+  .page-number {
+    min-width: 100px;
+  }
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}

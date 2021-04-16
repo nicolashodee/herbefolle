@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONT AWESOME  -->
+  <link href="./assets/fontawesome/css/all.css" rel="stylesheet">
+  <script src="https://use.fontawesome.com/4c85fb25a3.js"></script>
+  <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen"/>
-  <title>Le menu de cette semaine</title>
+  <title>l'Herbe Folle, cantine bio à Aix en Provence</title>
   <script src="js/main.js" defer></script>
-  <script src="js/parallax.js" defer></script>
+  <script src="js/buy.js" defer></script>
   <!-- IMPORTING GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <div class="cursor"></div>
   <!-- THE MENU -->
   <nav>
     <div class="top-bar">
@@ -37,66 +43,67 @@
       </div>
     </div>
 
-    <ul class="nav-links">
-      <li><a href="about.html">A propos</a></li>
-      <li><a href="thisweek.html">Menu de la semaine</a></li>
-      <li><a href="brunch.html">Les brunchs</a></li>
-      <li><a href="archives.html">Archives</a></li>
-    </ul>
+    
 
+    
   </nav>
   
-  <!-- THE HEADER -->
-  <div class="thisweek__header">
-    <div id="semaine-title"><span >Semaine du 12 au 16 avril</span></div>
-    
-    <div id="parallax1" class="parallax1 image-header position1">
-      <img id="parallax2" src="images/brunch3.jpg" class="parallax2" style="max-height: 500px;" alt="">
-    </div>
-    <div id="" class="image-header position2">
-      <img src="images/eggs.jpg" class="" style="max-height: 500px;" alt="">
-    </div>
-  </div>
+  <!-- MENU OPENED -->
+  <ul class="nav-links">
+    <li><a href="about.html"><h2>A propos</h2></a></li>
+    <li><a href="thisweek.html"><h2>Menu de la semaine</h2></a></li>
+    <li><a href="brunch.html"><h2>Les brunchs</h2></a></li>
+    <li><a href="brunch.html"><h2>Espace traiteur</h2></a></li>
+    <li><a href="archives.html"><h2>Archives</h2></a></li>
+  </ul>
   
+  <!-- THE HEADER -->
+  <header class="header__thisweek">
+    <div class="header--overlay thisweek">
+      <h2>Semaine du 14 au 18 Avril</h2>
+    </div>
+  </header>
   <!-- THE CONTENT -->
   <main class="container">
-    <div class="thisweek__content">
-      <div>Publié le 5 Avril 2021</div>
-      <div class="thisweek__text">
-        
-        <article>
-          <p>
+    <section class="articles">
+      <p>Publié le 4 Avril 2021</p>
+      <article class="article__thisweek">
+        <div class="thisweek-image">
+          <img src="./images/menus/IMG_20200527_154917171.jpg" alt="">
+        </div>
+        <p>
+          <strong>
             Bonjour, 
-            Grande nouvelle! L’Herbe Folle ouvre ses cuisines le samedi, avec un plat choisi par l’un d’entre vous, à tour de rôle.
+            Grande nouvelle! </strong><br><br>
+            L’Herbe Folle ouvre ses cuisines le samedi, avec un plat choisi par l’un d’entre vous, à tour de rôle.
             Cette semaine, l’Herbe Folle vous propose de prolonger le voyage avec:
-          </p>
-          <oul>
-            <li><u>Mardi:</u> le plat du retour de marché; des asperges, quelques courgettes juste revenues, des herbes fraîches, de la betterave crue à la coriandre, du parmesan et un oeuf mollet, un bon pain frais au thym et à l’huile d’olives…</li>
-            <li>Mercredi: Un petit tour par le Sénégal,avec un épicé mafé de boeuf (attention! allergiques aux arachides s’abstenir!), accompagné de carottes rôties, de pommes de terre à la vapeur et d’une douce romaine;</li>
-            <li>Jeudi: la route des épices nous amène en Inde, avec un curry de légumes au lait de coco, servi avec du riz et un naan au fromage et à la coriandre;</li>
-            <li>Vendredi: on clôt notre tour du monde par un pôke bowl poisson et crevettes. La composition dépendra des fruits que j’arrive à trouver (le principe étant toujours de ne pas consommer de produits à impact écologique important) mais les alliances seront succulentes, n’en doutez pas!</li>
-            <li>Samedi: ce samedi, c’est le poulet Marbella qui est à l’honneur!</li>
-          </ul>
-          <p>
-            Pour les desserts, je pense à un blanc manger aux fraises accompagné d’un biscuit à la noix de coco. Il y aura aussi très probablement une tarte fraîche aux kiwis.
-          </p>
-          <p>A très vite!</p>
-          <div class="btn--medium">&rarr; Je commande !</div>
-        </article>
-
-      </div>
-      <div class="thisweek__images">
+          
+        </p>
+        <oul>
+          <li><strong>Mardi:</strong> le plat du retour de marché; des asperges, quelques courgettes juste revenues, des herbes fraîches, de la betterave crue à la coriandre, du parmesan et un oeuf mollet, un bon pain frais au thym et à l’huile d’olives…</li>
+          <li><strong>Mercredi:</strong> Un petit tour par le Sénégal,avec un épicé mafé de boeuf (attention! allergiques aux arachides s’abstenir!), accompagné de carottes rôties, de pommes de terre à la vapeur et d’une douce romaine;</li>
+          <li><strong>Jeudi:</strong> la route des épices nous amène en Inde, avec un curry de légumes au lait de coco, servi avec du riz et un naan au fromage et à la coriandre;</li>
+          <li><strong>Vendredi:</strong> on clôt notre tour du monde par un pôke bowl poisson et crevettes. La composition dépendra des fruits que j’arrive à trouver (le principe étant toujours de ne pas consommer de produits à impact écologique important) mais les alliances seront succulentes, n’en doutez pas!</li>
+          <li><strong>Samedi:</strong> ce samedi, c’est le poulet Marbella qui est à l’honneur!</li>
+        </ul>
+        <p>
+          <strong>Pour les desserts,</strong> je pense à un blanc manger aux fraises accompagné d’un biscuit à la noix de coco. Il y aura aussi très probablement une tarte fraîche aux kiwis.
+        </p>
+        <p>A très vite!</p>
+        <a href="buy.html"><div class="btn--medium">&rarr; Je commande !</div></a>
         
-      </div>
-    </div>
+      </article>
+      <a href="archives.html"><div class="btn--medium">&rarr; Voir les semaines précédentes</div></a>
+    </section>
+    
+   
   </main>
-  
   <!-- THE FOOTER -->
   <footer>
     <!-- ROW 1 -->
     <div class="footer__info flex-row space-between text-strong">
       <div>
-          <p style="font-size: 13px;">L'herbe Folle - Café d'hôte à Aix en Provence</p>
+          <h4>L'herbe Folle - Café d'hôte à Aix en Provence</h4>
           <ul>
             <li>email: <a href="mailto:contact@lherbefolle.net">contact@lherbefolle.net</a></li>
             <li>fixe: <a href="tel:+33486313417">04.86.31.34.17</a></li>
@@ -106,8 +113,8 @@
       <div class="footer__social">
         <ul>
           <li> <a href="https://goo.gl/maps/AbcdYEoqVkxavS3K9" target="_blank"><i class="fas fa-map-marker-alt"></i> Google Maps</a></li>
-          <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/lherbefolle.aix/" target="_blank"> Instagram</a></li>
-          <li><i class="fab fa-tripadvisor"></i> TripAdvisor</li>
+          <li> <a href="https://www.instagram.com/lherbefolle.aix/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://www.tripadvisor.fr/" target="_blank"><i class="fab fa-tripadvisor"></i> TripAdvisor</a></li>
         </ul>
       </div>
     </div>
@@ -115,11 +122,10 @@
     <!-- ROW 2 -->
     <div class="flex-row space-between credits">
       <div><p>Copyright 2021 Denis Hayoun. All Rights Reserved</p></div>
-      <div><p>Réalisation site internet : <a href="http://www.nicolashodee.com" target="_blanks">www.nicolashodee.com</a></p></div>
+      <div><p>Réalisation site internet : <a href="http://www.nicolashodee.com" target="_blank">www.nicolashodee.com</a></p></div>
     </div>
       
   </footer>
-
+  
 </body>
-
 </html>

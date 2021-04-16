@@ -9,29 +9,55 @@
   <script src="js/main.js" defer></script>
 </head>
 <body>
-
+  <div class="cursor"></div>
   <!-- THE MENU -->
   <nav>
     <div class="top-bar">
-      <a href="index.html"><div id="site-title">l'HERBE FOLLE</div></a>
-      
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>  
+      <a href="index.html">
+        <div id="site-title">
+          <span>l'HERBE 
+            <span style="display: inline-block; transform: rotate(-30deg);">F</span>
+            <span style="display: inline-block; transform: rotate(-10deg);">O</span>
+            <span style="display: inline-block; transform: rotate(-5deg);">L</span>
+            <span style="display: inline-block; transform: rotate(0deg);">L</span>
+            <span style="display: inline-block; transform: rotate(5deg);">E</span>
+          </span>
+        </div>
+      </a>
+
+      <div class="top-bar--right">
+        <a href="buy.html"><div class="animate btn--nav">Réserver maintenant</div></a>
+        <!-- NEW HAMBURGER -->
+        <div class="animate hamburger">
+          <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="30" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+          </svg>
+        </div>
+      </div>
     </div>
 
-    <ul class="nav-links">
-      <li><a href="about.html">A propos</a></li>
-      <li><a href="thisweek.html">Menu de la semaine</a></li>
-      <li><a href="brunch.html">Les brunchs</a></li>
-      <li><a href="archives.html">Archives</a></li>
-    </ul>
     
-    
+
     
   </nav>
+  
+  <!-- MENU OPENED -->
+  <ul class="nav-links">
+    <li><a href="about.html"><h2>A propos</h2></a></li>
+    <li><a href="thisweek.html"><h2>Menu de la semaine</h2></a></li>
+    <li><a href="brunch.html"><h2>Les brunchs</h2></a></li>
+    <li><a href="brunch.html"><h2>Espace traiteur</h2></a></li>
+    <li><a href="archives.html"><h2>Archives</h2></a></li>
+  </ul>
+
   <!-- THE HEADER -->
   <header class="header__brunch">
     <div class="header--overlay brunch">
@@ -123,12 +149,13 @@
     </section>
 
   </main>
+  
   <!-- THE FOOTER -->
   <footer>
     <!-- ROW 1 -->
     <div class="footer__info flex-row space-between text-strong">
       <div>
-          <p style="font-size: 13px;">L'herbe Folle - Café d'hôte à Aix en Provence</p>
+          <h4>L'herbe Folle - Café d'hôte à Aix en Provence</h4>
           <ul>
             <li>email: <a href="mailto:contact@lherbefolle.net">contact@lherbefolle.net</a></li>
             <li>fixe: <a href="tel:+33486313417">04.86.31.34.17</a></li>
@@ -138,8 +165,8 @@
       <div class="footer__social">
         <ul>
           <li> <a href="https://goo.gl/maps/AbcdYEoqVkxavS3K9" target="_blank"><i class="fas fa-map-marker-alt"></i> Google Maps</a></li>
-          <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/lherbefolle.aix/" target="_blank"> Instagram</a></li>
-          <li><i class="fab fa-tripadvisor"></i> TripAdvisor</li>
+          <li> <a href="https://www.instagram.com/lherbefolle.aix/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://www.tripadvisor.fr/" target="_blank"><i class="fab fa-tripadvisor"></i> TripAdvisor</a></li>
         </ul>
       </div>
     </div>
@@ -147,7 +174,7 @@
     <!-- ROW 2 -->
     <div class="flex-row space-between credits">
       <div><p>Copyright 2021 Denis Hayoun. All Rights Reserved</p></div>
-      <div><p>Réalisation site internet : <a href="http://www.nicolashodee.com" target="_blanks">www.nicolashodee.com</a></p></div>
+      <div><p>Réalisation site internet : <a href="http://www.nicolashodee.com" target="_blank">www.nicolashodee.com</a></p></div>
     </div>
       
   </footer>

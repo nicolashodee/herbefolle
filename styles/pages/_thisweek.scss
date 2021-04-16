@@ -54,3 +54,48 @@
   .image-2 {background-image: url(images/garlic.jpg);}
   .image-3 {background-image: url(images/Scale_Common_Roach.JPG);}
 
+
+.article__thisweek {
+  position: relative;
+  padding: 20px 40px;
+  width: 60%;
+  background-color: white;
+  transform: translateY(-20%);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  z-index: 2;
+}
+
+.thisweek-image {
+  position: absolute;
+  right: -55%;
+  top: 0%;
+  
+  
+  img {
+    border-radius: 1%;
+    max-height: 350px;
+    max-width: 350px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  
+}
+
+@media screen and (max-width: 1200px) {
+  .thisweek-image {
+    position: relative;
+    left: 0%;
+    max-height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 5px;
+  }
+  .article__thisweek {
+    width: 100%;
+    transform: translateY(-11%);
+    padding: 20px 40px;
+    width: 100%;
+  }
+}

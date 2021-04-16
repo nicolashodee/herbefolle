@@ -5,7 +5,8 @@ const links = document.querySelectorAll('.nav-links li');
 const allLinks = document.querySelectorAll('a'); 
 
 hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('open')
+  navLinks.classList.toggle('open');
+  hamburger.classList.toggle('active');
 }); 
 
 
