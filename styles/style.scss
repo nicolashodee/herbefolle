@@ -1,7 +1,9 @@
 // FONTS
 
 @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap'); // font-family: 'Cardo', serif;
-@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Josefin+Sans:wght@100&display=swap'); // font-family: 'Josefin Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap'); // font-family: 'Josefin Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap'); // for the title, font-family: 'Monoton', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); // font-family: 'Montserrat', sans-serif;
 
 // Palette
 $dark-primary-color     :#002b1d; // background
@@ -20,8 +22,8 @@ $divider-color          :#BDBDBD; // border
 @import "./pages/index"; 
 @import "./menu"; 
 @import "./mobile";
-@import "./pages/thisweek2";
 @import "./pages/buy";
+@import "./pages/archives";
 
 /***********
 z index recap: 
@@ -44,12 +46,15 @@ body, html {
   background-color: $light-primary-color;
   color: $primary-text-color;
   height: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  strong {font-weight: bold;}
 
   h1  {font-size: 60px; padding: 0px; margin: 0px; font-family: 'Cardo', serif;}
   h2  {font-size: 40px;font-family: 'Cardo', serif;}
-  h3  {font-size: 30px; font-weight: bolder;font-family: 'Cardo', serif;}
-  h4  {font-size: 22px; font-weight: bolder;font-family: 'Josefin Sans', sans-serif;}
-  p   {font-size: 15px; padding: 15px 0px; font-family: 'Josefin Sans', sans-serif;}
+  h3  {font-size: 30px; font-weight: bolder;font-family: 'Cardo', serif; text-align: center;}
+  h4  {font-size: 22px; font-weight: bolder;font-family: 'Josefin Sans', sans-serif; text-align: center;}
+  p   {padding: 15px 0px; }
   .font--small {font-size: 10px}
   .accent-color {color: $accent-color;}
 
@@ -61,6 +66,7 @@ body, html {
   }
   
   
+  
 
 }
 
@@ -70,7 +76,11 @@ main {
   position: relative; // put on top 
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
-  
+  article {
+    li {
+      padding: 5px 0px;
+    }
+  }
 }
 
 main.container { 
@@ -89,7 +99,7 @@ main.container {
 /************ BUTTONS & LINKS ***********
 ******************************************/
 
-.btn--medium {color: black; font-size: 20px; border: 1px solid black; width: 250px; margin: 30px 0px; padding: 3px 5px; }
+.btn--medium {color: black; font-size: 20px; border: 1px solid black; width: 300px; margin: 30px 0px; padding: 3px 5px; }
 .btn--medium:hover {background-color: black; color: white;}
 
 // CURSOR 
@@ -157,17 +167,24 @@ header {
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    h2 {color: white;}
   }
   
   .header--overlay.brunch {background-image: linear-gradient(-45deg, rgba(194, 95, 19, 0.52), rgba(40, 117, 19, 0.33));}
+  // .header--overlay.archives {background-image: linear-gradient(-45deg, rgba(194, 95, 19, 0.52), rgba(40, 117, 19, 0.33));}
   .header--overlay.about {background-image: linear-gradient(-45deg, rgba(19, 46, 194, 0.52), rgba(40, 117, 19, 0.73));}
+  .header--overlay.thisweek {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 50px;
+    // background-image: linear-gradient(-45deg, rgba(19, 46, 194, 0.52), rgba(40, 117, 19, 0.73));
+  }
 }
 
 header.header__buy {
-  background-image: url("../images/vegetables.jpg");
-  background-position: 0% 50%;
+  background-image: url("../images/gas.jpg");
+  background-position: 0% 67%;
   background-size: cover;
-  h2 {color: white;}
   .header--overlay {background-color: rgba(14, 87, 0, 0.2);}
 
 }
@@ -176,12 +193,25 @@ header.header__brunch {
   background-position: top;
   background-size: cover;
 }
+header.header__thisweek {
+  background-image: url("../images/coriander.jpg");
+  background-position: top;
+  background-size: cover;
+  h2 {color: white;}
+}
+header.header__archives {
+  background-image: url("../images/archives.jpg");
+  background-position: top;
+  background-size: cover;
+  h2 {color: white;}
+}
 
 footer { 
   //colors
   font-family: 'Josefin Sans', sans-serif;
   color: $text-primary-color;
   background-color: $dark-primary-color;
+  h4 {text-align: left;}
   //positioning
   position: sticky;
   bottom: 0;
@@ -196,9 +226,6 @@ footer {
   flex-wrap: nowrap;
   justify-content: space-between;
   
-
-  
-
   ul {
     display: flex;
     flex-direction: row;
@@ -210,7 +237,7 @@ footer {
       padding-right: 30px;
       padding-top: 10px;
     }
-  }
+  } 
 
   .footer__social {
     display: flex;
