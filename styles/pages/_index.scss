@@ -6,6 +6,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  
 }
 
 .homepage-column { 
@@ -41,12 +42,45 @@
   font-size: 50px;
   padding: 35px;
   text-align: center;
+  cursor: none;
 }
   .homepage-overlay:hover {opacity: 0.8;}
   .overlay1 {background-color: rgb(51, 121, 51);}
   .overlay2 {background-color: rgb(213, 145, 27);}
   .overlay3 {background-color: rgb(51, 121, 99);}
 
+@media only screen and (min-width: 800px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+
+  /* HOMEPAGE */
+  .homepage-wrapper {
+    flex-direction: column;
+  }
+ 
+    .homepage-overlay{
+      opacity: 0.2;
+    }
+    .text-mobile {
+      text-align: center;
+      padding: 10px;
+      opacity: 1;
+      font-size: 46px;
+      font-weight: bold;
+    }
+  
+  
+  .homepage-column {
+    max-height: 33vh;
+  }
+}
 
 // ANIMATION ON DESKTOP SITE 
 

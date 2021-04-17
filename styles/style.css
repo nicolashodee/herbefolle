@@ -494,6 +494,7 @@
   font-size: 50px;
   padding: 35px;
   text-align: center;
+  cursor: none;
 }
 
 .homepage-overlay:hover {
@@ -510,6 +511,38 @@
 
 .overlay3 {
   background-color: #337963;
+}
+
+@media only screen and (min-width: 800px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+  /* HOMEPAGE */
+  .homepage-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homepage-overlay {
+    opacity: 0.2;
+  }
+  .text-mobile {
+    text-align: center;
+    padding: 10px;
+    opacity: 1;
+    font-size: 46px;
+    font-weight: bold;
+  }
+  .homepage-column {
+    max-height: 33vh;
+  }
 }
 
 .homepage-intro {
@@ -664,6 +697,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: none;
 }
 
 .btn--nav {
@@ -689,7 +723,13 @@ nav {
   font-weight: bolder;
   border: 1px solid #212121;
   text-align: center;
-  cursor: pointer;
+  cursor: none;
+}
+
+@media screen and (max-width: 800px) {
+  .btn--nav {
+    display: none;
+  }
 }
 
 .btn--nav:hover {
@@ -720,7 +760,7 @@ nav {
 }
 
 .nav-links {
-  padding: 100px;
+  padding: 80px 130px 130px 130px;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -741,6 +781,7 @@ nav {
   -webkit-clip-path: circle(100px at 150% 0%);
   z-index: 99;
   text-align: center;
+  cursor: none;
 }
 
 .nav-links h2 {
@@ -772,19 +813,6 @@ nav {
   }
   h2 {
     font-size: 15px;
-  }
-  /* HOMEPAGE */
-  .homepage-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .homepage-overlay {
-    opacity: 0.5;
-  }
-  .homepage-column {
-    max-height: 33vh;
   }
   /* CETTE SEMAINE */
   .day {
@@ -896,7 +924,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 30%;
+  width: 25%;
   margin-right: 0;
   padding: 15px;
   margin: 30px 30px;
@@ -950,6 +978,7 @@ nav-links: 99
 }
 
 body, html {
+  cursor: none;
   font-size: 18px;
   background-color: #f0f0f0;
   color: #212121;
@@ -1003,10 +1032,14 @@ body .accent-color, html .accent-color {
 body a, html a {
   color: #FFFFFF;
   text-decoration: none;
+  cursor: none;
 }
 
 body a:hover, html a:hover {
   color: #795548;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: none;
 }
 
 main {
@@ -1064,7 +1097,7 @@ main.container {
 .cursor {
   width: 1rem;
   height: 1rem;
-  background-color: black;
+  background-color: #795548;
   border-radius: 50%;
   position: absolute;
   z-index: 1020;
@@ -1080,7 +1113,7 @@ main.container {
 .cursor.active {
   -webkit-transform: scale(2);
           transform: scale(2);
-  border: 1px solid black;
+  border: 1px solid #795548;
   background-color: rgba(0, 0, 0, 0);
 }
 

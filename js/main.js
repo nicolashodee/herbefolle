@@ -29,6 +29,14 @@ allLinks.forEach( link => {
 });
 
 
+//SITE TITLE HOVER ANIMATION
+const letters = gsap.utils.toArray('.letter').forEach(letter => {
+  // on déclare une animation
+  const anim = TweenMax.to(letter, 1, {rotation:-360, overwrite:"none"});
+  // on ajoute les event listeners
+  letter.addEventListener("mouseenter", () => anim.play() );
+  letter.addEventListener("mouseleave", () => anim.reverse() );
+});
 
 
 

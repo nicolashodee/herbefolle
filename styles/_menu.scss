@@ -68,7 +68,9 @@ nav {
     font-weight: bold;
     display: flex; 
     flex-direction: row; 
-    align-items: center;}
+    align-items: center;
+    cursor: none;
+  }
 }
 
 // styling the "buy" button in the navbar
@@ -89,7 +91,12 @@ nav {
   font-weight: bolder;
   border: 1px solid $primary-text-color; 
   text-align: center; 
-  cursor: pointer; 
+  cursor: none; 
+
+  @media screen and (max-width: 800px) {
+    display: none;
+    
+  }
 }
 .btn--nav:hover {
   background-color: $dark-primary-color; 
@@ -113,7 +120,7 @@ nav {
 
 // MENU WHEN IT'S OPEN
 .nav-links {
-  padding: 100px;
+  padding: 80px 130px 130px 130px;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -127,7 +134,7 @@ nav {
   -webkit-clip-path: circle(100px at 150% 0%); 
   z-index: 99;
   text-align: center;
-
+  cursor: none;
   h2 {
     font-size: 25px;
   }
