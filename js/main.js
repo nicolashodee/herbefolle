@@ -20,6 +20,7 @@ function cursor(e) {
   mouseCursor.style.left = e.pageX + 'px';
 }
 
+//HAMBRGER EFFECT
 hamburger.addEventListener('mouseover', () => {mouseCursor.classList.add("active")});
 hamburger.addEventListener('mouseout', () => {mouseCursor.classList.remove("active")});
 

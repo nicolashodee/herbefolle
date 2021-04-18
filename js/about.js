@@ -1,6 +1,6 @@
 // TYPING EFFECT 
 
-var wordList = ['délicieuse', 'végétarienne', 'livrée chez vous', 'bio'];
+var wordList = ['de saison', 'savoureuse', 'en livraison', 'bio', ];
 var characterPosition = 0, wordPosition = 0;
 var typeSpeed = 200, eraseSpeed = typeSpeed/2;
 

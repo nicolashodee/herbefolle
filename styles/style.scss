@@ -64,8 +64,17 @@ body, html {
       font-size: 30px;
     }
   }
-  h3  {font-size: 30px; font-weight: bolder;font-family: 'Cardo', serif; text-align: center;}
-  h4  {font-size: 22px; font-weight: bolder;font-family: 'Josefin Sans', sans-serif; text-align: center;}
+  h3  {font-size: 30px; font-weight: bolder;font-family: 'Cardo', serif; text-align: center; padding: 10px 0px;}
+  h4  {
+    padding: 10px 0px;
+    font-size: 22px; 
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif; 
+    text-align: center;
+    @media screen and (max-width: 1200px) {
+      font-size: 20px;
+    }
+  }
   p   {padding: 15px 0px; }
   .accent-color {color: $accent-color;}
 
@@ -79,6 +88,20 @@ body, html {
 
 }
 
+@media screen and (min-width: 1000px) {
+  
+  .desaturate {
+    
+    filter: grayscale(100%);
+    transition: .2s ease-in;
+    
+      &:hover {
+        filter: grayscale(0%);
+        transition: .2s ease-out;
+      }
+    
+  }
+}
 
 
 main {
@@ -97,9 +120,7 @@ main {
 main.container { 
   padding: 35px;
 
-  @media screen and (max-width: 1200px) {
-    padding: 10px;
-  }
+  
 }
 
 .main-title {
@@ -108,7 +129,7 @@ main.container {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  height: 150px;
+  min-height: 150px;
 }
 
 /************ BUTTONS & LINKS ***********
@@ -124,15 +145,33 @@ main.container {
   text-align: left; 
   cursor: none; 
   transition: 0.5s;
-
-  // color: ; 
-  // font-size: 20px; 
-  // border: 1px solid black; 
-  width: 300px; 
+  min-width: 200px; 
   margin: 30px 0px; 
   padding: 5px; 
 }
 .btn--medium:hover {
+  background-color: $dark-primary-color; 
+  color: $light-primary-color;
+  transition: 0.5s;
+}
+
+.btn--small {
+  // style
+  font-family: 'Josefin Sans', sans-serif;
+  color: $primary-text-color; 
+  font-size: 15px; 
+  font-weight: bolder;
+  border: 1px solid $primary-text-color; 
+  text-align: center; 
+  cursor: none; 
+  transition: 0.5s;
+  min-width: 100px; 
+  margin: 30px 0px; 
+  padding: 5px; 
+  
+}
+
+.btn--small:hover {
   background-color: $dark-primary-color; 
   color: $light-primary-color;
   transition: 0.5s;
@@ -210,8 +249,9 @@ header {
   }
   
   .header--overlay.brunch {background-image: linear-gradient(-45deg, rgba(194, 95, 19, 0.52), rgba(40, 117, 19, 0.33));}
-  // .header--overlay.archives {background-image: linear-gradient(-45deg, rgba(194, 95, 19, 0.52), rgba(40, 117, 19, 0.33));}
-  .header--overlay.about {background-image: linear-gradient(-45deg, rgba(19, 46, 194, 0.52), rgba(40, 117, 19, 0.73));}
+  .header--overlay.buy {background-image: linear-gradient(-45deg, rgba(194, 109, 19, 0.52), rgba(117, 19, 19, 0.112));}
+  .header--overlay.archives {background-image: linear-gradient(-45deg, rgba(188, 19, 194, 0.091), rgba(0, 0, 0, 0.93));}
+  .header--overlay.about {background-image: linear-gradient(-45deg, rgba(42, 194, 19, 0.303), rgba(117, 19, 19, 0.714));}
   .header--overlay.thisweek {
     display: flex;
     justify-content: center;
@@ -221,8 +261,8 @@ header {
 }
 
 header.header__buy {
-  background-image: url("../images/gas.jpg");
-  background-position: 0% 67%;
+  background-image: url("../images/sushi.jpg");
+  background-position: 0% 37%;
   background-size: cover;
   .header--overlay {background-color: rgba(14, 87, 0, 0.2);}
 
@@ -239,9 +279,17 @@ header.header__thisweek {
   h2 {color: white;}
 }
 header.header__archives {
-  background-image: url("../images/archives.jpg");
+  background-image: url("../images/leftover.jpg");
   background-position: top;
   background-size: cover;
+  background-position: 80% 50%;
+  h2 {color: white;}
+}
+header.header__about {
+  background-image: url("../images/chicken.jpg");
+  background-position: top;
+  background-size: cover;
+  background-position: 80% 50%;
   h2 {color: white;}
 }
 
