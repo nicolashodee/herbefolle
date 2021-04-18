@@ -1,6 +1,6 @@
 // TYPING EFFECT 
 
-var wordList = ['à la pause dej', '', 'chez soi', 'en livraison'];
+var wordList = ['délicieuse', 'végétarienne', 'livrée chez vous', 'bio'];
 var characterPosition = 0, wordPosition = 0;
 var typeSpeed = 200, eraseSpeed = typeSpeed/2;
 
