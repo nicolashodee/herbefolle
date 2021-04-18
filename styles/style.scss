@@ -21,7 +21,6 @@ $divider-color          :#BDBDBD; // border
 @import "./pages/brunch";
 @import "./pages/index"; 
 @import "./menu"; 
-@import "./mobile";
 @import "./pages/buy";
 @import "./pages/archives";
 
@@ -43,7 +42,9 @@ nav-links: 99
 
 body, html {
   cursor: none;
-
+  @media only screen and (max-width: 800px)  {
+    cursor: auto; 
+  }
   
   font-size: 18px;
   background-color: $light-primary-color;
@@ -57,11 +58,15 @@ body, html {
   strong {font-weight: bold;}
 
   h1  {font-size: 60px; padding: 0px; margin: 0px; font-family: 'Cardo', serif;}
-  h2  {font-size: 40px;font-family: 'Cardo', serif;}
+  h2  {
+    font-size: 40px;font-family: 'Cardo', serif;
+    @media screen and (max-width: 1200px) {
+      font-size: 30px;
+    }
+  }
   h3  {font-size: 30px; font-weight: bolder;font-family: 'Cardo', serif; text-align: center;}
   h4  {font-size: 22px; font-weight: bolder;font-family: 'Josefin Sans', sans-serif; text-align: center;}
   p   {padding: 15px 0px; }
-  .font--small {font-size: 10px}
   .accent-color {color: $accent-color;}
 
   a {
@@ -70,19 +75,11 @@ body, html {
     cursor: none; 
     &:hover {color: $accent-color; transition: 0.5s; cursor: none;}
   }
-  @media only screen and (max-width: 800px)  {
-    a:hover {
-      color: $text-primary-color; 
-    }
-  }
+  
 
 }
 
-@media only screen and (max-width: 800px)  {
-  body {
-    cursor: auto; 
-  }
-}
+
 
 main {
   height: 100%; //make sure to cover the screen 
@@ -99,6 +96,10 @@ main {
 
 main.container { 
   padding: 35px;
+
+  @media screen and (max-width: 1200px) {
+    padding: 10px;
+  }
 }
 
 .main-title {
@@ -113,8 +114,29 @@ main.container {
 /************ BUTTONS & LINKS ***********
 ******************************************/
 
-.btn--medium {color: black; font-size: 20px; border: 1px solid black; width: 300px; margin: 30px 0px; padding: 3px 5px; }
-.btn--medium:hover {background-color: black; color: white;}
+.btn--medium {
+  // style
+  font-family: 'Josefin Sans', sans-serif;
+  color: $primary-text-color; 
+  font-size: 15px; 
+  font-weight: bolder;
+  border: 1px solid $primary-text-color; 
+  text-align: left; 
+  cursor: none; 
+  transition: 0.5s;
+
+  // color: ; 
+  // font-size: 20px; 
+  // border: 1px solid black; 
+  width: 300px; 
+  margin: 30px 0px; 
+  padding: 5px; 
+}
+.btn--medium:hover {
+  background-color: $dark-primary-color; 
+  color: $light-primary-color;
+  transition: 0.5s;
+}
 
 // CURSOR 
 .cursor {
@@ -192,8 +214,8 @@ header {
   .header--overlay.about {background-image: linear-gradient(-45deg, rgba(19, 46, 194, 0.52), rgba(40, 117, 19, 0.73));}
   .header--overlay.thisweek {
     display: flex;
-    justify-content: flex-start;
-    padding-left: 50px;
+    justify-content: center;
+    padding: 30px;
     // background-image: linear-gradient(-45deg, rgba(19, 46, 194, 0.52), rgba(40, 117, 19, 0.73));
   }
 }

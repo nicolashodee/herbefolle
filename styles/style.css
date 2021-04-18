@@ -282,11 +282,20 @@
   padding: 20px 40px;
   width: 60%;
   background-color: white;
-  -webkit-transform: translateY(-20%);
-          transform: translateY(-20%);
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
           box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   z-index: 2;
+}
+
+@media screen and (max-width: 1200px) {
+  .article__thisweek {
+    -webkit-transform: translateY(-5%);
+            transform: translateY(-5%);
+    padding: 0px;
+    width: 100%;
+  }
 }
 
 .thisweek-image {
@@ -323,8 +332,8 @@
   }
   .article__thisweek {
     width: 100%;
-    -webkit-transform: translateY(-11%);
-            transform: translateY(-11%);
+    -webkit-transform: translateY(-5%);
+            transform: translateY(-5%);
     padding: 20px 40px;
     width: 100%;
   }
@@ -812,35 +821,6 @@ nav {
   z-index: 99;
 }
 
-/* RESPONSIVE MEDIA QUERIES */
-@media only screen and (max-width: 800px) {
-  p {
-    font-size: 10px;
-  }
-  h1 {
-    font-size: 20px;
-  }
-  h2 {
-    font-size: 15px;
-  }
-  /* CETTE SEMAINE */
-  .day {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: auto;
-  }
-  .day-detail {
-    padding: 0px;
-    padding: 0px;
-    margin: 10px 0px;
-  }
-  .parallax-banner {
-    height: 30vh;
-  }
-}
-
 .btn--buy {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -996,6 +976,12 @@ body, html {
   font-weight: lighter;
 }
 
+@media only screen and (max-width: 800px) {
+  body, html {
+    cursor: auto;
+  }
+}
+
 body strong, html strong {
   font-weight: bold;
 }
@@ -1010,6 +996,12 @@ body h1, html h1 {
 body h2, html h2 {
   font-size: 40px;
   font-family: 'Cardo', serif;
+}
+
+@media screen and (max-width: 1200px) {
+  body h2, html h2 {
+    font-size: 30px;
+  }
 }
 
 body h3, html h3 {
@@ -1030,10 +1022,6 @@ body p, html p {
   padding: 15px 0px;
 }
 
-body .font--small, html .font--small {
-  font-size: 10px;
-}
-
 body .accent-color, html .accent-color {
   color: #795548;
 }
@@ -1051,18 +1039,6 @@ body a:hover, html a:hover {
   cursor: none;
 }
 
-@media only screen and (max-width: 800px) {
-  body a:hover, html a:hover {
-    color: #FFFFFF;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  body {
-    cursor: auto;
-  }
-}
-
 main {
   height: 100%;
   background-color: #f0f0f0;
@@ -1078,6 +1054,12 @@ main article li {
 
 main.container {
   padding: 35px;
+}
+
+@media screen and (max-width: 1200px) {
+  main.container {
+    padding: 10px;
+  }
 }
 
 .main-title {
@@ -1102,17 +1084,25 @@ main.container {
 /************ BUTTONS & LINKS ***********
 ******************************************/
 .btn--medium {
-  color: black;
-  font-size: 20px;
-  border: 1px solid black;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #212121;
+  font-size: 15px;
+  font-weight: bolder;
+  border: 1px solid #212121;
+  text-align: left;
+  cursor: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   width: 300px;
   margin: 30px 0px;
-  padding: 3px 5px;
+  padding: 5px;
 }
 
 .btn--medium:hover {
-  background-color: black;
-  color: white;
+  background-color: #002b1d;
+  color: #f0f0f0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .cursor {
@@ -1262,10 +1252,10 @@ header .header--overlay.thisweek {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-left: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
 }
 
 header.header__buy {
