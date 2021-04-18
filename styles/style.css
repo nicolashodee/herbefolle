@@ -497,6 +497,12 @@
   cursor: none;
 }
 
+@media only screen and (max-width: 800px) {
+  .homepage-overlay {
+    cursor: auto;
+  }
+}
+
 .homepage-overlay:hover {
   opacity: 0.8;
 }
@@ -531,7 +537,10 @@
             flex-direction: column;
   }
   .homepage-overlay {
-    opacity: 0.2;
+    opacity: 0;
+  }
+  .homepage-overlay:hover {
+    opacity: 0;
   }
   .text-mobile {
     text-align: center;
@@ -1042,6 +1051,18 @@ body a:hover, html a:hover {
   cursor: none;
 }
 
+@media only screen and (max-width: 800px) {
+  body a:hover, html a:hover {
+    color: #FFFFFF;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    cursor: auto;
+  }
+}
+
 main {
   height: 100%;
   background-color: #f0f0f0;
@@ -1108,6 +1129,12 @@ main.container {
   transition: 0.1s all ease-out;
   -webkit-transform-origin: 100% 100%;
           transform-origin: 100% 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .cursor {
+    display: none;
+  }
 }
 
 .cursor.active {

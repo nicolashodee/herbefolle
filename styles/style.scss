@@ -43,12 +43,16 @@ nav-links: 99
 
 body, html {
   cursor: none;
+
+  
   font-size: 18px;
   background-color: $light-primary-color;
   color: $primary-text-color;
   height: auto;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
+
+
 
   strong {font-weight: bold;}
 
@@ -66,7 +70,18 @@ body, html {
     cursor: none; 
     &:hover {color: $accent-color; transition: 0.5s; cursor: none;}
   }
+  @media only screen and (max-width: 800px)  {
+    a:hover {
+      color: $text-primary-color; 
+    }
+  }
 
+}
+
+@media only screen and (max-width: 800px)  {
+  body {
+    cursor: auto; 
+  }
 }
 
 main {
@@ -113,6 +128,9 @@ main.container {
   pointer-events: none;
   transition: 0.1s all ease-out;
   transform-origin: 100% 100%;
+  @media only screen and (max-width: 800px)  {
+    display: none;
+  }
 }
 
 .cursor.active {

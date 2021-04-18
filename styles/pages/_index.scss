@@ -43,6 +43,9 @@
   padding: 35px;
   text-align: center;
   cursor: none;
+  @media only screen and (max-width: 800px) { 
+    cursor: auto;
+  }
 }
   .homepage-overlay:hover {opacity: 0.8;}
   .overlay1 {background-color: rgb(51, 121, 51);}
@@ -66,7 +69,10 @@
   }
  
     .homepage-overlay{
-      opacity: 0.2;
+      opacity: 0;
+    }
+    .homepage-overlay:hover{
+      opacity: 0;
     }
     .text-mobile {
       text-align: center;
