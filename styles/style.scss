@@ -57,7 +57,16 @@ body, html {
 
   strong {font-weight: bold;}
 
-  h1  {font-size: 60px; padding: 0px; margin: 0px; font-family: 'Cardo', serif;}
+  h1  { 
+    font-size: 60px; 
+    padding: 0px; 
+    margin: 0px; 
+    font-family: 'Cardo', serif;
+    @media screen and (max-width: 1200px) {
+      font-size: 40px;
+    }
+  }
+  
   h2  {
     font-size: 40px;font-family: 'Cardo', serif;
     @media screen and (max-width: 1200px) {
@@ -109,12 +118,13 @@ body, html {
 
 
 main {
+  
   height: 100%; //make sure to cover the screen 
   background-color: $light-primary-color ; // need a solid bg to hide the footer 
   position: relative; // put on top 
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
-  
+  background-image: url(../images/noisem-medium.png);
   article {
     li {
       padding: 5px 0px;
@@ -123,8 +133,13 @@ main {
 }
 
 main.container { 
+  
   @media screen and (min-width: 1000px) {padding: 35px;}
   @media screen and (max-width: 1000px) {padding: 10px;}
+}
+
+.thisweek-bg {
+  background-color: rgba(255, 255, 255, 0.256);
 }
 
 .main-title {
@@ -199,6 +214,12 @@ main.container {
   }
 }
 
+.mobile {
+  @media only screen and (min-width: 800px)  {
+    display: none;
+  }
+}
+
 .cursor.active {
   transform: scale(2);
   border: 1px solid $accent-color;
@@ -250,13 +271,18 @@ header {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    h2 {color: white;}
+    h2 {
+      color: white;
+      text-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+    
+    
   }
   
   .header--overlay.brunch {background-image: linear-gradient(-45deg, rgba(194, 95, 19, 0.52), rgba(40, 117, 19, 0.33));}
   .header--overlay.buy {background-image: linear-gradient(-45deg, rgba(194, 109, 19, 0.52), rgba(117, 19, 19, 0.112));}
   .header--overlay.archives {background-image: linear-gradient(-45deg, rgba(188, 19, 194, 0.091), rgba(0, 0, 0, 0.93));}
-  .header--overlay.about {background-image: linear-gradient(-45deg, rgba(42, 194, 19, 0.303), rgba(117, 19, 19, 0.714));}
+  .header--overlay.about {background-image: linear-gradient(-45deg, rgba(194, 66, 19, 0.475), rgba(255, 255, 0, 0.262));}
   .header--overlay.thisweek {
     display: flex;
     justify-content: center;
@@ -281,7 +307,16 @@ header.header__thisweek {
   background-image: url("../images/coriander.jpg");
   background-position: top;
   background-size: cover;
-  h2 {color: white;}
+  h2 {
+    color: white;
+    text-align: left;
+    width: 100%;
+    padding-left: 15px;
+
+    @media screen and (max-width:1200px) {
+      margin-bottom: 25px;
+    }
+  }
 }
 header.header__archives {
   background-image: url("../images/leftover.jpg");
@@ -291,10 +326,9 @@ header.header__archives {
   h2 {color: white;}
 }
 header.header__about {
-  background-image: url("../images/chicken.jpg");
-  background-position: top;
+  background-image: url("../images/citrouilles.jpg");
   background-size: cover;
-  background-position: 80% 50%;
+  background-position: 90% 50%;
   h2 {color: white;}
 }
 

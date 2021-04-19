@@ -105,6 +105,7 @@
     }
     .right {
       flex-shrink: 1;
+      margin-left: 30px;
     }
   }
 
@@ -155,4 +156,98 @@
     left: 50%s;
   }
 }
+
+
+
+.about_who, .about_when, .about_where, .about_how {  
+  margin: 30px 10px;
+  position: relative;
+  flex-basis: 100%;
+  display: flex;
+  align-items: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  
+  min-height: 50vh;
+  padding: 30px;
+  
+  @media screen and (max-width: 1000px) {
+    position: relative;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.228);
+    .kitchen, .salade, .bg_when {
+      display: none;
+    }
+  }
+
+
+  ul {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  img {
+    max-height: 400px;
+    width: 100%;
+  }
+
+  .text {
+    flex-grow: 1;
+  }
+
+  .image {
+    flex-grow: 2;
+  }
+
+  .kitchen {
+    position: absolute;
+    filter: grayscale(100%);
+    right: 0%; 
+    top: -30%;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  .salade {
+    position: absolute;
+    right: 5%; 
+    top: 20%;
+    z-index: -1;
+    opacity: 1;
+  }
+
+  .bg_when {
+    position: absolute;
+    top:0;
+    background-image: url("../images/flower.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: -1;
+    height: 500px;
+    width: 80vw;
+    top: -40%;
+    
+  } 
+
+  .portion {
+    position: absolute;
+    left: -10%; 
+    top: 0%;
+    z-index: -1;
+    opacity: 0.4;
+    transform: rotate(-90deg);
+    filter: grayscale(100%);
+  }
+  
+  
+}
+
+
+
+
 

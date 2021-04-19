@@ -1,8 +1,8 @@
 // TYPING EFFECT 
 
-var wordList = ['de saison', 'savoureuse', 'en livraison', 'bio', ];
+var wordList = ['de saison', 'savoureuse', 'livrée chez vous', 'bio', ];
 var characterPosition = 0, wordPosition = 0;
-var typeSpeed = 200, eraseSpeed = typeSpeed/2;
+var typeSpeed = 160, eraseSpeed = typeSpeed/2;
 
 function typeWord() {
   if (characterPosition < wordList[wordPosition].length) {

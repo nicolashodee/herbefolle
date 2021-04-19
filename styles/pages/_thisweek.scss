@@ -56,20 +56,27 @@
 
 
 .article__thisweek {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: 7px solid $dark-primary-color;
   position: relative;
   padding: 20px 40px;
   width: 60%;
-  background-color: white;
-  transform: translateY(-10%);
+  background-color: rgb(255, 255, 255);
+  transform: translateY(-12%);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   z-index: 2;
+  // background-image: url("../images/flower-symetry.png");
 }
 
 @media screen and (max-width: 1200px) {
   .article__thisweek { 
-  transform: translateY(-5%);
-  padding: 0px;
-  width: 100%;
+    
+      width: 100%;
+      transform: translateY(-5%);
+      padding: 20px 40px;
+      width: 100%;
+    
+  
   }
 }
 
@@ -78,10 +85,11 @@
   right: -55%;
   top: 0%;
   
+  
   img {
-    border-radius: 1%;
-    max-height: 350px;
-    max-width: 350px;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    height: auto;
+    max-height: 400px;
     overflow: hidden;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
@@ -97,10 +105,11 @@
     flex-direction: row;
     justify-content: center;
   }
-  .article__thisweek {
-    width: 100%;
-    transform: translateY(-5%);
-    padding: 20px 40px;
-    width: 100%;
+  
+}
+@media screen and (min-width: 1200px) {
+  .header__thisweek {
+    display: flex;
+    align-items: flex-start;
   }
 }
