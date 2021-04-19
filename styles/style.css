@@ -425,6 +425,53 @@
           justify-content: flex-start;
 }
 
+.brunch__section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 200px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  padding: 30px 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dcd6d3), to(rgba(40, 117, 19, 0)));
+  background-image: linear-gradient(180deg, #dcd6d3, rgba(40, 117, 19, 0));
+  overflow: hidden;
+  z-index: 1;
+}
+
+.brunch__section ul {
+  list-style: square inside;
+}
+
+.brunch__left {
+  min-width: 300px;
+  top: -45px;
+  z-index: -1;
+  -webkit-transform: translate(20px, 10px);
+          transform: translate(20px, 10px);
+  overflow: hidden;
+}
+
+.brunch__left h1 {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .brunch__left h1 {
+    font-size: 30px;
+  }
+}
+
 /* HOME PAGE LAYOUT */
 .homepage-wrapper {
   position: relative;
@@ -677,7 +724,7 @@ nav {
           align-items: center;
   width: 100%;
   padding: 10px 15px;
-  background-color: white;
+  background-color: #f8f8f8;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
   z-index: 100;
@@ -870,13 +917,14 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   color: black;
   border: 2px solid black;
-  padding: 3px 5px;
+  padding: 8px 10px;
   margin: 10px 5px;
-  text-align: center;
+  text-align: left;
   cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1063,7 +1111,7 @@ nav-links: 99
 body, html {
   cursor: none;
   font-size: 18px;
-  background-color: #f0f0f0;
+  background-color: #002b1d;
   color: #212121;
   height: auto;
   font-family: 'Josefin Sans', sans-serif;
@@ -1205,8 +1253,9 @@ main.container {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   min-width: 200px;
+  max-width: 300px;
   margin: 30px 0px;
-  padding: 5px;
+  padding: 15px;
 }
 
 .btn--medium:hover {
@@ -1226,9 +1275,9 @@ main.container {
   cursor: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  min-width: 100px;
+  width: 100px;
   margin: 30px 0px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .btn--small:hover {

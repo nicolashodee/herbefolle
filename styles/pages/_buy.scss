@@ -4,12 +4,12 @@
 .btn--buy {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: left;
   color: black;
   border: 2px solid black;
-  padding: 3px 5px; 
+  padding: 8px 10px; 
   margin: 10px 5px;
-  text-align: center;
+  text-align: left;
   cursor: pointer;
   transition: all 0.5s;
   width: 250px;

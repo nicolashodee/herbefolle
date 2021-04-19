@@ -47,7 +47,7 @@ body, html {
   }
   
   font-size: 18px;
-  background-color: $light-primary-color;
+  background-color: $dark-primary-color;
   color: $primary-text-color;
   height: auto;
   font-family: 'Josefin Sans', sans-serif;
@@ -146,8 +146,9 @@ main.container {
   cursor: none; 
   transition: 0.5s;
   min-width: 200px; 
+  max-width: 300px;
   margin: 30px 0px; 
-  padding: 5px; 
+  padding: 15px; 
 }
 .btn--medium:hover {
   background-color: $dark-primary-color; 
@@ -165,9 +166,9 @@ main.container {
   text-align: center; 
   cursor: none; 
   transition: 0.5s;
-  min-width: 100px; 
-  margin: 30px 0px; 
-  padding: 5px; 
+  width: 100px; 
+  margin: 30px 0px;
+  padding: 10px; 
   
 }
 
