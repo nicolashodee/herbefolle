@@ -908,7 +908,8 @@ nav {
   border-top: 2px solid black;
   border-left: 2px solid black;
   padding: 30px 50px;
-  background-color: #f0f0f0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dcd6d3), to(rgba(40, 117, 19, 0)));
+  background-image: linear-gradient(180deg, #dcd6d3, rgba(40, 117, 19, 0));
   overflow: hidden;
   z-index: 1;
 }
@@ -924,6 +925,12 @@ nav {
   -webkit-transform: translate(20px, 15px);
           transform: translate(20px, 15px);
   overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .buy__left h1 {
+    font-size: 50px;
+  }
 }
 
 .archives {

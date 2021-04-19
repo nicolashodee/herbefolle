@@ -10,6 +10,13 @@ hamburger.addEventListener('click', () => {
 }); 
 
 
+// LINKS IN MENU ANIMATION
+// HOMEPAGE LOADING
+const tl = gsap.timeline({ defaults: {ease: 'power3.out'} }); //initializing a timeline
+tl.from(".menu-animation", {y: "45%",  duration: 0.5, stagger: 0.5});
+
+
+
 
 // CURSOR 
 let mouseCursor = document.querySelector(".cursor"); 
