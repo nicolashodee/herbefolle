@@ -78,7 +78,6 @@
   right: -55%;
   top: 0%;
   
-  
   img {
     border-radius: 1%;
     max-height: 350px;
@@ -93,12 +92,10 @@
 @media screen and (max-width: 1200px) {
   .thisweek-image {
     position: relative;
-    left: 0%;
-    max-height: 450px;
+    right: 0%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 20px 5px;
   }
   .article__thisweek {
     width: 100%;

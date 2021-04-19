@@ -133,10 +133,11 @@ nav {
   background-color: rgba(0, 58, 38, 0.98);
   clip-path: circle(100px at 150% 0%);
   -webkit-clip-path: circle(100px at 150% 0%); 
-  z-index: 99;
   text-align: center;
+    
+  z-index: 99;
   cursor: none;
-
+  pointer-events: none; 
   h2 {
     font-size: 25px;
   }
@@ -152,7 +153,6 @@ nav {
     text-transform: uppercase;
     padding: 4px 0;
     transition: 0.5s;
-    // max-width: 400px;
     
   }
   li a::after {
@@ -167,9 +167,7 @@ nav {
     transform: scaleX(0.15);
     transform-origin: center;
   }
-  li a:hover {
-    
-  }
+  
   li a:hover::after {
     transform: scaleX(1);
     transform-origin: center;
@@ -189,4 +187,6 @@ nav {
   height: 100%;
   margin-bottom: 0px;
   z-index: 99;
+  pointer-events: visible;
+  opacity: 1;
 }

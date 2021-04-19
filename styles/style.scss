@@ -77,12 +77,16 @@ body, html {
   }
   p   {padding: 15px 0px; }
   .accent-color {color: $accent-color;}
+  .dark-primary {color: $dark-primary-color;}
 
   a {
     color: $text-primary-color; 
     text-decoration: none;  
     cursor: none; 
-    &:hover {color: $accent-color; transition: 0.5s; cursor: none;}
+    @media only screen and (min-width: 800px)  {
+      &:hover {color: $accent-color; transition: 0.5s; cursor: none;}
+    }
+    
   }
   
 
@@ -110,6 +114,7 @@ main {
   position: relative; // put on top 
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+  
   article {
     li {
       padding: 5px 0px;
@@ -118,9 +123,8 @@ main {
 }
 
 main.container { 
-  padding: 35px;
-
-  
+  @media screen and (min-width: 1000px) {padding: 35px;}
+  @media screen and (max-width: 1000px) {padding: 10px;}
 }
 
 .main-title {

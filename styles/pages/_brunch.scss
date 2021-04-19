@@ -2,29 +2,6 @@ $primary-color: rgb(255, 169, 39);
 $secondary-color:  rgb(198, 150, 125); 
 $header-image: "../images/brunch2.jpg";
 
-.rectangle {
-  margin: 15px 15px;
-  position: relative;
-  padding: 25px 45px;
-}
-    
-.title {
-  font-size: 30px; 
-  position: absolute;
-  top: -25px; left: 20px;
-}
-
-.bg {
-  &--primary {background-color: $primary-color;}
-  &--secondary {background-color: $secondary-color;}  
-} 
-
-.border{
-  &--primary {border: 3px solid $primary-color;}
-  &--secondary {border: 3px solid $secondary-color;}
-}
-
-
 
 
 #achat {
@@ -40,22 +17,7 @@ $header-image: "../images/brunch2.jpg";
   margin: 40px 0px;
 }
 
-.tip {
-  position: relative;
-  padding: 15px;
-  border-radius: 15px;
-  background-color: rgb(218, 218, 218);
-  margin: 20px 45px;
-  height: auto;
 
-  .icon { 
-    position: absolute;
-    top:-30px; 
-    left: -30px; 
-    padding: 10px;
-    border-radius: 30px;
-  }
-}
 
 #galerie-brunch { 
   background-color: grey;
@@ -77,11 +39,10 @@ $header-image: "../images/brunch2.jpg";
   justify-content: space-between;
   flex-wrap: wrap;
   min-height: 200px;
-  
   border-top: 2px solid black;
   border-left: 2px solid black;
   padding: 30px 50px;
-  background-image: linear-gradient(180deg, rgb(220, 214, 211), rgba(40, 117, 19, 0));
+  background-image: linear-gradient(180deg, rgb(220, 214, 211), rgba(164, 164, 164, 0));
   overflow: hidden;
   z-index: 1;
   
