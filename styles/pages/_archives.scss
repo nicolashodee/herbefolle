@@ -2,32 +2,29 @@
   display: flex;
   flex-flow: row wrap; 
   justify-content: center;
-  align-items: flex-start;
-  flex-basis: 33%;
-
-  @media screen and (max-width: 1000px) {
-    display: flex;
-    flex-basis: 100%;
-    flex-direction: column;
-  }
+  align-items: center;
 }
 .article__archive {
+  color: black;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   border-radius: 2%;
   margin: 10px;
-  width: 23%;
-  background-color: $dark-primary-color;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  max-width: 20%;
+  //background-color: $dark-primary-color;
+  //box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   cursor: none;
   z-index: 2;
   
-  a {color: $text-primary-color;}
-  a:hover {color: white;}
+  a {color: black;}
   
   @media screen and (max-width: 1000px) {
-    width: 100%;
+    max-width: 30%;
+  }
+  
+  @media screen and (max-width: 700px) {
+    max-width: 100%;
   }
   
   
@@ -37,7 +34,7 @@
     height: 200px;
 
     img {
-      width:100%;
+      max-width:100%;
     }
   }
 
@@ -48,8 +45,7 @@
   }
   @media screen and (min-width: 1000px) {
     &:hover {
-      background-color: rgba(33, 2, 33, 0.831);
-      color: white;
+      background-color: rgba(33, 2, 33, 0.105);
       transition: 0.5s;
       cursor: none;
     }
@@ -68,4 +64,22 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+}
+
+
+.sketchy {
+  
+  border: 1px solid #333333;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  
+  &::before {
+      content: '';
+      border: 2px solid #353535;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+      border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+  }
 }

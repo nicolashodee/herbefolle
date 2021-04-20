@@ -28,3 +28,41 @@ function eraseWord() {
 }
 
 setTimeout(typeWord, typeSpeed);
+
+// PAGE ANIMATIONS
+
+const leftBlocks = gsap.utils.toArray('.anim-left');
+console.log(leftBlocks);
+leftBlocks.forEach(block => {
+  const animLeft = gsap.from(block, { ease: Power2. easeOut, x: 80, opacity: 0, paused: true});
+
+  ScrollTrigger.create({
+    trigger: block,
+    start: "top 50%",
+    onEnter: () => animLeft.play()
+  });
+  
+  ScrollTrigger.create({
+    trigger: block,
+    start: "top 50%",
+    onLeaveBack: () => animLeft.reverse()
+  });
+});
+
+const rightBlocks = gsap.utils.toArray('.anim-right');
+console.log(rightBlocks);
+rightBlocks.forEach(block => {
+  const animRight = gsap.from(block, { ease: Power2. easeOut, x: -80, opacity: 0, paused: true});
+  
+  ScrollTrigger.create({
+    trigger: block,
+    start: "top 80%",
+    onEnter: () => animRight.play()
+  });
+  
+  ScrollTrigger.create({
+    trigger: block,
+    start: "top 80%",
+    onLeaveBack: () => animRight.reverse()
+  });
+});

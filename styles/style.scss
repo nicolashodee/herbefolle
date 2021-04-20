@@ -23,6 +23,7 @@ $divider-color          :#BDBDBD; // border
 @import "./menu"; 
 @import "./pages/buy";
 @import "./pages/archives";
+@import "./pages/traiteur";
 
 /***********
 z index recap: 
@@ -138,8 +139,29 @@ main.container {
   @media screen and (max-width: 1000px) {padding: 10px;}
 }
 
+
+
 .thisweek-bg {
-  background-color: rgba(255, 255, 255, 0.256);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0;
+  opacity: 0.1;
+  z-index: -3;
+  background-image: url(../images/flower-symetry.png);
+  //background-size: cover;
+  background-position: -100% 70%;
+  background-repeat: no-repeat;
+  transform: rotate(0deg);
+  overflow: hidden;
+
+  @media screen and (max-width: 700px) {
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    
+  }
 }
 
 .main-title {
@@ -207,7 +229,7 @@ main.container {
   z-index: 1020;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: 0.1s all ease-out;
+  // transition: 0.1s all ease-in-out;
   transform-origin: 100% 100%;
   @media only screen and (max-width: 800px)  {
     display: none;
@@ -273,7 +295,7 @@ header {
     align-items: center;
     h2 {
       color: white;
-      text-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
     
     
@@ -282,7 +304,7 @@ header {
   .header--overlay.brunch {background-image: linear-gradient(-45deg, rgba(194, 95, 19, 0.52), rgba(40, 117, 19, 0.33));}
   .header--overlay.buy {background-image: linear-gradient(-45deg, rgba(194, 109, 19, 0.52), rgba(117, 19, 19, 0.112));}
   .header--overlay.archives {background-image: linear-gradient(-45deg, rgba(188, 19, 194, 0.091), rgba(0, 0, 0, 0.93));}
-  .header--overlay.about {background-image: linear-gradient(-45deg, rgba(194, 66, 19, 0.475), rgba(255, 255, 0, 0.262));}
+  .header--overlay.apropos {background-image: linear-gradient(-45deg, rgba(194, 66, 19, 0.475), rgba(255, 255, 0, 0.262));}
   .header--overlay.thisweek {
     display: flex;
     justify-content: center;
@@ -304,8 +326,8 @@ header.header__brunch {
   background-size: cover;
 }
 header.header__thisweek {
-  background-image: url("../images/coriander.jpg");
-  background-position: top;
+  background-image: url("../images/spring1.jpg");
+  background-position: 0% 50%;
   background-size: cover;
   h2 {
     color: white;
