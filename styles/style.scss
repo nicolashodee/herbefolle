@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap'); // font-family: 'Josefin Sans', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap'); // for the title, font-family: 'Monoton', cursive;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); // font-family: 'Montserrat', sans-serif;
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap'); //font-family: 'Indie Flower', cursive;
 // Palette
 $dark-primary-color     :#002b1d; // background
 $default-primary-color  :#65B285; // background
@@ -137,6 +137,14 @@ main.container {
   
   @media screen and (min-width: 1000px) {padding: 35px;}
   @media screen and (max-width: 1000px) {padding: 10px;}
+}
+
+main.container.traiteur {
+  position: relative;
+  min-height: 95vh;
+  background-image: url("../images/traiteur.jpg");
+  background-size: cover;
+  overflow: hidden; 
 }
 
 
@@ -334,7 +342,7 @@ header.header__thisweek {
     text-align: left;
     width: 100%;
     padding-left: 15px;
-
+    font-size: 40px;
     @media screen and (max-width:1200px) {
       margin-bottom: 25px;
     }
@@ -345,7 +353,7 @@ header.header__archives {
   background-position: top;
   background-size: cover;
   background-position: 80% 50%;
-  h2 {color: white;}
+  h2 {color: white; }
 }
 header.header__about {
   background-image: url("../images/citrouilles.jpg");

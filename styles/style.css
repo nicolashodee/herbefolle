@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 #historique h1 {
   border-bottom: 1px solid black;
   padding-bottom: 15px;
@@ -501,7 +502,6 @@
 }
 
 .thisweek-image img {
-  height: auto;
   max-height: 400px;
   max-width: 100%;
   overflow: hidden;
@@ -917,7 +917,7 @@ nav {
 }
 
 .top-bar #site-title {
-  font-family: 'Cardo', serif;
+  font-family: 'Monoton', cursive;
   color: #212121;
   font-size: 30px;
   font-weight: bold;
@@ -1145,6 +1145,10 @@ nav {
   overflow: hidden;
 }
 
+.buy__left h1 {
+  font-family: 'Indie Flower', cursive;
+}
+
 @media screen and (max-width: 1000px) {
   .buy__left h1 {
     font-size: 50px;
@@ -1260,6 +1264,60 @@ nav {
   -webkit-transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
           transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
   border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+}
+
+#traiteur {
+  padding: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.906);
+  height: 100%;
+  width: 70%;
+  overflow: hidden;
+}
+
+#traiteur h4 {
+  text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+  #traiteur {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 30px;
+    width: 100%;
+  }
+}
+
+.basket {
+  position: absolute;
+  bottom: -20%;
+  right: 10%;
+}
+
+@media screen and (max-width: 600px) {
+  .basket {
+    max-height: 450px;
+    right: -50%;
+    bottom: -30%;
+    opacity: 1;
+  }
 }
 
 /***********
@@ -1410,6 +1468,14 @@ main article li {
   main.container {
     padding: 10px;
   }
+}
+
+main.container.traiteur {
+  position: relative;
+  min-height: 95vh;
+  background-image: url("../images/traiteur.jpg");
+  background-size: cover;
+  overflow: hidden;
 }
 
 .thisweek-bg {
@@ -1696,6 +1762,7 @@ header.header__thisweek h2 {
   text-align: left;
   width: 100%;
   padding-left: 15px;
+  font-size: 40px;
 }
 
 @media screen and (max-width: 1200px) {

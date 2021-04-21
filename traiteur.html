@@ -10,12 +10,13 @@
   <script src="https://use.fontawesome.com/4c85fb25a3.js"></script>
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen"/>
-  <title>l'Herbe Folle | Menu de la semaine</title>
+  <title>l'Herbe Folle | Espace traiteur</title>
   <script src="js/main.js" defer></script>
-  <script src="js/thisweek.js" defer></script>
+  <script src="js/traiteur.js" defer></script>
   <!-- IMPORTING GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
   <!-- FAVICON -->
   <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
 </head>
@@ -70,50 +71,23 @@
     <li><a href="traiteur.html"><h2>Espace traiteur</h2></a></li>
     <li><a href="archives.html"><h2>Archives</h2></a></li>
   </ul>
-  <!-- THE HEADER -->
-  <header class="header__thisweek">
-    <div class="header--overlay thisweek">
-      <h2>Semaine du 14 au 18 Avril</h2>
-    </div>
-  </header>
-  <!-- THE CONTENT -->
-  <main class="container">
-
-    <div class="thisweek-bg">Hello</div>
-    <section class="articles">
-      
-      <article class="article__thisweek">
-        
-        <div class="thisweek-image sketchy">
-          <img src="./images/menus/IMG_20200527_154917171.jpg" alt="">
-        </div>
-        <p class="accent-color"><i class="far fa-clock"></i> &nbsp;Publié le 4 Avril 2021</p>
-        <p>
-          <strong>
-            Bonjour, 
-            Grande nouvelle! </strong><br><br>
-            L’Herbe Folle ouvre ses cuisines le samedi, avec un plat choisi par l’un d’entre vous, à tour de rôle.
-            Cette semaine, l’Herbe Folle vous propose de prolonger le voyage avec:
   
-        </p>
-        <oul>
-          <li><strong>Mardi:</strong> le plat du retour de marché; des asperges, quelques courgettes juste revenues, des herbes fraîches, de la betterave crue à la coriandre, du parmesan et un oeuf mollet, un bon pain frais au thym et à l’huile d’olives…</li>
-          <li><strong>Mercredi:</strong> Un petit tour par le Sénégal,avec un épicé mafé de boeuf (attention! allergiques aux arachides s’abstenir!), accompagné de carottes rôties, de pommes de terre à la vapeur et d’une douce romaine;</li>
-          <li><strong>Jeudi:</strong> la route des épices nous amène en Inde, avec un curry de légumes au lait de coco, servi avec du riz et un naan au fromage et à la coriandre;</li>
-          <li><strong>Vendredi:</strong> on clôt notre tour du monde par un pôke bowl poisson et crevettes. La composition dépendra des fruits que j’arrive à trouver (le principe étant toujours de ne pas consommer de produits à impact écologique important) mais les alliances seront succulentes, n’en doutez pas!</li>
-          <li><strong>Samedi:</strong> ce samedi, c’est le poulet Marbella qui est à l’honneur!</li>
-        </ul>
-        <p>
-          <strong>Pour les desserts,</strong> je pense à un blanc manger aux fraises accompagné d’un biscuit à la noix de coco. Il y aura aussi très probablement une tarte fraîche aux kiwis.
-        </p>
-        <p>A très vite!</p>
-        <a href="buy.html"><div class="btn--medium">&rarr; Je commande !</div></a>
-        
-      </article>
-      <a href="archives.html" class="seebefore" ><div>&rarr; Voir les semaines précédentes</div></a>
+  <!-- THE CONTENT -->
+  <main class="container traiteur">
+
+    <section id="traiteur">
+      <div class="title">
+        <h1 class="traiteur-element">Espace traiteur</h1>
+      </div>
+      <div>
+        <h4 class="traiteur-element">L’Herbe Folle, c’est aussi la réalisation de buffets ou plateaux repas pour vos réunions et évènements professionnels. </h4>
+        <p class="traiteur-element">C’est la cuisine de l’Herbe Folle en modèle réduit, des goûts riches et simples, des produits frais, des préparations saines et gourmandes. Le tout dans des plats en fibre végétale, compostables ou recyclables.</p>
+        <p class="traiteur-element">Contactez nous pour plus d'informations et réalisation de devis</p>
+      </div>
+      
+      <a href="mailt:contact@lherbefolle.net" class="btn--medium traiteur-button" style="text-align: center;">Nous contacter</a>
     </section>
-    
-   
+    <div class="basket"><img src="./images/basket.png" alt=""></div>
   </main>
   <!-- THE FOOTER -->
   <footer>
