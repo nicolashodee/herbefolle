@@ -157,11 +157,10 @@ main.container.traiteur {
   left: 0;
   opacity: 0.1;
   z-index: -3;
-  background-image: url(../images/flower-symetry.png);
+  background-image: url("../images/flower-symetry.png");
   //background-size: cover;
   background-position: -100% 70%;
   background-repeat: no-repeat;
-  transform: rotate(0deg);
   overflow: hidden;
 
   @media screen and (max-width: 700px) {
