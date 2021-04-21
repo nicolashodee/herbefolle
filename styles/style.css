@@ -504,10 +504,15 @@
 }
 
 .thisweek-image img {
+  display: block;
   max-height: 400px;
+  max-width: 400px;
+  height: auto;
+  width: auto;
   overflow: hidden;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid red;
 }
 
 .thisweek-image.sketchy {
