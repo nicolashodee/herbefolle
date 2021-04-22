@@ -1,0 +1,21 @@
+[22-Apr-2021 15:25:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_header() in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/header.php:10
+Stack trace:
+#0 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template.php(730): require_once()
+#1 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template.php(676): load_template('/Users/nicolash...', true, Array)
+#2 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/front-page.php(4): get_header()
+#4 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template-loader.php(106): in in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/header.php on line 10
+[22-Apr-2021 15:25:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_header() in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/header.php:1
+Stack trace:
+#0 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template.php(730): require_once()
+#1 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template.php(676): load_template('/Users/nicolash...', true, Array)
+#2 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/front-page.php(4): get_header()
+#4 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template-loader.php(106): inc in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/header.php on line 1
+[22-Apr-2021 15:53:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_header() in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/front-page.php:18
+Stack trace:
+#0 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-blog-header.php(19): require_once('/Users/nicolash...')
+#2 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/index.php(17): require('/Users/nicolash...')
+#3 {main}
+  thrown in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/front-page.php on line 18
