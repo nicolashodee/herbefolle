@@ -1,4 +1,4 @@
-// TYPING EFFECT 
+//---------------- TYPING EFFECT-------------- //
 
 var wordList = ['de saison', 'savoureuse', 'livrée chez vous', 'bio', ];
 var characterPosition = 0, wordPosition = 0;
@@ -29,8 +29,9 @@ function eraseWord() {
 
 setTimeout(typeWord, typeSpeed);
 
-// PAGE ANIMATIONS
+//---------------- PAGE ANIMATIONS -------------- //
 
+//----- BLOCKS COMING FROM THE RIGHT ----------//
 const leftBlocks = gsap.utils.toArray('.anim-left');
 console.log(leftBlocks);
 leftBlocks.forEach(block => {
@@ -49,6 +50,7 @@ leftBlocks.forEach(block => {
   });
 });
 
+//----- BLOCKS COMING FROM THE LEFT ----------//
 const rightBlocks = gsap.utils.toArray('.anim-right');
 console.log(rightBlocks);
 rightBlocks.forEach(block => {

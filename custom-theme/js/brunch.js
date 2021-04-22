@@ -1,3 +1,5 @@
+// ------------ PAGES ANIMATIONS ---------- //
+
 const titles = gsap.utils.toArray('.brunch__left');
 titles.forEach(title => {
   const anim = gsap.from(title, { ease: Power2. easeOut, y: 80, opacity: 0, paused: true, delay: 1.5});

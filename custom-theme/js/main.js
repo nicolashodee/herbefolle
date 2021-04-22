@@ -1,33 +1,27 @@
-// NEW NAV BAR
+// ---X-------------- VARIABLES ------------X---- //
 const hamburger = document.querySelector('.hamburger'); 
 const navLinks = document.querySelector('.nav-links'); 
 const links = document.querySelectorAll('.nav-links li'); 
 const allLinks = document.querySelectorAll('a'); 
+let mouseCursor = document.querySelector(".cursor"); 
+
+
+// ----------- EXPEND NAV LINKS WHEN CLICKING BURGER ICON ---------- //
 
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
   hamburger.classList.toggle('active');
 }); 
 
+// ------------------X------------ CUSTOM CURSOR ----------------X------------- //
 
-// LINKS IN MENU ANIMATION
-// HOMEPAGE LOADING
-const tl = gsap.timeline({ defaults: {ease: 'power3.out'} }); //initializing a timeline
-tl.from(".menu-animation", {y: "45%",  duration: 0.5, stagger: 0.5});
-
-
-
-
-// CURSOR 
-let mouseCursor = document.querySelector(".cursor"); 
-
-window.addEventListener('mousemove', cursor); //
+window.addEventListener('mousemove', cursor); // triggers the cursor to make a div follow the pointer 
 function cursor(e) {
   mouseCursor.style.top = e.pageY + 'px';
   mouseCursor.style.left = e.pageX + 'px';
 }
 
-//HAMBRGER EFFECT
+// ------ CURSOR CHANGE WHEN HOVERING LINKS AND BURGER MENU -------  //
 hamburger.addEventListener('mouseover', () => {mouseCursor.classList.add("active")});
 hamburger.addEventListener('mouseout', () => {mouseCursor.classList.remove("active")});
 
@@ -37,9 +31,10 @@ allLinks.forEach( link => {
 });
 
 
-//SITE TITLE HOVER ANIMATION
+// ------------------X------------ SITE TITLE HOVERING EFFECT ----------------X------------- //
+
 const letters = gsap.utils.toArray('.letter').forEach(letter => {
-  // on déclare une animation
+  // on déclare une animation de rotation
   const anim = TweenMax.to(letter, 1, {rotation:-360, overwrite:"none"});
   // on ajoute les event listeners
   letter.addEventListener("mouseenter", () => anim.play() );

@@ -1,3 +1,5 @@
+// ------------ PAGE ANIMATIONS ---------- //
+
 const titles = gsap.utils.toArray('.buy__left');
 titles.forEach(title => {
   const anim = gsap.from(title, { ease: Power2. easeOut, y: 80, opacity: 0, paused: true, delay: 1.5});
@@ -14,6 +16,8 @@ titles.forEach(title => {
     onLeaveBack: () => anim.reverse()
   });
 });
+
+// ------------ PAGE ANIMATIONS ---------- //
 
 const blocks = gsap.utils.toArray('.buy__section');
 blocks.forEach(block => {
