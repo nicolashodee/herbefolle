@@ -1,3 +1,4 @@
+console.log("index.js is loaded");
 // ------------ HOMEPAGE ANIMATIONS ---------- //
 
 const tlHome = gsap.timeline({ defaults: {ease: 'power3.out'} });

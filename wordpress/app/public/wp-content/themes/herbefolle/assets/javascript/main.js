@@ -1,3 +1,5 @@
+console.log("main.js is loaded");
+
 // ---X-------------- VARIABLES ------------X---- //
 const hamburger = document.querySelector('.hamburger'); 
 const navLinks = document.querySelector('.nav-links'); 

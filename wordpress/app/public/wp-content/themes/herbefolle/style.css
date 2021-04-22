@@ -675,15 +675,15 @@ Author URI: http://www.nicolashodee.com/
 }
 
 .col1 {
-  background-image: url(../images/food1.jpg);
+  background-image: url(./assets/images/food1.jpg);
 }
 
 .col2 {
-  background-image: url(../images/brunch6.jpg);
+  background-image: url(./assets/images/brunch6.jpg);
 }
 
 .col3 {
-  background-image: url(../images/brunch5.jpg);
+  background-image: url(./assets/images/brunch5.jpg);
 }
 
 /* OVERLAY EFFECT */
@@ -1453,7 +1453,7 @@ main {
   z-index: 1;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-image: url(../images/noisem-medium.png);
+  background-image: url(./assets/images/noisem-medium.png);
 }
 
 main article li {
