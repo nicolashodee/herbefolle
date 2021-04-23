@@ -26,10 +26,24 @@
     wp_enqueue_script('herbefolle_gsap_TweenMax',         "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js", array(), false, true );
 
     wp_enqueue_script('herbefolle_custom_javascript_main', get_template_directory_uri() . "/assets/javascript/main.js", array(), false, true  );
-    wp_enqueue_script('herbefolle_custom_javascript_index', get_template_directory_uri() . "/assets/javascript/index.js", array(), false, true  );
-  
+    // wp_enqueue_script('herbefolle_custom_javascript_thisweek', get_template_directory_uri() . "/assets/javascript/thisweek.js", array(), false, true  );
+    // wp_enqueue_script('herbefolle_custom_javascript_index', get_template_directory_uri() . "/assets/javascript/index.js", array(), false, true  );
+    
+    
+
   }
 
+  function herbefolle_conditional_enqueue_script1() {
+    if ( is_single() && in_category( 'MENUS' ) ) { 
+        wp_enqueue_script('herbefolle_custom_javascript_thisweek', get_template_directory_uri() . "/assets/javascript/thisweek.js", array(), false, true);
+    }
+}
+
   add_action( 'wp_enqueue_scripts', 'herbefolle_register_scripts' );
+  add_action('wp_enqueue_scripts', 'herbefolle_conditional_enqueue_script1');
+
+  
+
 
 ?>
+
