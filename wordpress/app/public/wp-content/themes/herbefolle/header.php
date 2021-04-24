@@ -33,7 +33,7 @@
 
   <nav>
     <div class="top-bar">
-      <a href="index.html">
+      <a href="<?php echo home_url(); ?>">
 
         <div id="site-title">
           <span style="font-family: 'Monoton', cursive;">
@@ -47,7 +47,7 @@
       </a>
 
       <div class="top-bar--right">
-        <a href="buy.html"><div class="animate btn--nav">Réserver maintenant</div></a>
+        <a href="<?php site_url(); ?>/buy"><div class="animate btn--nav">Réserver maintenant</div></a>
         <!-- NEW HAMBURGER -->
         <div class="animate hamburger">
           <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="30" onclick="this.classList.toggle('active')">
@@ -69,9 +69,18 @@
   
   <!-- MENU OPENED -->
   <ul class="nav-links">
-    <li><a href="about.html"><h2>A propos</h2></a></li>
-    <li><a href="thisweek.html"><h2>Menu de la semaine</h2></a></li>
-    <li><a href="brunch.html"><h2>Les brunchs</h2></a></li>
-    <li><a href="traiteur.html"><h2>Espace traiteur</h2></a></li>
-    <li><a href="archives.html"><h2>Archives</h2></a></li>
+    <li><a href=" <?php site_url(); ?>/about "><h2>A propos</h2></a></li>
+    <li>
+      <a href=" <?php
+                    $my_query = new WP_Query('category_name=MENUS&showposts=1');
+                    while ($my_query->have_posts()) : $my_query->the_post(); {
+                    the_permalink();
+                    } endwhile; 
+                ?>  ">
+        <h2>Menu de la semaine</h2>
+      </a>
+    </li>
+    <li><a href=" <?php site_url(); ?>/brunch "><h2>Les brunchs</h2></a></li>
+    <li><a href=" <?php site_url(); ?>/traiteur "><h2>Espace traiteur</h2></a></li>
+    <li><a href=" <?php site_url(); ?>/archives "><h2>Archives</h2></a></li>
   </ul>

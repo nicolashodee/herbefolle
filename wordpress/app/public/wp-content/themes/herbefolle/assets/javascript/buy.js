@@ -1,3 +1,4 @@
+console.log("buy.js is loaded");
 // ------------ PAGE ANIMATIONS ---------- //
 
 const titles = gsap.utils.toArray('.buy__left');

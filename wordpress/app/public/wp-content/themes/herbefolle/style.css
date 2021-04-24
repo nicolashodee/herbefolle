@@ -1,20 +1,8 @@
-/*
-Theme Name: L'Herbe Folle
-Version: 1.5
-Description: Thème customisé fait par Nico (et gratos en plus, cooool ça !)
-Tags: topbar responsive custom
-Author: Nicolas Hodee Photographie
-Author URI: http://www.nicolashodee.com/
-*/ 
-
-
-
 @import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-
 #historique h1 {
   border-bottom: 1px solid black;
   padding-bottom: 15px;
@@ -454,7 +442,7 @@ Author URI: http://www.nicolashodee.com/
 .bg_flowers1 {
   position: absolute;
   top: 0;
-  background-image: url("../images/flower.png");
+  background-image: url("./assets/images/flower.png");
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.5;
@@ -491,7 +479,7 @@ Author URI: http://www.nicolashodee.com/
   z-index: 2;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .article__thisweek {
     padding: 20px 40px;
     width: 100%;
@@ -499,7 +487,7 @@ Author URI: http://www.nicolashodee.com/
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .thisweek-image {
     position: absolute;
     right: -55%;
@@ -508,19 +496,32 @@ Author URI: http://www.nicolashodee.com/
 }
 
 .thisweek-image img {
+  display: block;
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  max-width: 100%;
-  max-height: 400px;
+  width: 100%;
+  height: auto;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .thisweek-image.sketchy {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 50%;
+  max-height: auto;
+  overflow: hidden;
   border: 1px solid #333333;
   border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+}
+
+@media screen and (max-width: 1000px) {
+  .thisweek-image.sketchy {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .thisweek-image.sketchy {
+    max-width: 100%;
+  }
 }
 
 .thisweek-image.sketchy::before {
@@ -537,7 +538,7 @@ Author URI: http://www.nicolashodee.com/
   border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .header__thisweek {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1184,7 +1185,9 @@ nav {
           flex-direction: row;
   border-radius: 2%;
   margin: 10px;
-  max-width: 20%;
+  max-width: 25%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   cursor: none;
   z-index: 2;
 }
@@ -1207,12 +1210,28 @@ nav {
 
 .article__archive .pastweek-image {
   border-radius: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   overflow: hidden;
-  height: 200px;
+  width: 100%;
 }
 
 .article__archive .pastweek-image img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .article__archive .pastweek-text {
@@ -1251,11 +1270,9 @@ nav {
 
 .sketchy {
   border: 1px solid #333333;
-  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
 }
 
 .sketchy::before {
-  content: '';
   border: 2px solid #353535;
   display: block;
   position: absolute;
@@ -1322,10 +1339,10 @@ nav {
 
 /***********
 z index recap: 
-footer: 0
-main: 1
-top-bar: 100
-nav-links: 99
+footer: 
+main:
+top-bar: 
+nav-links: 
 ***********/
 /************ GENERAL STYLING ***********
 ******************************************/
@@ -1476,7 +1493,7 @@ main article li {
 main.container.traiteur {
   position: relative;
   min-height: 95vh;
-  background-image: url("../images/traiteur.jpg");
+  background-image: url("./assets/images/traiteur.jpg");
   background-size: cover;
   overflow: hidden;
 }
@@ -1489,7 +1506,7 @@ main.container.traiteur {
   left: 0;
   opacity: 0.1;
   z-index: -3;
-  background-image: url("../images/flower-symetry.png");
+  background-image: url("./assets/images/flower-symetry.png");
   background-position: -100% 70%;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1737,7 +1754,7 @@ header .header--overlay.thisweek {
 }
 
 header.header__buy {
-  background-image: url("../images/sushi.jpg");
+  background-image: url("./assets/images/sushi.jpg");
   background-position: 0% 37%;
   background-size: cover;
 }
@@ -1747,13 +1764,13 @@ header.header__buy .header--overlay {
 }
 
 header.header__brunch {
-  background-image: url("../images/brunch2.jpg");
+  background-image: url("./assets/images/brunch2.jpg");
   background-position: top;
   background-size: cover;
 }
 
 header.header__thisweek {
-  background-image: url("../images/spring1.jpg");
+  background-image: url("./assets/images/spring1.jpg");
   background-position: 0% 50%;
   background-size: cover;
 }
@@ -1773,7 +1790,7 @@ header.header__thisweek h2 {
 }
 
 header.header__archives {
-  background-image: url("../images/leftover.jpg");
+  background-image: url("./assets/images/leftover.jpg");
   background-position: top;
   background-size: cover;
   background-position: 80% 50%;
@@ -1784,7 +1801,7 @@ header.header__archives h2 {
 }
 
 header.header__about {
-  background-image: url("../images/citrouilles.jpg");
+  background-image: url("./assets/images/citrouilles.jpg");
   background-size: cover;
   background-position: 90% 50%;
 }

@@ -1,3 +1,4 @@
+console.log("archive.js is loaded");
 // ----------- PAGE ANIMATIONS ------------- //
 
 const tlArchives = gsap.timeline({ defaults: {ease: 'none'} }); 

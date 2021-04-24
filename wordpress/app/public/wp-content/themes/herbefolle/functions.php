@@ -26,24 +26,68 @@
     wp_enqueue_script('herbefolle_gsap_TweenMax',         "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js", array(), false, true );
 
     wp_enqueue_script('herbefolle_custom_javascript_main', get_template_directory_uri() . "/assets/javascript/main.js", array(), false, true  );
-    // wp_enqueue_script('herbefolle_custom_javascript_thisweek', get_template_directory_uri() . "/assets/javascript/thisweek.js", array(), false, true  );
-    // wp_enqueue_script('herbefolle_custom_javascript_index', get_template_directory_uri() . "/assets/javascript/index.js", array(), false, true  );
-    
     
 
   }
 
-  function herbefolle_conditional_enqueue_script1() {
+  function herbefolle_conditional_enqueue_scripts() {
+
+    // FOR THIS WEEK POST PAGE
     if ( is_single() && in_category( 'MENUS' ) ) { 
         wp_enqueue_script('herbefolle_custom_javascript_thisweek', get_template_directory_uri() . "/assets/javascript/thisweek.js", array(), false, true);
     }
+    // FOR HOME PAGE
+    if ( is_front_page() ) { 
+      wp_enqueue_script('herbefolle_custom_javascript_index', get_template_directory_uri() . "/assets/javascript/index.js", array(), false, true);
+    }
+    // FOR A PROPOS PAGE
+    if ( is_page('about') ) { 
+      wp_enqueue_script('herbefolle_custom_javascript_about', get_template_directory_uri() . "/assets/javascript/about.js", array(), false, true);
+    }
+    // FOR ESPACE TRAITEUR PAGE
+    if ( is_page('traiteur') ) { 
+      wp_enqueue_script('herbefolle_custom_javascript_traiteur', get_template_directory_uri() . "/assets/javascript/traiteur.js", array(), false, true);
+    }
+    // FOR BUY PAGE
+    if ( is_page('buy') ) { 
+      wp_enqueue_script('herbefolle_custom_javascript_buy', get_template_directory_uri() . "/assets/javascript/buy.js", array(), false, true);
+    }
+    // FOR ARCHIVE PAGE
+    if ( is_page('archives') ) { 
+      wp_enqueue_script('herbefolle_custom_javascript_archives', get_template_directory_uri() . "/assets/javascript/archives.js", array(), false, true);
+    }
+
 }
 
   add_action( 'wp_enqueue_scripts', 'herbefolle_register_scripts' );
-  add_action('wp_enqueue_scripts', 'herbefolle_conditional_enqueue_script1');
+  add_action('wp_enqueue_scripts', 'herbefolle_conditional_enqueue_scripts');
 
   
+//------------ CUSTOM POST TEMPLATE BASED ON CATEGORY ------------//
 
+add_filter('single_template', create_function(
+	'$the_template',
+	'foreach( (array) get_the_category() as $cat ) {
+		if ( file_exists(TEMPLATEPATH . "/single-{$cat->slug}.php") )
+		return TEMPLATEPATH . "/single-{$cat->slug}.php"; }
+	return $the_template;' )
+);
+
+//------------ ENABLING POST THUMBNAILS ------------//
+add_theme_support( 'post-thumbnails' );
+
+//------------ REDUCING EXCERPT LENGTH FOR ARCHIVE PAGE ------------//
+function get_excerpt() {
+  $excerpt = get_the_content();
+  $excerpt = preg_replace(" ([.*?])",'',$excerpt);
+  $excerpt = strip_shortcodes($excerpt);
+  $excerpt = strip_tags($excerpt);
+  $excerpt = substr($excerpt, 0, 150);
+  $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+  $excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
+  $excerpt = $excerpt.'... <a href="'.get_the_permalink().'">more</a>';
+  return $excerpt;
+  }
 
 ?>
 

@@ -1,0 +1,64 @@
+$primary-color: rgb(255, 169, 39); 
+$secondary-color:  rgb(198, 150, 125); 
+$header-image: "./assets/images/brunch2.jpg";
+
+
+
+#achat {
+  position: relative;
+  padding: 35px 35px;
+  margin: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+}
+
+.presentation {
+  margin: 40px 0px;
+}
+
+
+
+#galerie-brunch { 
+  background-color: grey;
+  width: 80vw;
+  min-height: 80vh;
+}
+
+#onselache {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.brunch__section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 200px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  padding: 30px 50px;
+  background: linear-gradient(180deg, rgb(220, 214, 211), rgba(164, 164, 164, 0));
+  overflow: hidden;
+  z-index: 1;
+  
+  ul {
+    list-style:square inside;
+  } 
+}
+
+.brunch__left {
+  min-width: 300px;
+  top: -45px;
+  z-index: -1;
+  transform: translate(20px, 10px);
+  overflow: hidden;
+  h1 {font-size: 40px;}
+  @media screen and (max-width: 1000px) {
+    h1 {font-size: 30px;}
+  }
+}

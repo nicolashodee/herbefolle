@@ -1,3 +1,4 @@
+console.log("about.js is loaded");
 //---------------- TYPING EFFECT-------------- //
 
 var wordList = ['de saison', 'savoureuse', 'livrée chez vous', 'bio', ];
@@ -33,7 +34,7 @@ setTimeout(typeWord, typeSpeed);
 
 //----- BLOCKS COMING FROM THE RIGHT ----------//
 const leftBlocks = gsap.utils.toArray('.anim-left');
-console.log(leftBlocks);
+
 leftBlocks.forEach(block => {
   const animLeft = gsap.from(block, { ease: Power2. easeOut, x: 80, opacity: 0, paused: true});
 
@@ -52,7 +53,7 @@ leftBlocks.forEach(block => {
 
 //----- BLOCKS COMING FROM THE LEFT ----------//
 const rightBlocks = gsap.utils.toArray('.anim-right');
-console.log(rightBlocks);
+
 rightBlocks.forEach(block => {
   const animRight = gsap.from(block, { ease: Power2. easeOut, x: -80, opacity: 0, paused: true});
   

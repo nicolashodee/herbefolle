@@ -9,21 +9,27 @@
 
     <!-----X--- desktop version -----X----->
     <div class="homepage-column col1 desktop">
-      <a href="thisweek.html">
+      <a href=" <?php
+                    $my_query = new WP_Query('category_name=MENUS&showposts=1');
+                    while ($my_query->have_posts()) : $my_query->the_post(); {
+                    the_permalink();
+                    } endwhile; 
+                ?>
+       ">
         <div class="homepage-overlay overlay1">
-          <div class="text">Menu de la semaine</div>
+          <div class="text">Cette semaine</div>
         </div>
       </a>
     </div>
     <div class="homepage-column col2 desktop">
-      <a href="brunch.html">
+      <a href=" <?php site_url(); ?>/brunch ">
         <div class="homepage-overlay overlay2">
           <div class="text">Les brunchs</div>
         </div>
       </a>
     </div>
     <div class="homepage-column col3 desktop">
-      <a href="about.html">
+      <a href=" <?php site_url(); ?>/about/ ">
         <div class="homepage-overlay overlay3">
           <div class="text">A propos</div>
         </div>
@@ -32,22 +38,28 @@
 
     <!-----X--- mobile version -----X----->
     <div class="homepage-column col1 mobile">
-      <a href="thisweek.html">
-        <div class="text-mobile">Menu de la semaine</div>
+      <a href=" <?php
+                    $my_query = new WP_Query('category_name=MENUS&showposts=1');
+                    while ($my_query->have_posts()) : $my_query->the_post(); {
+                    the_permalink();
+                    } endwhile; 
+                ?>
+      ">
+        <div class="text-mobile">Cette semaine</div>
         <div class="homepage-overlay overlay1">
           
         </div>
       </a>
     </div>
     <div class="homepage-column col2 mobile">
-      <a href="brunch.html">
+      <a href=" <?php site_url(); ?>/brunch ">
         <div class="text-mobile">Les brunchs</div>
         <div class="homepage-overlay overlay2">
         </div>
       </a>
     </div>
     <div class="homepage-column col3 mobile">
-      <a href="about.html">
+      <a href=" <?php site_url(); ?>/about ">
         <div class="text-mobile">A propos</div>
         <div class="homepage-overlay overlay3">
         </div>
