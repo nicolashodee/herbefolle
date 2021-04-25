@@ -65,13 +65,22 @@
   
 //------------ CUSTOM POST TEMPLATE BASED ON CATEGORY ------------//
 
-add_filter('single_template', create_function(
-	'$the_template',
-	'foreach( (array) get_the_category() as $cat ) {
-		if ( file_exists(TEMPLATEPATH . "/single-{$cat->slug}.php") )
-		return TEMPLATEPATH . "/single-{$cat->slug}.php"; }
-	return $the_template;' )
-);
+// add_filter('single_template', 'check_for_category_single_template');
+// function check_for_category_single_template( $t )
+// {
+//   foreach( (array) get_the_category() as $cat ) 
+//   { 
+//     if ( file_exists(get_stylesheet_directory() . "/single-category-{$cat->slug}.php") ) return get_stylesheet_directory() . "/single-category-{$cat->slug}.php"; 
+//     if($cat->parent)
+//     {
+//       $cat = get_the_category_by_ID( $cat->parent );
+//       if ( file_exists(get_stylesheet_directory() . "/single-category-{$cat->slug}.php") ) return get_stylesheet_directory() . "/single-category-{$cat->slug}.php";
+//     }
+//   } 
+//   return $t;
+// }
+
+
 
 //------------ ENABLING POST THUMBNAILS ------------//
 add_theme_support( 'post-thumbnails' );
@@ -88,6 +97,12 @@ function get_excerpt() {
   $excerpt = $excerpt.'... <a href="'.get_the_permalink().'">more</a>';
   return $excerpt;
   }
+
+//------------ Custom Admin Footer ------------//
+  function custom_admin_footer() {
+    echo '<a href="http://nicolashodee.com/">Made with <span class="redheart" style="color: red;">♥</span> by Nicolas HODEE | www.nicolashodee.com</a>';
+  } 
+  add_filter('admin_footer_text', 'custom_admin_footer');
 
 ?>
 

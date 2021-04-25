@@ -1,19 +1,15 @@
-<?php /* Template Name: Cette semaine */ ?>
+<?php
+/*
+* Template Name: Cette semaine
+* Template Post Type: post
+*/
+?>
 
-  <?php
 
-  // Start the Loop.
-  while ( have_posts() ) :
-    the_post();
-    
-    get_template_part( 'template-parts/content/content', 'single' );
-
-  endwhile; // End the loop.
-  ?>
-
+  
   <!------------- THE MENU AND HEAD TAG ---------------->
   <?php get_header();?>
-
+  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <!------------- THE PAGE HEADER ------------>
   <header class="header__thisweek">
     <div class="header--overlay thisweek">
@@ -49,9 +45,10 @@
       </article>
       <a href=" <?php site_url(); ?>/archives " class="seebefore" ><div>&rarr; Voir les semaines précédentes</div></a>
     </section>
-    
-   
+  
   </main>
+  <?php endwhile; endif; ?>
+
 
 
   <!-- THE FOOTER  -->

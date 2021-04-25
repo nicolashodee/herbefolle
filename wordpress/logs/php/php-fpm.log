@@ -21,3 +21,8 @@
 [24-Apr-2021 10:40:14] NOTICE: fpm is running, pid 831
 [24-Apr-2021 10:40:14] NOTICE: ready to handle connections
 [24-Apr-2021 19:04:56] WARNING: [pool www] child 837 said into stderr: "sh: gs: command not found"
+[24-Apr-2021 23:49:03] NOTICE: Terminating ...
+[24-Apr-2021 23:49:03] NOTICE: Terminating ...
+[24-Apr-2021 23:49:03] NOTICE: exiting, bye-bye!
+[25-Apr-2021 12:01:51] NOTICE: fpm is running, pid 2057
+[25-Apr-2021 12:01:51] NOTICE: ready to handle connections
