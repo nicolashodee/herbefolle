@@ -1,4 +1,4 @@
-// ------------ PAGES ANIMATIONS ---------- //
+// ------------ BRUNCH PAGES ANIMATIONS ---------- //
 
 const titles = gsap.utils.toArray('.brunch__left');
 titles.forEach(title => {

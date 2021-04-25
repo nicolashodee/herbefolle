@@ -32,6 +32,9 @@
     </div>
       
   </footer>
+  
+<!-- ANIMATED TRANSITIONS WTH BARBA.JS ENDS HERE   -->
+</div>
 
 </body>
 </html>

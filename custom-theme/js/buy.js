@@ -1,4 +1,4 @@
-// ------------ PAGE ANIMATIONS ---------- //
+// ------------ BUY PAGE ANIMATIONS ---------- //
 
 const titles = gsap.utils.toArray('.buy__left');
 titles.forEach(title => {
@@ -17,7 +17,7 @@ titles.forEach(title => {
   });
 });
 
-// ------------ PAGE ANIMATIONS ---------- //
+// ------------ BUY PAGE ANIMATIONS ---------- //
 
 const blocks = gsap.utils.toArray('.buy__section');
 blocks.forEach(block => {

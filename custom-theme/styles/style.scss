@@ -20,7 +20,7 @@ $divider-color          :#BDBDBD; // border
 @import "./pages/thisweek"; 
 @import "./pages/brunch";
 @import "./pages/index"; 
-@import "./menu"; 
+@import "./pages/menu"; 
 @import "./pages/buy";
 @import "./pages/archives";
 @import "./pages/traiteur";
@@ -315,7 +315,6 @@ header {
     display: flex;
     justify-content: center;
     padding: 30px;
-    // background-image: linear-gradient(-45deg, rgba(19, 46, 194, 0.52), rgba(40, 117, 19, 0.73));
   }
 }
 

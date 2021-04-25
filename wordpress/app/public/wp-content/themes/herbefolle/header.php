@@ -21,8 +21,7 @@
 </head>
 
 
-
-<body>
+<body data-barba="wrapper">
 
   <!-------- CUSTOM CURSOR --------->
   <div class="cursor"></div>
@@ -84,3 +83,6 @@
     <li><a href=" <?php site_url(); ?>/traiteur "><h2>Espace traiteur</h2></a></li>
     <li><a href=" <?php site_url(); ?>/archives "><h2>Archives</h2></a></li>
   </ul>
+
+<!-- ANIMATED TRANSITIONS WITH BARBA.JS STARTS HERE -->
+<div data-barba="container">

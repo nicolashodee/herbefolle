@@ -1,4 +1,24 @@
 console.log("main.js is loaded");
+// ---X-------------- BARBA.JS TRANSITIONS ------------X---- //
+// function pageTransition() {
+//   var tlTransitions = gsap.timeline(); 
+//   tlTransitions.to()
+// }
+
+
+// barba.init({
+//   sync: true, 
+//   transitions: [{
+//     async leave(data) {
+//       const done = this.async(); 
+//       pageTransition();
+//       await(delay: 1500); 
+//       done();
+//     }, 
+
+//     async enter
+//   }]
+// })
 
 // ---X-------------- VARIABLES ------------X---- //
 const hamburger = document.querySelector('.hamburger'); 
@@ -24,6 +44,7 @@ function cursor(e) {
 }
 
 // ------ CURSOR CHANGE WHEN HOVERING LINKS AND BURGER MENU -------  //
+
 hamburger.addEventListener('mouseover', () => {mouseCursor.classList.add("active")});
 hamburger.addEventListener('mouseout', () => {mouseCursor.classList.remove("active")});
 
