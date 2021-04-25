@@ -311,3 +311,10 @@ Stack trace:
 #2 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/index.php(17): require('/Users/nicolash...')
 #3 {main}
   thrown in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/archive.php on line 41
+[25-Apr-2021 12:55:47 UTC] PHP Fatal error:  Uncaught Error: Maximum function nesting level of '256' reached, aborting! in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-object-cache.php:493
+Stack trace:
+#0 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-object-cache.php(290): WP_Object_Cache->_exists(16, 'terms')
+#1 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-object-cache.php(320): WP_Object_Cache->get(16, 'terms', false)
+#2 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/cache.php(145): WP_Object_Cache->get_multiple(Array, 'terms', false)
+#3 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/functions.php(6475): wp_cache_get_multiple(Array, 'terms')
+#4 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/h in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-object-cache.php on line 493
