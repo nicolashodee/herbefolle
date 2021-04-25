@@ -21,8 +21,9 @@
 </head>
 
 
-<body data-barba="wrapper">
-
+<body>
+<!--------- BARBA WRAPPER STARTS HERE ----------->
+<div data-barba="wrapper">
   <!-------- CUSTOM CURSOR --------->
   <div class="cursor"></div>
 
@@ -84,5 +85,11 @@
     <li><a href=" <?php site_url(); ?>/archives "><h2>Archives</h2></a></li>
   </ul>
 
-<!-- ANIMATED TRANSITIONS WITH BARBA.JS STARTS HERE -->
+<!--------- BARBA CONTAINER STARTS HERE ----------->
 <div data-barba="container">
+
+<!-- TRANSITION SLIDER -->
+<div class="transition-overlay">
+    <div class="transition-overlay-loader loader loader-1"></div>
+</div>
+<button class="button">Click to trigger transition</button>

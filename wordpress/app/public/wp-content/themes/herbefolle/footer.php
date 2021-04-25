@@ -1,6 +1,6 @@
-<?php 
-  wp_footer(); 
-?>
+  <?php 
+    wp_footer(); 
+  ?>
 
 
   <!---------------------------- FOOTER SECTION ------------------------------->
@@ -33,7 +33,9 @@
       
   </footer>
   
-<!-- ANIMATED TRANSITIONS WTH BARBA.JS ENDS HERE   -->
+  <!---------- BARBA CONTAINER ENDS HERE ---------->
+  </div>
+<!---------- BARBA WRAPPER ENDS HERE ---------->
 </div>
 
 </body>
