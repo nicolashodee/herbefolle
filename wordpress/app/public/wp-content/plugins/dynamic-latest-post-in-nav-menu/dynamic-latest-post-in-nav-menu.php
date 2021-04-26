@@ -33,12 +33,18 @@ if( !class_exists( 'Dlpinm' ) )
 					
 					// latest
 					if ( $item->object == 'latest' ) {
-						
+						// the next 4 lines select the latest posts from MENUS category with id 2
 						$sql = "SELECT ID 
-							FROM $wpdb->posts 
-							WHERE $wpdb->posts.post_type = '$item->type' AND $wpdb->posts.post_status = 'publish' 
+							FROM $wpdb->posts
+							LEFT JOIN  $wpdb->term_relationships  as t
+							ON ID = t.object_id 
+							WHERE $wpdb->posts.post_type = '$item->type' AND $wpdb->posts.post_status = 'publish' AND t.term_taxonomy_id = 2
+					
 							ORDER BY $wpdb->posts.menu_order, $wpdb->posts.post_date DESC 
 							LIMIT 1";
+
+
+
 						
 						$post_id = $wpdb->get_var( $sql );
 						$item->object_id = $post_id;

@@ -11,7 +11,11 @@ jQuery(document).ready(function($){
 
           if(link.startsWith('#')){
             //Don't run animation.
-          }else{
+          }
+		  if(link.startsWith('mailto:')){
+            //Don't run animation.
+          }
+		  else{
             if(target == '_blank'){
               window.open(link, '_blank');
             }else{

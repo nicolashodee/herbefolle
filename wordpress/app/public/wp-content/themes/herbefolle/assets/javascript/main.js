@@ -63,7 +63,3 @@ const letters = gsap.utils.toArray('.letter').forEach(letter => {
   letter.addEventListener("mouseenter", () => anim.play() );
   letter.addEventListener("mouseleave", () => anim.reverse() );
 });
-
-
-
-

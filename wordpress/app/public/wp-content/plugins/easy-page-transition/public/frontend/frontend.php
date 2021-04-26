@@ -77,10 +77,10 @@ function cd_ept_swipe_element() { ?>
     $bgColor = '';
   } ?>
 
-  <div class="ept_swipe transition-overlay" <?php echo $bgColor; ?> >
+  <div id="loader" class="ept_swipe transition-overlay" <?php echo $bgColor; ?> >
 	
 	  
-    <div class="transition-overlay-loader loader loader-1"> un petit moment...</div>
+    <div class="transition-overlay-loader loader loader-1"></div>
 	  
 	  
   </div>
