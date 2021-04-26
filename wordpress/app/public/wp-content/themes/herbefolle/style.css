@@ -822,7 +822,7 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 110;
 }
 
 .ham {
@@ -891,7 +891,7 @@ nav {
   background-color: #f8f8f8;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
-  z-index: 100;
+  z-index: 110;
 }
 
 .top-bar--right {
@@ -1008,7 +1008,7 @@ nav {
   list-style: none;
   -webkit-transition: 1s all ease-out;
   transition: 1s all ease-out;
-  background-color: rgba(0, 58, 38, 0.98);
+  background-color: #002b1d;
   clip-path: circle(100px at 150% 0%);
   -webkit-clip-path: circle(100px at 150% 0%);
   text-align: center;
@@ -1027,20 +1027,24 @@ nav {
   font-size: 25px;
 }
 
-.nav-links li a {
+.nav-links #herbefolle-menu {
+  font-family: 'Cardo', serif;
+}
+
+.nav-links .menu-item a {
   padding: 10px 20px;
   position: relative;
   display: block;
   text-decoration: none;
-  font-family: "Lato";
-  font-size: 2rem;
+  font-family: 'Cardo', serif;
+  font-size: 1.5rem;
   text-transform: uppercase;
   padding: 4px 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.nav-links li a::after {
+.nav-links .menu-item a::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -1058,7 +1062,7 @@ nav {
           transform-origin: center;
 }
 
-.nav-links li a:hover::after {
+.nav-links .menu-item a:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: center;
@@ -1077,7 +1081,7 @@ nav {
   transition: 1s all ease-out;
   height: 100%;
   margin-bottom: 0px;
-  z-index: 99;
+  z-index: 90;
   pointer-events: visible;
   opacity: 1;
 }
@@ -1351,15 +1355,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 90;
-  background-color: #002b1d;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 .transition-overlay-loader {
@@ -1503,6 +1498,8 @@ body, html {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
   width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 @media only screen and (max-width: 800px) {

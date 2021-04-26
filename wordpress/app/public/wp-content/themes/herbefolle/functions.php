@@ -106,5 +106,28 @@ function get_excerpt() {
   } 
   add_filter('admin_footer_text', 'custom_admin_footer');
 
+
+//-------- CUSTOM MENU ---------- //
+function herbefolle_custom_new_menu() {
+  register_nav_menu('herbefolle-custom-menu',__( 'MENU HERBE FOLLE CUSTOM' ));
+}
+add_action( 'init', 'herbefolle_custom_new_menu' );
+
+// ------ SHORTCODE FOR LINK TO LATEST MENU ------ //
+add_shortcode('latest_menu', 'get_latest_menu');
+function get_latest_menu($atts, $content = null) {
+    $args = array(
+        'posts_per_page' => 1,
+        'cat' => '2' // replace this number with your category's ID - 2 es l'ID de la catégorie MENUS ici
+    );
+    $posts = get_posts($args);
+    foreach($posts as $post) {
+        $latest_post = '<a href="' . get_permalink($post) . '">' . $post->title . '</a>';
+    }
+    return $latest_post;
+}
+
+
+
 ?>
 

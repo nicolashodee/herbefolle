@@ -1,3 +1,13 @@
+
+// Theme Name: L'Herbe Folle
+// Version: 1.0
+// Description: thème custom (et gratos en plus !) fait par Nico. 
+// Tags: responsive custom
+// Author: Nicolas Hodee Photographie
+// Author URI: http://www.nicolashodee.com/
+
+
+
 // FONTS
 
 @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap'); // font-family: 'Cardo', serif;
@@ -57,7 +67,7 @@ body, html {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
   width: 100%;
-
+  transition: 1s;
 
   strong {font-weight: bold;}
 

@@ -2,7 +2,7 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 110;
 }
 
 // HAMBURGER ICON STYLING
@@ -51,7 +51,7 @@ nav {
   padding: 10px 15px;
   background-color: #f8f8f8;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
-  z-index: 100;
+  z-index: 110;
 
   &--right {
     display: flex;
@@ -133,32 +133,34 @@ nav {
   height: 100%;
   list-style: none;
   transition: 1s all ease-out;
-  background-color: rgba(0, 58, 38, 0.98);
+  background-color: $dark-primary-color;
   clip-path: circle(100px at 150% 0%);
   -webkit-clip-path: circle(100px at 150% 0%); 
   text-align: center;
-    
+   
   z-index: 99;
   cursor: none;
   pointer-events: none; 
   h2 {
     font-size: 25px;
   }
-
-  
-  li a {
+  #herbefolle-menu {
+    font-family: 'Cardo', serif; 
+  }
+  // wordpress tweak, changed li to ".menu-item" 
+  .menu-item a {
     padding: 10px 20px;
     position: relative;
     display: block;
     text-decoration: none;
-    font-family: "Lato";
-    font-size: 2rem;
+    font-family: 'Cardo', serif; 
+    font-size: 1.5rem;
     text-transform: uppercase;
     padding: 4px 0;
     transition: 0.5s;
     
   }
-  li a::after {
+  .menu-item a::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -171,7 +173,7 @@ nav {
     transform-origin: center;
   }
   
-  li a:hover::after {
+  .menu-item a:hover::after {
     transform: scaleX(1);
     transform-origin: center;
   }
@@ -189,7 +191,7 @@ nav {
   transition: 1s all ease-out;
   height: 100%;
   margin-bottom: 0px;
-  z-index: 99;
+  z-index: 90;
   pointer-events: visible;
   opacity: 1;
 }

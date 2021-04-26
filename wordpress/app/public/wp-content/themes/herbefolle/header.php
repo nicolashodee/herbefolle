@@ -68,7 +68,16 @@
   </nav>
   
   <!-- MENU OPENED -->
-  <ul class="nav-links">
+
+  <!------X------ WORDPRESS MENU -----X----->
+  <?php
+    wp_nav_menu( array( 
+        'theme_location' => 'herbefolle-custom-menu', 
+        'items_wrap' => '<ul id="herbefolle-menu" class="nav-links">%3$s</ul>' ) ); 
+  ?>
+
+  <!------X------ MY MENU -----X----->
+  <!-- <ul class="nav-links">
     <li><a href=" <?php site_url(); ?>/about "><h2>A propos</h2></a></li>
     <li>
       <a href=" <?php
@@ -83,13 +92,15 @@
     <li><a href=" <?php site_url(); ?>/brunch "><h2>Les brunchs</h2></a></li>
     <li><a href=" <?php site_url(); ?>/traiteur "><h2>Espace traiteur</h2></a></li>
     <li><a href=" <?php site_url(); ?>/archives "><h2>Archives</h2></a></li>
-  </ul>
+  </ul> -->
 
-<!--------- BARBA CONTAINER STARTS HERE ----------->
-<div data-barba="container">
+<!--------- TRANSITION CONTAINER STARTS HERE ----------->
 
 <!-- TRANSITION SLIDER -->
-<div class="transition-overlay">
+<!-- <div id="page-anim-preloader" class="transition-overlay">
     <div class="transition-overlay-loader loader loader-1"></div>
-</div>
-<button class="button">Click to trigger transition</button>
+</div> -->
+<!-- <button class="button">Click to trigger transition</button>  -->
+
+
+<!-- <div class="ept_swipe" <?php echo $bgColor; ?> > </div> -->
