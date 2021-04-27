@@ -22,8 +22,7 @@
 
 
 <body>
-<!--------- BARBA WRAPPER STARTS HERE ----------->
-<div data-barba="wrapper">
+
   <!-------- CUSTOM CURSOR --------->
   <div class="cursor"></div>
 
@@ -75,32 +74,3 @@
         'theme_location' => 'herbefolle-custom-menu', 
         'items_wrap' => '<ul id="herbefolle-menu" class="nav-links">%3$s</ul>' ) ); 
   ?>
-
-  <!------X------ MY MENU -----X----->
-  <!-- <ul class="nav-links">
-    <li><a href=" <?php site_url(); ?>/about "><h2>A propos</h2></a></li>
-    <li>
-      <a href=" <?php
-                    $my_query = new WP_Query('category_name=MENUS&showposts=1');
-                    while ($my_query->have_posts()) : $my_query->the_post(); {
-                    the_permalink();
-                    } endwhile; 
-                ?>  ">
-        <h2>Menu de la semaine</h2>
-      </a>
-    </li>
-    <li><a href=" <?php site_url(); ?>/brunch "><h2>Les brunchs</h2></a></li>
-    <li><a href=" <?php site_url(); ?>/traiteur "><h2>Espace traiteur</h2></a></li>
-    <li><a href=" <?php site_url(); ?>/archives "><h2>Archives</h2></a></li>
-  </ul> -->
-
-<!--------- TRANSITION CONTAINER STARTS HERE ----------->
-
-<!-- TRANSITION SLIDER -->
-<!-- <div id="page-anim-preloader" class="transition-overlay">
-    <div class="transition-overlay-loader loader loader-1"></div>
-</div> -->
-<!-- <button class="button">Click to trigger transition</button>  -->
-
-
-<!-- <div class="ept_swipe" <?php echo $bgColor; ?> > </div> -->

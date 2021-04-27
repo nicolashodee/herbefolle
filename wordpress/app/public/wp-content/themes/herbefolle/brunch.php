@@ -22,7 +22,7 @@
   <!----------------X------------ MAIN SITE SECTION --------------X----------------->
   <?php
     $args = array (
-        'showposts' => '3',
+        'showposts' => '1',
         'category_name' => 'BRUNCH',
         'paged' => $paged
       );
@@ -30,39 +30,68 @@
   ?>
 
 
+
+
+
   <main class="container">
 
-    <section class="main-title">
+    <section class="main-title animate-brunch">
       <div><h3>Le dimanche devient le rendez vous du brunch !</h3></div>
       
-      <h4 class="accent-color">Important: Nous utilisons exclusivement des produits frais, pensez à commander au plus tard le samedi midi.</h4>
+      <h4 class="accent-color animate-brunch">Important: Nous utilisons exclusivement des produits frais, pensez à commander au plus tard le samedi midi.</h4>
     </section>
+
+    <?php
+        while ($the_query -> have_posts()) :
+          $the_query -> the_post();
+      ?>
     
-    
-    <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post();
-    ?>
 
     <div class="brunch__left">
       <h1> <?php the_title(); ?> </h1>
     </div>
 
-    <section class="buy__section">
+    <section class="brunch__section">
       
       <!-- BRUNCH POST CONTENT STARTS HERE -->
 
+        
+      <div class="brunch_text"> 
           <?php the_content(); ?>
+          <a href=" <?php site_url(); ?>/buy "><div class="btn--medium">&rarr; Je commande !</div></a>
+      </div>
+
+      <div  class="brunch_image">
+        
+        <?php
+          if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+          the_post_thumbnail( 'small' );
+          }
+        ?>
+          
+      </div>
+        
 
       <!-- BRUNCH POST CONTENT ENDS HERE -->
         
 
-      <a href=" <?php site_url(); ?>/buy "><div class="btn--medium">&rarr; Je commande !</div></a>
+      
+        
+      
         
     </section>
-
+    
     <?php
         endwhile;
-        endif; 
       ?>
+    <section class="archives_navigation">
+
+      <?php if (function_exists("pagination")) {
+            pagination($the_query->max_num_pages);
+        } ?>
+
+    </section>
+    
 
   </main>
   

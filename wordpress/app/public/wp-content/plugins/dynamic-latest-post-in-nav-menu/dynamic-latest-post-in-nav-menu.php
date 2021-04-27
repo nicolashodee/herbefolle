@@ -44,7 +44,7 @@ if( !class_exists( 'Dlpinm' ) )
 							LIMIT 1";
 
 
-
+						
 						
 						$post_id = $wpdb->get_var( $sql );
 						$item->object_id = $post_id;

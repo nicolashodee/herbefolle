@@ -3,10 +3,16 @@
 
 <?php
 
-  //------- FUNCTIONS FOR OUR CUSTOM THEME L'HERBE FOLLE ----------- //
+  //-------------------------------------------------------------------------- //
+  //------X----------- FUNCTIONS FOR CUSTOM THEME L'HERBE FOLLE -------X------ //
+  //-------------------------------------------------------------------------- //
 
 
-  //-------------- ADDING CUSTOM CSS  -------------- //
+
+
+
+
+  //-------------- ENQUEUING CUSTOM CSS  -------------- //
   function herbefolle_register_styles () {
 
     wp_enqueue_style('herbefolle_custom_css', get_template_directory_uri() . "/style.css", '1.0', 'all');
@@ -16,22 +22,25 @@
 
   add_action( 'wp_enqueue_scripts', 'herbefolle_register_styles' );
 
-  //-------------- ADDING CUSTOM JAVASCRIPT  -------------- //
+
+
+
+
+  //-------------- ENQUEUING CUSTOM JAVASCRIPT  -------------- //
   function herbefolle_register_scripts () {
 
     
-    wp_enqueue_script('herbefolle_fontawesome_scripts',   "https://use.fontawesome.com/4c85fb25a3.js", array(), false, true);
+    wp_enqueue_script('herbefolle_fontawesome_scripts',   "https://use.fontawesome.com/4c85fb25a3.js", array(), '', true);
     wp_enqueue_script('herbefolle_gsap',                  "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js", array(), false, true);
-    wp_enqueue_script('herbefolle_gsap_ScrollTrigger',    "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js", array(), false, true );
-    wp_enqueue_script('herbefolle_gsap_TweenMax',         "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js", array(), false, true );
-    wp_enqueue_script('herbefolle_barba_js_unpkg',        "https://unpkg.com/@barba/core", array(), '1.0.0', true );
-    //wp_enqueue_script('herbefolle_barba_js_jsdelivr',     "https://cdn.jsdelivr.net/npm/@barba/core", array(), '1.0.0', true );
-
-    wp_enqueue_script('herbefolle_custom_javascript_main', get_template_directory_uri() . "/assets/javascript/main.js", array(), false, true  );
+    wp_enqueue_script('herbefolle_gsap_ScrollTrigger',    "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js", array(), '', true );
+    wp_enqueue_script('herbefolle_gsap_TweenMax',         "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js", array(), '', true );
+    wp_enqueue_script('herbefolle_custom_javascript_main', get_template_directory_uri() . "/assets/javascript/main.js", array(), '' , true);
     
 
   }
+ 
 
+  // loading custom Javascript depending on which page you're on
   function herbefolle_conditional_enqueue_scripts() {
 
     // FOR THIS WEEK POST PAGE
@@ -58,30 +67,16 @@
     if ( is_page('archives') ) { 
       wp_enqueue_script('herbefolle_custom_javascript_archives', get_template_directory_uri() . "/assets/javascript/archives.js", array(), false, true);
     }
+    // FOR ARCHIVE PAGE
+    if ( is_page('brunch') ) { 
+      wp_enqueue_script('herbefolle_custom_javascript_archives', get_template_directory_uri() . "/assets/javascript/brunch.js", array(), false, true);
+    }
 
 }
 
-  add_action( 'wp_enqueue_scripts', 'herbefolle_register_scripts' );
+
+  add_action( 'wp_enqueue_scripts', 'herbefolle_register_scripts');
   add_action('wp_enqueue_scripts', 'herbefolle_conditional_enqueue_scripts');
-
-  
-//------------ CUSTOM POST TEMPLATE BASED ON CATEGORY ------------//
-
-// add_filter('single_template', 'check_for_category_single_template');
-// function check_for_category_single_template( $t )
-// {
-//   foreach( (array) get_the_category() as $cat ) 
-//   { 
-//     if ( file_exists(get_stylesheet_directory() . "/single-category-{$cat->slug}.php") ) return get_stylesheet_directory() . "/single-category-{$cat->slug}.php"; 
-//     if($cat->parent)
-//     {
-//       $cat = get_the_category_by_ID( $cat->parent );
-//       if ( file_exists(get_stylesheet_directory() . "/single-category-{$cat->slug}.php") ) return get_stylesheet_directory() . "/single-category-{$cat->slug}.php";
-//     }
-//   } 
-//   return $t;
-// }
-
 
 
 //------------ ENABLING POST THUMBNAILS ------------//
@@ -102,7 +97,7 @@ function get_excerpt() {
 
 //------------ Custom Admin Footer ------------//
   function custom_admin_footer() {
-    echo '<a href="http://nicolashodee.com/">Made with <span class="redheart" style="color: red;">♥</span> by Nicolas HODEE | www.nicolashodee.com</a>';
+    echo '<a href="http://nicolashodee.com/" style="border: 2px solid darkgrey; color: black; padding: 5px 25px;">Made with <span class="redheart" style="color: red;">♥</span> by Nicolas HODEE | www.nicolashodee.com</a>';
   } 
   add_filter('admin_footer_text', 'custom_admin_footer');
 
@@ -113,20 +108,43 @@ function herbefolle_custom_new_menu() {
 }
 add_action( 'init', 'herbefolle_custom_new_menu' );
 
-// ------ SHORTCODE FOR LINK TO LATEST MENU ------ //
-add_shortcode('latest_menu', 'get_latest_menu');
-function get_latest_menu($atts, $content = null) {
-    $args = array(
-        'posts_per_page' => 1,
-        'cat' => '2' // replace this number with your category's ID - 2 es l'ID de la catégorie MENUS ici
-    );
-    $posts = get_posts($args);
-    foreach($posts as $post) {
-        $latest_post = '<a href="' . get_permalink($post) . '">' . $post->title . '</a>';
-    }
-    return $latest_post;
-}
+// ------ PAGINATION FUNCTION FOR ARCHIVES ------ //
+function pagination($pages = '', $range = 2)
+{
+    $showitems = ($range * 2)+1;
 
+    global $paged;
+    if(empty($paged)) $paged = 1;
+
+    if($pages == '')
+    {
+        global $wp_query;
+        $pages = $wp_query->max_num_pages;
+        if(!$pages)
+        {
+            $pages = 1;
+        }
+    }
+
+    if(1 != $pages)
+    {
+        echo "<div class=\"pagination\">";
+        if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo; Début</a>";
+        //if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo; Page Précédente</a>";
+
+        for ($i=1; $i <= $pages; $i++)
+        {
+            if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
+            {
+                echo ($paged == $i)? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
+            }
+        }
+
+        //if ($paged < $pages && $showitems < $pages) echo "<a href=\"".get_pagenum_link($paged + 1)."\">Page suivante &rsaquo;</a>";
+        if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>Fin &raquo;</a>";
+        echo "</div>\n";
+    }
+}
 
 
 ?>

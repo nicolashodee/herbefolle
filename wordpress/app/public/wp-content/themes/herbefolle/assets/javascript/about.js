@@ -1,4 +1,11 @@
 console.log("about.js is loaded");
+
+//---------------- TYPING EFFECT-------------- //
+const tlAbout = gsap.timeline({ defaults: {ease: 'none'} }); 
+
+tlAbout.from(".header--overlay", { opacity: 0, delay: 0.5,  duration: 0.5});
+tlAbout.from(".animate-about", {y:"-10%", opacity: 0,  duration: 0.3, stagger: 0.2});
+
 //---------------- TYPING EFFECT-------------- //
 
 var wordList = ['de saison', 'savoureuse', 'livrée chez vous', 'bio', ];
@@ -28,7 +35,7 @@ function eraseWord() {
   }
 }
 
-setTimeout(typeWord, typeSpeed);
+setTimeout(typeWord, 2000) ;
 
 //---------------- PAGE ANIMATIONS -------------- //
 

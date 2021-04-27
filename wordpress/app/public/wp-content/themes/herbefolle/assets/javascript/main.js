@@ -1,30 +1,10 @@
 console.log("main.js is loaded");
-// ---X-------------- BARBA.JS TRANSITIONS ------------X---- //
-// function pageTransition() {
-//   var tlTransitions = gsap.timeline(); 
-//   tlTransitions.to()
-// }
-
-
-// barba.init({
-//   sync: true, 
-//   transitions: [{
-//     async leave(data) {
-//       const done = this.async(); 
-//       pageTransition();
-//       await(delay: 1500); 
-//       done();
-//     }, 
-
-//     async enter
-//   }]
-// })
 
 // ---X-------------- VARIABLES ------------X---- //
 const hamburger = document.querySelector('.hamburger'); 
 const navLinks = document.querySelector('.nav-links'); 
 const links = document.querySelectorAll('.nav-links li'); 
-const allLinks = document.querySelectorAll('a'); 
+const allLinks = [...document.getElementsByTagName('a')];
 let mouseCursor = document.querySelector(".cursor"); 
 
 

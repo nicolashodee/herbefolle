@@ -36,15 +36,21 @@ $header-image: "./assets/images/brunch2.jpg";
   position: relative;
   display: flex;
   flex-direction: row;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   min-height: 200px;
-  border-top: 2px solid black;
-  border-left: 2px solid black;
+  border-top: 3px solid black;
+  
   padding: 30px 50px;
-  background: linear-gradient(180deg, rgb(220, 214, 211), rgba(164, 164, 164, 0));
+  @media screen and (max-width: 1000px) {
+    padding: 20px;
+  }
   overflow: hidden;
   z-index: 1;
+  border-radius: 205px 0px 0px 0px/15px 0px 0px 0px;
   
   ul {
     list-style:square inside;
@@ -61,4 +67,38 @@ $header-image: "./assets/images/brunch2.jpg";
   @media screen and (max-width: 1000px) {
     h1 {font-size: 30px;}
   }
+}
+
+.brunch_text {
+
+}
+
+.brunch_image {
+    
+    border-radius: 2%;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    min-width: 35%;
+    max-width: 35%;
+    max-height: 80%;
+    @media screen and (max-width: 1000px) { 
+      max-width: 100%;
+      max-height: 500px;
+    }
+    padding: 50px;
+    @media screen and (max-width: 1000px) {
+      padding: 50px;
+    }
+
+    img {
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 }

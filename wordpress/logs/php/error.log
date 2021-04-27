@@ -1252,3 +1252,97 @@ Stack trace:
 					
 							ORDER BY wp_posts.menu_order, wp_posts.post_date DESC 
 							LIMIT 1 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/herbefolle/about.php'), get_header, locate_template, load_template, require_once('/themes/herbefolle/header.php'), wp_nav_menu, apply_filters('wp_nav_menu_objects'), WP_Hook->apply_filters, Dlpinm->dlpinm_filter
+[27-Apr-2021 09:45:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pagination_nav() in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/archive.php:71
+Stack trace:
+#0 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-blog-header.php(19): require_once('/Users/nicolash...')
+#2 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/index.php(17): require('/Users/nicolash...')
+#3 {main}
+  thrown in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/archive.php on line 71
+[27-Apr-2021 09:45:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pagination_nav() in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/archive.php:71
+Stack trace:
+#0 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-blog-header.php(19): require_once('/Users/nicolash...')
+#2 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/index.php(17): require('/Users/nicolash...')
+#3 {main}
+  thrown in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/archive.php on line 71
+[27-Apr-2021 10:17:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/archive.php:17
+Stack trace:
+#0 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-blog-header.php(19): require_once('/Users/nicolash...')
+#2 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/index.php(17): require('/Users/nicolash...')
+#3 {main}
+  thrown in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/archive.php on line 17
+[27-Apr-2021 10:17:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/archive.php:43
+Stack trace:
+#0 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-blog-header.php(19): require_once('/Users/nicolash...')
+#2 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/index.php(17): require('/Users/nicolash...')
+#3 {main}
+  thrown in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/archive.php on line 43
+[27-Apr-2021 10:17:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/archive.php:43
+Stack trace:
+#0 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-blog-header.php(19): require_once('/Users/nicolash...')
+#2 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/index.php(17): require('/Users/nicolash...')
+#3 {main}
+  thrown in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/archive.php on line 43
+[27-Apr-2021 10:17:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/archive.php:42
+Stack trace:
+#0 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template-loader.php(106): include()
+#1 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-blog-header.php(19): require_once('/Users/nicolash...')
+#2 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/index.php(17): require('/Users/nicolash...')
+#3 {main}
+  thrown in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/archive.php on line 42
+[27-Apr-2021 14:25:55 UTC] PHP Warning:  filemtime(): stat failed for http://herbefollewordpress.local/wp-content/themes/herbefolle/assets/javascript/main.js in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/functions.php on line 44
+[27-Apr-2021 14:25:55 UTC] PHP Stack trace:
+[27-Apr-2021 14:25:55 UTC] PHP   1. {main}() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/index.php:0
+[27-Apr-2021 14:25:55 UTC] PHP   2. require() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/index.php:17
+[27-Apr-2021 14:25:55 UTC] PHP   3. require_once() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-blog-header.php:19
+[27-Apr-2021 14:25:55 UTC] PHP   4. include() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template-loader.php:106
+[27-Apr-2021 14:25:55 UTC] PHP   5. get_header() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/front-page.php:3
+[27-Apr-2021 14:25:55 UTC] PHP   6. locate_template() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/general-template.php:48
+[27-Apr-2021 14:25:55 UTC] PHP   7. load_template() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template.php:676
+[27-Apr-2021 14:25:55 UTC] PHP   8. require_once() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template.php:730
+[27-Apr-2021 14:25:55 UTC] PHP   9. wp_head() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/header.php:2
+[27-Apr-2021 14:25:55 UTC] PHP  10. do_action() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/general-template.php:3009
+[27-Apr-2021 14:25:55 UTC] PHP  11. WP_Hook->do_action() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/plugin.php:484
+[27-Apr-2021 14:25:55 UTC] PHP  12. WP_Hook->apply_filters() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-hook.php:316
+[27-Apr-2021 14:25:55 UTC] PHP  13. wp_enqueue_scripts() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-hook.php:292
+[27-Apr-2021 14:25:55 UTC] PHP  14. do_action() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/script-loader.php:2027
+[27-Apr-2021 14:25:55 UTC] PHP  15. WP_Hook->do_action() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/plugin.php:484
+[27-Apr-2021 14:25:55 UTC] PHP  16. WP_Hook->apply_filters() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-hook.php:316
+[27-Apr-2021 14:25:55 UTC] PHP  17. herbefolle_enqueue_scripts_delay() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-hook.php:292
+[27-Apr-2021 14:25:55 UTC] PHP  18. filemtime() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/functions.php:44
+[27-Apr-2021 14:25:55 UTC] PHP Warning:  filemtime(): stat failed for http://herbefollewordpress.local/wp-content/themes/herbefolle/assets/javascript/main.js in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/functions.php on line 44
+[27-Apr-2021 14:25:55 UTC] PHP Stack trace:
+[27-Apr-2021 14:25:55 UTC] PHP   1. {main}() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/index.php:0
+[27-Apr-2021 14:25:55 UTC] PHP   2. require() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/index.php:17
+[27-Apr-2021 14:25:55 UTC] PHP   3. require_once() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-blog-header.php:19
+[27-Apr-2021 14:25:55 UTC] PHP   4. include() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template-loader.php:106
+[27-Apr-2021 14:25:55 UTC] PHP   5. get_header() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/front-page.php:3
+[27-Apr-2021 14:25:55 UTC] PHP   6. locate_template() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/general-template.php:48
+[27-Apr-2021 14:25:55 UTC] PHP   7. load_template() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template.php:676
+[27-Apr-2021 14:25:55 UTC] PHP   8. require_once() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/template.php:730
+[27-Apr-2021 14:25:55 UTC] PHP   9. wp_head() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/header.php:17
+[27-Apr-2021 14:25:55 UTC] PHP  10. do_action() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/general-template.php:3009
+[27-Apr-2021 14:25:55 UTC] PHP  11. WP_Hook->do_action() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/plugin.php:484
+[27-Apr-2021 14:25:55 UTC] PHP  12. WP_Hook->apply_filters() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-hook.php:316
+[27-Apr-2021 14:25:55 UTC] PHP  13. wp_enqueue_scripts() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-hook.php:292
+[27-Apr-2021 14:25:55 UTC] PHP  14. do_action() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/script-loader.php:2027
+[27-Apr-2021 14:25:55 UTC] PHP  15. WP_Hook->do_action() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/plugin.php:484
+[27-Apr-2021 14:25:55 UTC] PHP  16. WP_Hook->apply_filters() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-hook.php:316
+[27-Apr-2021 14:25:55 UTC] PHP  17. herbefolle_enqueue_scripts_delay() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-hook.php:292
+[27-Apr-2021 14:25:55 UTC] PHP  18. filemtime() /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/functions.php:44
+[27-Apr-2021 15:09:40 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/brunch.php on line 66
+[27-Apr-2021 15:09:53 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/brunch.php on line 66
+[27-Apr-2021 15:09:59 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/brunch.php on line 66
+[27-Apr-2021 15:16:50 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/brunch.php on line 81
+[27-Apr-2021 15:33:56 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-content/themes/herbefolle/brunch.php on line 94
+[27-Apr-2021 15:35:37 UTC] PHP Fatal error:  Uncaught Error: Maximum function nesting level of '256' reached, aborting! in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-object-cache.php:493
+Stack trace:
+#0 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-object-cache.php(290): WP_Object_Cache->_exists(16, 'terms')
+#1 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-object-cache.php(320): WP_Object_Cache->get(16, 'terms', false)
+#2 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/cache.php(145): WP_Object_Cache->get_multiple(Array, 'terms', false)
+#3 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/functions.php(6475): wp_cache_get_multiple(Array, 'terms')
+#4 /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/h in /Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/wordpress/app/public/wp-includes/class-wp-object-cache.php on line 493

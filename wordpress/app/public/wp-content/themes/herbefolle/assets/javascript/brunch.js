@@ -1,4 +1,11 @@
+console.log("brunch.js is loaded"); 
+
 // ------------ PAGES ANIMATIONS ---------- //
+const tlBrunch = gsap.timeline({ defaults: {ease: 'none'} }); 
+
+tlBrunch.from(".header--overlay", { opacity: 0, delay: 0.5,  duration: 0.5});
+tlBrunch.from(".animate-brunch", {x:"-10%", opacity: 0,  duration: 0.3, stagger: 0.2});
+
 
 const titles = gsap.utils.toArray('.brunch__left');
 titles.forEach(title => {

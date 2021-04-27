@@ -7,8 +7,14 @@
 ?>
 
 <?php
-$post_by_category = new WP_Query( 'cat=MENUS&posts_per_page=10' );
-if ($post_by_category->have_posts()) :
+$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+$args = array(
+  'posts_per_page' => 5,
+  'paged' => $paged, 
+  'cat' => 2
+);
+$custom_query = new WP_Query( $args );
+if ($custom_query -> have_posts()) :
 ?>
 
   <!----------------X------------ WP HEADER SECTION --------------X----------------->
@@ -34,8 +40,8 @@ if ($post_by_category->have_posts()) :
       
       
       <?php
-        while ($post_by_category -> have_posts()) :
-            $post_by_category -> the_post();
+        while ($custom_query -> have_posts()) :
+          $custom_query -> the_post();
       ?>
       
       <article class="article__archive desaturate sketchy">
@@ -66,9 +72,10 @@ if ($post_by_category->have_posts()) :
 
   
     <section class="archives_navigation">
-      <div class="btn--small">&larr;</div>
-      <div class="page-number"><h4>1</h4></div>
-      <div class="btn--small">&rarr;</div>
+
+    <?php if (function_exists("pagination")) {
+          pagination($custom_query->max_num_pages);
+      } ?>
     </section>
   </main>
 

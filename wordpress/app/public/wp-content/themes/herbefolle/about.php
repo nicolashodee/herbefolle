@@ -22,11 +22,11 @@
     <!-- PRESENTATION -->
     <section id="about_main">
 
-      <div>
+      <div class="animate-about">
         <h2 style="text-align: center;">C'est une cuisine <br class="mobile"> <span id="text"></span><span class="text__decorator">_</span></h2></div>
       <div>
-        <h4 style="text-align: center;">sur Aix en Provence.</h4><br>
-        <h4 style="text-align: center; padding: 10px;">Des compositions saines et simples, composées autour des végétaux, accompagnées parfois de viande ou de poisson.</h4>
+        <h4 style="text-align: center;" class="animate-about">sur Aix en Provence.</h4><br>
+        <h4 style="text-align: center; padding: 10px;" class="animate-about">Des compositions saines et simples, composées autour des végétaux, accompagnées parfois de viande ou de poisson.</h4>
       </div>
 
     </section>
@@ -119,8 +119,8 @@
     
     <!-- NOTRE HISTOIRE -->
     <section class="about historique">
-      <h1>Notre histoire</h1>
-      <div class="category active">
+      <h1 class="anim-left">Notre histoire</h1>
+      <div class="category active anim-left">
         <div class="left">
           <h2>Hier</h2>
         </div>
@@ -138,7 +138,7 @@
         </div>
       </div>
   
-      <div class="category">
+      <div class="category anim-right">
         <div class="left"><h2>Aujourd'hui</h2></div>
         <div class="right">
           <p style="font-weight:300;">
@@ -146,7 +146,7 @@
           </p>
         </div>
       </div>
-      <div class="category">
+      <div class="category anim-left">
         <div class="left"><h2>Demain</h2></div>
         <div class="right">
           <p>

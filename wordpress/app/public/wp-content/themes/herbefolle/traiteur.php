@@ -16,7 +16,7 @@
         <p class="traiteur-element">Contactez nous pour plus d'informations et réalisation de devis</p>
       </div>
       
-      <a href="mailt:contact@lherbefolle.net" class="btn--medium traiteur-button" style="text-align: center;">Nous contacter</a>
+      <a href=" mailto:contact@lherbefolle.net?subject=Commande%20traiteur&body=Merci%20de%20pr%C3%A9ciser%20votre%20projet%20ici%2C%20nous%20vous%20r%C3%A9pondrons%20au%20plus%20vite%20!%0D%0AA%20bient%C3%B4t. " class="btn--medium traiteur-button" style="text-align: center;">Nous contacter</a>
     </section>
     <div class="basket"><img src="/wp-content/themes/herbefolle/assets/images/basket.png" alt=""></div>
   </main>
