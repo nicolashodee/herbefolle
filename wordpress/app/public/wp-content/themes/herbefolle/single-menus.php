@@ -32,7 +32,7 @@
             }
           ?>
         </div>
-        <p class="accent-color"> <i class="far fa-clock"></i>  &nbsp;Publié le <?php the_date(); ?> par : <?php echo get_the_author(); ?>
+        <p class="accent-color" style="margin-top: 15px;"> <i class="far fa-clock"></i>  &nbsp;Publié le <?php the_date(); ?> par <?php echo get_the_author(); ?>
  </p>
         <!-- POST CONTENT STARTS HERE -->
 

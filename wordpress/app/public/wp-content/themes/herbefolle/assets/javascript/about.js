@@ -8,9 +8,9 @@ tlAbout.from(".animate-about", {y:"-10%", opacity: 0,  duration: 0.3, stagger: 0
 
 //---------------- TYPING EFFECT-------------- //
 
-var wordList = ['de saison', 'savoureuse', 'livrée chez vous', 'bio', ];
+var wordList = ['de saison', 'savoureuse', 'livrée chez vous', 'saine et biologique', ];
 var characterPosition = 0, wordPosition = 0;
-var typeSpeed = 160, eraseSpeed = typeSpeed/2;
+var typeSpeed = 180, eraseSpeed = typeSpeed/2;
 
 function typeWord() {
   if (characterPosition < wordList[wordPosition].length) {

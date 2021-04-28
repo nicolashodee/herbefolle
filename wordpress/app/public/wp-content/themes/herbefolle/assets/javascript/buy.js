@@ -1,6 +1,12 @@
 console.log("buy.js is loaded");
 // ------------ PAGE ANIMATIONS ---------- //
 
+const tlBuy = gsap.timeline({ defaults: {ease: 'none'} }); 
+
+tlBuy.from(".header--overlay", { opacity: 0, delay: 0.5,  duration: 0.5});
+tlBuy.from(".animate-buy", {y:"-10%", opacity: 0,  duration: 0.3, stagger: 0.2});
+
+
 const titles = gsap.utils.toArray('.buy__left');
 titles.forEach(title => {
   const anim = gsap.from(title, { ease: Power2. easeOut, y: 80, opacity: 0, paused: true, delay: 1.5});

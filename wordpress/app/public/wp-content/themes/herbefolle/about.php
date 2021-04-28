@@ -68,7 +68,16 @@
             <li>Consultez le menu de la semaine pour être sûr !</li>
           </ul>
         </p>
-        <p><a href="thisweek.html" class="btn--buy" style="text-align: right;">&rarr; Voir le menu </a></p>
+        <p><a href="
+        
+        <?php
+          $my_query = new WP_Query('category_name=MENUS&showposts=1');
+          while ($my_query->have_posts()) : $my_query->the_post(); {
+          the_permalink();
+          } endwhile; 
+        ?>
+        
+        " class="btn--buy" style="text-align: right;">&rarr; Voir le menu </a></p>
       </div>
       
     </section>
@@ -109,9 +118,18 @@
 
         <h1>Comment ?</h1>
         <h4 style="text-align: right;">Des portions individuelles, souvent pour moins de 10€ !<br> A venir chercher sur place ou délivrées à proximité.</h4>
-        <p>Emballages compostables et des couverts en bois garantis !<i class="fas fa-leaf" style="color: green;"></i> <br><br>
+        <p>Nous utilisons des emballages compostables et couverts en bois <i class="fas fa-leaf" style="color: green;"></i> <br><br>
         Livraisons possibles à l'hopital d'Aix Nord. <i class="fas fa-hospital" style="color: red;"></i></p>
-        <a href="thisweek.html" class="btn--buy" style="text-align: right;">&rarr; Voir le menu </a>
+        <a href="
+
+        <?php
+          $my_query = new WP_Query('category_name=MENUS&showposts=1');
+          while ($my_query->have_posts()) : $my_query->the_post(); {
+          the_permalink();
+          } endwhile; 
+        ?>
+        
+        " class="btn--buy" style="text-align: right;">&rarr; Voir le menu </a>
 
       </div>
       

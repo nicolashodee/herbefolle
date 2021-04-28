@@ -483,6 +483,10 @@
   z-index: 2;
 }
 
+.article__thisweek h1, .article__thisweek h2, .article__thisweek h3, .article__thisweek h4, .article__thisweek h5 {
+  text-align: left;
+}
+
 @media screen and (max-width: 1000px) {
   .article__thisweek {
     padding: 20px 40px;
@@ -1291,12 +1295,12 @@ nav {
       -ms-flex-align: start;
           align-items: flex-start;
   overflow: hidden;
-  width: 100%;
+  max-height: 200px;
 }
 
 .article__archive .pastweek-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
