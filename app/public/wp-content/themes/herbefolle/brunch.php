@@ -58,7 +58,7 @@
         
       <div class="brunch_text"> 
           <?php the_content(); ?>
-          <a href=" ./index.php/buy "><div class="btn--medium">&rarr; Je commande !</div></a>
+          <a href=" <?php site_url(); ?>/buy "><div class="btn--medium">&rarr; Je commande !</div></a>
       </div>
 
       <div  class="brunch_image">

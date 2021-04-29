@@ -1,0 +1,234 @@
+Log created: 2021-04-29 09:38:00
+Type: restore
+[2021-04-29 09:38:00][notice]init restore data
+[2021-04-29 09:38:00][notice]Start restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part003.zip
+[2021-04-29 09:38:00][notice]extract root:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/
+[2021-04-29 09:38:00][notice]start extracting file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part003.zip
+[2021-04-29 09:38:02][notice]extract finished file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part003.zip
+[2021-04-29 09:38:02][notice]Finished restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part003.zip
+[2021-04-29 09:38:03][notice]Start restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part004.zip
+[2021-04-29 09:38:03][notice]extract root:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/
+[2021-04-29 09:38:03][notice]start extracting file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part004.zip
+[2021-04-29 09:38:03][notice]extract finished file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part004.zip
+[2021-04-29 09:38:03][notice]Finished restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part004.zip
+[2021-04-29 09:38:04][notice]Start restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part002.zip
+[2021-04-29 09:38:04][notice]extract root:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/
+[2021-04-29 09:38:04][notice]start extracting file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part002.zip
+[2021-04-29 09:38:06][notice]extract finished file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part002.zip
+[2021-04-29 09:38:06][notice]Finished restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part002.zip
+[2021-04-29 09:38:06][notice]Start restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part001.zip
+[2021-04-29 09:38:06][notice]extract root:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/
+[2021-04-29 09:38:06][notice]start extracting file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part001.zip
+[2021-04-29 09:38:08][notice]extract finished file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part001.zip
+[2021-04-29 09:38:08][notice]Finished restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_all.part001.zip
+[2021-04-29 09:38:09][notice]Start restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_uploads.zip
+[2021-04-29 09:38:09][notice]restore from files:["\/Users\/nicolashodee\/Desktop\/LOCAL_WORKING_FOLDER\/herbe-folle\/site\/herbefolle\/app\/public\/wp-content\/wpvividbackups\/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_uploads.zip"]
+[2021-04-29 09:38:09][notice]start extracting file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_uploads.zip
+[2021-04-29 09:38:09][notice]extract finished file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_uploads.zip
+[2021-04-29 09:38:09][notice]Finished restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_uploads.zip
+[2021-04-29 09:38:10][notice]Start restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_themes.zip
+[2021-04-29 09:38:10][notice]restore from files:["\/Users\/nicolashodee\/Desktop\/LOCAL_WORKING_FOLDER\/herbe-folle\/site\/herbefolle\/app\/public\/wp-content\/wpvividbackups\/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_themes.zip"]
+[2021-04-29 09:38:10][notice]start extracting file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_themes.zip
+[2021-04-29 09:38:11][notice]extract finished file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_themes.zip
+[2021-04-29 09:38:11][notice]Finished restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_themes.zip
+[2021-04-29 09:38:12][notice]Start restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_core.zip
+[2021-04-29 09:38:12][notice]restore from files:["\/Users\/nicolashodee\/Desktop\/LOCAL_WORKING_FOLDER\/herbe-folle\/site\/herbefolle\/app\/public\/wp-content\/wpvividbackups\/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_core.zip"]
+[2021-04-29 09:38:12][notice]start extracting file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_core.zip
+[2021-04-29 09:38:13][notice]extract finished file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_core.zip
+[2021-04-29 09:38:13][notice]Finished restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_core.zip
+[2021-04-29 09:38:14][notice]Start restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_plugin.zip
+[2021-04-29 09:38:14][notice]restore from files:["\/Users\/nicolashodee\/Desktop\/LOCAL_WORKING_FOLDER\/herbe-folle\/site\/herbefolle\/app\/public\/wp-content\/wpvividbackups\/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_plugin.zip"]
+[2021-04-29 09:38:14][notice]start extracting file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_plugin.zip
+[2021-04-29 09:38:15][notice]extract finished file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_plugin.zip
+[2021-04-29 09:38:15][notice]Finished restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_plugin.zip
+[2021-04-29 09:38:16][notice]Start restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_content.part001.zip
+[2021-04-29 09:38:16][notice]restore from files:["\/Users\/nicolashodee\/Desktop\/LOCAL_WORKING_FOLDER\/herbe-folle\/site\/herbefolle\/app\/public\/wp-content\/wpvividbackups\/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_content.part001.zip"]
+[2021-04-29 09:38:16][notice]start extracting file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_content.part001.zip
+[2021-04-29 09:38:18][notice]extract finished file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_content.part001.zip
+[2021-04-29 09:38:18][notice]Finished restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_content.part001.zip
+[2021-04-29 09:38:19][notice]Start restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_content.part002.zip
+[2021-04-29 09:38:19][notice]restore from files:["\/Users\/nicolashodee\/Desktop\/LOCAL_WORKING_FOLDER\/herbe-folle\/site\/herbefolle\/app\/public\/wp-content\/wpvividbackups\/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_content.part002.zip"]
+[2021-04-29 09:38:19][notice]start extracting file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_content.part002.zip
+[2021-04-29 09:38:21][notice]extract finished file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_content.part002.zip
+[2021-04-29 09:38:21][notice]Finished restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_content.part002.zip
+[2021-04-29 09:38:21][notice]Start restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_db.zip
+[2021-04-29 09:38:21][notice]start extracting file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_db.zip
+[2021-04-29 09:38:21][notice]extract finished file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_db.zip
+[2021-04-29 09:38:21][notice]sql file: herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_db.sql
+[2021-04-29 09:38:21][Warning]wpdb
+[2021-04-29 09:38:21][notice]The test to create table succeeds.
+[2021-04-29 09:38:21][notice]The test to insert into table succeeds.
+[2021-04-29 09:38:21][notice]The test to drop table succeeds.
+[2021-04-29 09:38:21][notice]get max_allowed_packet wpdb 
+[2021-04-29 09:38:21][notice]max_allowed_packet less than 32M :16.00 MB
+[2021-04-29 09:38:21][notice]Start import sql file.
+[2021-04-29 09:38:21][notice]old site url:http://herbefollewordpress.local
+[2021-04-29 09:38:21][notice]old home url:http://herbefollewordpress.local
+[2021-04-29 09:38:21][notice]old content url:http://herbefollewordpress.local/wp-content
+[2021-04-29 09:38:21][notice]old upload url:http://herbefollewordpress.local/wp-content/uploads
+[2021-04-29 09:38:21][notice]old site prefix:wp_
+[2021-04-29 09:38:21][notice]Drop table if exist
+[2021-04-29 09:38:21][notice]Create table wp_b2s_posts
+[2021-04-29 09:38:21][notice]Dumping table wp_b2s_posts is complete. Start replacing row(s).
+[2021-04-29 09:38:21][notice]Count of rows in wp_b2s_posts: 1
+[2021-04-29 09:38:21][notice]Replace the row in 0 line.
+[2021-04-29 09:38:21][notice]finish replace rows
+[2021-04-29 09:38:21][notice]Drop table if exist
+[2021-04-29 09:38:21][notice]Create table wp_b2s_posts_drafts
+[2021-04-29 09:38:21][notice]Dumping table wp_b2s_posts_drafts is complete. Start replacing row(s).
+[2021-04-29 09:38:21][notice]Count of rows in wp_b2s_posts_drafts: 0
+[2021-04-29 09:38:21][notice]Drop table if exist
+[2021-04-29 09:38:21][notice]Create table wp_b2s_posts_favorites
+[2021-04-29 09:38:21][notice]Dumping table wp_b2s_posts_favorites is complete. Start replacing row(s).
+[2021-04-29 09:38:21][notice]Count of rows in wp_b2s_posts_favorites: 0
+[2021-04-29 09:38:21][notice]Drop table if exist
+[2021-04-29 09:38:21][notice]Create table wp_b2s_posts_network_details
+[2021-04-29 09:38:21][notice]create table replace collate:utf8mb4_unicode_ci to :utf8_general_ci
+[2021-04-29 09:38:21][notice]Dumping table wp_b2s_posts_network_details is complete. Start replacing row(s).
+[2021-04-29 09:38:21][notice]finish replace rows
+[2021-04-29 09:38:21][notice]Drop table if exist
+[2021-04-29 09:38:21][notice]Create table wp_b2s_posts_sched_details
+[2021-04-29 09:38:21][notice]Dumping table wp_b2s_posts_sched_details is complete. Start replacing row(s).
+[2021-04-29 09:38:21][notice]Count of rows in wp_b2s_posts_sched_details: 0
+[2021-04-29 09:38:21][notice]Drop table if exist
+[2021-04-29 09:38:21][notice]Create table wp_b2s_user
+[2021-04-29 09:38:21][notice]Dumping table wp_b2s_user is complete. Start replacing row(s).
+[2021-04-29 09:38:21][notice]Count of rows in wp_b2s_user: 1
+[2021-04-29 09:38:21][notice]Replace the row in 0 line.
+[2021-04-29 09:38:21][notice]finish replace rows
+[2021-04-29 09:38:21][notice]Drop table if exist
+[2021-04-29 09:38:21][notice]Create table wp_b2s_user_contact
+[2021-04-29 09:38:21][notice]Dumping table wp_b2s_user_contact is complete. Start replacing row(s).
+[2021-04-29 09:38:21][notice]Count of rows in wp_b2s_user_contact: 0
+[2021-04-29 09:38:21][notice]Drop table if exist
+[2021-04-29 09:38:21][notice]Create table wp_b2s_user_network_settings
+[2021-04-29 09:38:21][notice]Dumping table wp_b2s_user_network_settings is complete. Start replacing row(s).
+[2021-04-29 09:38:21][notice]Count of rows in wp_b2s_user_network_settings: 0
+[2021-04-29 09:38:21][notice]Drop table if exist
+[2021-04-29 09:38:21][notice]Create table wp_commentmeta
+[2021-04-29 09:38:21][notice]Dumping table wp_commentmeta is complete. Start replacing row(s).
+[2021-04-29 09:38:21][notice]Count of rows in wp_commentmeta: 0
+[2021-04-29 09:38:21][notice]Drop table if exist
+[2021-04-29 09:38:21][notice]Create table wp_comments
+[2021-04-29 09:38:21][notice]Dumping table wp_comments is complete. Start replacing row(s).
+[2021-04-29 09:38:21][notice]Count of rows in wp_comments: 0
+[2021-04-29 09:38:21][notice]Drop table if exist
+[2021-04-29 09:38:21][notice]Create table wp_links
+[2021-04-29 09:38:21][notice]Dumping table wp_links is complete. Start replacing row(s).
+[2021-04-29 09:38:21][notice]Count of rows in wp_links: 0
+[2021-04-29 09:38:21][notice]Drop table if exist
+[2021-04-29 09:38:21][notice]Create table wp_options
+[2021-04-29 09:38:21][notice]Dumping table wp_options is complete. Start replacing row(s).
+[2021-04-29 09:38:21][notice]Count of rows in wp_options: 210
+[2021-04-29 09:38:21][notice]Replace the row in 0 line.
+[2021-04-29 09:38:21][notice]finish replace rows
+[2021-04-29 09:38:21][notice]Drop table if exist
+[2021-04-29 09:38:21][notice]Create table wp_postmeta
+[2021-04-29 09:38:21][notice]Dumping table wp_postmeta is complete. Start replacing row(s).
+[2021-04-29 09:38:21][notice]Count of rows in wp_postmeta: 852
+[2021-04-29 09:38:21][notice]Replace the row in 0 line.
+[2021-04-29 09:38:22][notice]finish replace rows
+[2021-04-29 09:38:22][notice]Drop table if exist
+[2021-04-29 09:38:22][notice]Create table wp_posts
+[2021-04-29 09:38:22][notice]Dumping table wp_posts is complete. Start replacing row(s).
+[2021-04-29 09:38:22][notice]Count of rows in wp_posts: 304
+[2021-04-29 09:38:22][notice]Replace the row in 0 line.
+[2021-04-29 09:38:22][notice]finish replace rows
+[2021-04-29 09:38:22][notice]Drop table if exist
+[2021-04-29 09:38:22][notice]Create table wp_term_relationships
+[2021-04-29 09:38:22][notice]Dumping table wp_term_relationships is complete. Start replacing row(s).
+[2021-04-29 09:38:22][Warning]Skip table wp_term_relationships
+[2021-04-29 09:38:22][notice]Drop table if exist
+[2021-04-29 09:38:22][notice]Create table wp_term_taxonomy
+[2021-04-29 09:38:22][notice]Dumping table wp_term_taxonomy is complete. Start replacing row(s).
+[2021-04-29 09:38:22][notice]Count of rows in wp_term_taxonomy: 16
+[2021-04-29 09:38:22][notice]Replace the row in 0 line.
+[2021-04-29 09:38:22][notice]finish replace rows
+[2021-04-29 09:38:22][notice]Drop table if exist
+[2021-04-29 09:38:22][notice]Create table wp_termmeta
+[2021-04-29 09:38:22][notice]Dumping table wp_termmeta is complete. Start replacing row(s).
+[2021-04-29 09:38:22][notice]Count of rows in wp_termmeta: 0
+[2021-04-29 09:38:22][notice]Drop table if exist
+[2021-04-29 09:38:22][notice]Create table wp_terms
+[2021-04-29 09:38:22][notice]Dumping table wp_terms is complete. Start replacing row(s).
+[2021-04-29 09:38:22][notice]Count of rows in wp_terms: 16
+[2021-04-29 09:38:22][notice]Replace the row in 0 line.
+[2021-04-29 09:38:22][notice]finish replace rows
+[2021-04-29 09:38:22][notice]Drop table if exist
+[2021-04-29 09:38:22][notice]Create table wp_usermeta
+[2021-04-29 09:38:22][notice]Dumping table wp_usermeta is complete. Start replacing row(s).
+[2021-04-29 09:38:22][notice]Count of rows in wp_usermeta: 74
+[2021-04-29 09:38:22][notice]Replace the row in 0 line.
+[2021-04-29 09:38:22][notice]finish replace rows
+[2021-04-29 09:38:22][notice]Drop table if exist
+[2021-04-29 09:38:22][notice]Create table wp_users
+[2021-04-29 09:38:22][notice]Dumping table wp_users is complete. Start replacing row(s).
+[2021-04-29 09:38:22][notice]Count of rows in wp_users: 2
+[2021-04-29 09:38:22][notice]Replace the row in 0 line.
+[2021-04-29 09:38:22][notice]finish replace rows
+[2021-04-29 09:38:22][notice]Drop table if exist
+[2021-04-29 09:38:22][notice]Create table wp_wpvivid_scan_result
+[2021-04-29 09:38:22][notice]Dumping table wp_wpvivid_scan_result is complete. Start replacing row(s).
+[2021-04-29 09:38:22][notice]Count of rows in wp_wpvivid_scan_result: 0
+[2021-04-29 09:38:22][notice]Drop table if exist
+[2021-04-29 09:38:22][notice]Create table wp_wpvivid_unused_uploads_files
+[2021-04-29 09:38:22][notice]Dumping table wp_wpvivid_unused_uploads_files is complete. Start replacing row(s).
+[2021-04-29 09:38:22][notice]Count of rows in wp_wpvivid_unused_uploads_files: 0
+[2021-04-29 09:38:22][notice]Drop table if exist
+[2021-04-29 09:38:22][notice]Create table wp_wt_mgdp_ftp
+[2021-04-29 09:38:22][notice]Dumping table wp_wt_mgdp_ftp is complete. Start replacing row(s).
+[2021-04-29 09:38:22][notice]Count of rows in wp_wt_mgdp_ftp: 0
+[2021-04-29 09:38:22][notice]Drop table if exist
+[2021-04-29 09:38:22][notice]Create table wp_wtmgdp_log
+[2021-04-29 09:38:22][notice]Dumping table wp_wtmgdp_log is complete. Start replacing row(s).
+[2021-04-29 09:38:22][notice]Count of rows in wp_wtmgdp_log: 2
+[2021-04-29 09:38:22][notice]Replace the row in 0 line.
+[2021-04-29 09:38:22][notice]finish replace rows
+[2021-04-29 09:38:22][notice]Drop table if exist
+[2021-04-29 09:38:22][notice]Create table wp_xcloner_scheduler
+[2021-04-29 09:38:22][notice]Dumping table wp_xcloner_scheduler is complete. Start replacing row(s).
+[2021-04-29 09:38:22][notice]Count of rows in wp_xcloner_scheduler: 0
+[2021-04-29 09:38:22][notice]Drop table if exist
+[2021-04-29 09:38:22][notice]Create table wp_yoast_indexable
+[2021-04-29 09:38:22][notice]Dumping table wp_yoast_indexable is complete. Start replacing row(s).
+[2021-04-29 09:38:22][notice]Count of rows in wp_yoast_indexable: 99
+[2021-04-29 09:38:22][notice]Replace the row in 0 line.
+[2021-04-29 09:38:23][notice]finish replace rows
+[2021-04-29 09:38:23][notice]Drop table if exist
+[2021-04-29 09:38:23][notice]Create table wp_yoast_indexable_hierarchy
+[2021-04-29 09:38:23][notice]Dumping table wp_yoast_indexable_hierarchy is complete. Start replacing row(s).
+[2021-04-29 09:38:23][notice]Count of rows in wp_yoast_indexable_hierarchy: 99
+[2021-04-29 09:38:23][notice]Replace the row in 0 line.
+[2021-04-29 09:38:23][notice]finish replace rows
+[2021-04-29 09:38:23][notice]Drop table if exist
+[2021-04-29 09:38:23][notice]Create table wp_yoast_migrations
+[2021-04-29 09:38:23][notice]Dumping table wp_yoast_migrations is complete. Start replacing row(s).
+[2021-04-29 09:38:23][notice]Count of rows in wp_yoast_migrations: 21
+[2021-04-29 09:38:23][notice]Replace the row in 0 line.
+[2021-04-29 09:38:23][notice]finish replace rows
+[2021-04-29 09:38:23][notice]Drop table if exist
+[2021-04-29 09:38:23][notice]Create table wp_yoast_primary_term
+[2021-04-29 09:38:23][notice]Dumping table wp_yoast_primary_term is complete. Start replacing row(s).
+[2021-04-29 09:38:23][notice]Count of rows in wp_yoast_primary_term: 84
+[2021-04-29 09:38:23][notice]Replace the row in 0 line.
+[2021-04-29 09:38:23][notice]finish replace rows
+[2021-04-29 09:38:23][notice]Drop table if exist
+[2021-04-29 09:38:23][notice]Create table wp_yoast_seo_links
+[2021-04-29 09:38:23][notice]Dumping table wp_yoast_seo_links is complete. Start replacing row(s).
+[2021-04-29 09:38:23][notice]Count of rows in wp_yoast_seo_links: 16
+[2021-04-29 09:38:23][notice]Replace the row in 0 line.
+[2021-04-29 09:38:23][notice]finish replace rows
+[2021-04-29 09:38:23][notice]UPDATE wp_options SET option_value="http://herbefollefinal.local" WHERE option_name="siteurl";
+[2021-04-29 09:38:23][notice]update query len:94
+[2021-04-29 09:38:23][notice]UPDATE wp_options SET option_value="http://herbefollefinal.local" WHERE option_name="home";
+[2021-04-29 09:38:23][notice]update query len:91
+[2021-04-29 09:38:23][notice]Finished restoring herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_db.zip
+[2021-04-29 09:38:23][notice]Restore task completed.
+[2021-04-29 09:38:24][notice]disable maintenance mode
+[2021-04-29 09:38:24][notice]clean file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_uploads.zip
+[2021-04-29 09:38:24][notice]clean file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_themes.zip
+[2021-04-29 09:38:24][notice]clean file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_core.zip
+[2021-04-29 09:38:24][notice]clean file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_plugin.zip
+[2021-04-29 09:38:24][notice]clean file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_db.zip
+[2021-04-29 09:38:24][notice]clean file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_content.part001.zip
+[2021-04-29 09:38:24][notice]clean file:/Users/nicolashodee/Desktop/LOCAL_WORKING_FOLDER/herbe-folle/site/herbefolle/app/public/wp-content/wpvividbackups/herbefollewordpress.local_wpvivid-6089b6b51ed7d_2021-04-28-19-25_backup_content.part002.zip

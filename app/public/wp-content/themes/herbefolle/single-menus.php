@@ -40,10 +40,10 @@
 
 
         <!-- POST CONTENT ENDS HERE -->
-        <a href=" ./index.php/buy "><div class="btn--medium">&rarr; Je commande !</div></a>
+        <a href=" <?php site_url(); ?>/buy "><div class="btn--medium">&rarr; Je commande !</div></a>
         
       </article>
-      <a href=" ./index.php/archives " class="seebefore" ><div>&rarr; Voir les semaines précédentes</div></a>
+      <a href=" <?php site_url(); ?>/archives " class="seebefore" ><div>&rarr; Voir les semaines précédentes</div></a>
     </section>
   
   </main>

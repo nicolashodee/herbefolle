@@ -41,10 +41,10 @@
         <!-- image -->
         <div class="image">
           <div>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/male.jpg" alt="">
+            <img src="/wp-content/themes/herbefolle/assets/images/male.jpg" alt="">
           </div>
           <div class="salade">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/WP_20180605_11_35_06_Pro-1024x576.jpg" alt="" >
+            <img src="/wp-content/themes/herbefolle/assets/images/WP_20180605_11_35_06_Pro-1024x576.jpg" alt="" >
           </div>
         </div>
       
@@ -54,7 +54,7 @@
     <section class="about when anim-left">
       <!-- image -->
       <div class="image ">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/calendar-minimal.jpg" alt="">
+        <img src="/wp-content/themes/herbefolle/assets/images/calendar-minimal.jpg" alt="">
       </div>
         
       <div class="bg_flowers1"></div>
@@ -95,7 +95,7 @@
       <div class="image">
 
         <div>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/maison.jpg" alt="">
+          <img src="/wp-content/themes/herbefolle/assets/images/maison.jpg" alt="">
         </div>
 
       </div>
@@ -108,7 +108,7 @@
       <!-- image -->
       <div class="image">
         
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/portion2.jpg" alt="">
+        <img src="/wp-content/themes/herbefolle/assets/images/portion2.jpg" alt="">
         <!-- <img src="./images/portion.png"></div> -->
 
       </div>

@@ -22,14 +22,14 @@
       </a>
     </div>
     <div class="homepage-column col2 desktop">
-      <a href=" ./index.php/brunch ">
+      <a href=" <?php site_url(); ?>/brunch ">
         <div class="homepage-overlay overlay2">
           <div class="text">Les brunchs</div>
         </div>
       </a>
     </div>
     <div class="homepage-column col3 desktop">
-      <a href=" ./index.php/about ">
+      <a href=" <?php site_url(); ?>/about/ ">
         <div class="homepage-overlay overlay3">
           <div class="text">A propos</div>
         </div>
@@ -52,14 +52,14 @@
       </a>
     </div>
     <div class="homepage-column col2 mobile">
-      <a href=" ./index.php/brunch ">
+      <a href=" <?php site_url(); ?>/brunch ">
         <div class="text-mobile">Les brunchs</div>
         <div class="homepage-overlay overlay2">
         </div>
       </a>
     </div>
     <div class="homepage-column col3 mobile">
-      <a href=" ./index.php/about ">
+      <a href=" <?php site_url(); ?>/about ">
         <div class="text-mobile">A propos</div>
         <div class="homepage-overlay overlay3">
         </div>

@@ -46,7 +46,7 @@
       </a>
 
       <div class="top-bar--right">
-        <a href="./index.php/buy"><div class="animate btn--nav">Réserver maintenant</div></a>
+        <a href="<?php site_url(); ?>/buy"><div class="animate btn--nav">Réserver maintenant</div></a>
         <!-- NEW HAMBURGER -->
         <div class="animate hamburger">
           <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="30" onclick="this.classList.toggle('active')">
