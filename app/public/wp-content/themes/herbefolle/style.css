@@ -2143,4 +2143,8 @@ footer .footer__social {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.article__404 {
+  min-height: 60vh;
+}
 /*# sourceMappingURL=style.css.map */
