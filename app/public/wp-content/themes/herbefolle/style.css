@@ -649,6 +649,7 @@
 
 .brunch__left h1 {
   font-size: 40px;
+  font-family: 'Indie Flower', cursive;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1974,7 +1975,7 @@ header .header--overlay {
 
 header .header--overlay h2 {
   color: white;
-  text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 header .header__default {
@@ -2010,7 +2011,7 @@ header .header--overlay.archives {
 }
 
 header .header--overlay.apropos {
-  background-image: linear-gradient(-45deg, rgba(194, 66, 19, 0.475), rgba(255, 255, 0, 0.262));
+  background-image: linear-gradient(-45deg, rgba(241, 206, 2, 0.24), rgba(255, 255, 255, 0.11));
 }
 
 header .header--overlay.thisweek {
@@ -2021,6 +2022,7 @@ header .header--overlay.thisweek {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 30px;
+  background-image: linear-gradient(-45deg, rgba(231, 182, 21, 0.274), rgba(9, 255, 0, 0.144));
 }
 
 header.header__buy {
@@ -2056,6 +2058,8 @@ header.header__thisweek h2 {
 @media screen and (max-width: 1200px) {
   header.header__thisweek h2 {
     margin-bottom: 25px;
+    padding: 5px;
+    font-size: 30px;
   }
 }
 
@@ -2071,7 +2075,7 @@ header.header__archives h2 {
 }
 
 header.header__about {
-  background-image: url("./assets/images/citrouilles.jpg");
+  background-image: url("./assets/images/coriander.jpg");
   background-size: cover;
   background-position: 90% 50%;
 }

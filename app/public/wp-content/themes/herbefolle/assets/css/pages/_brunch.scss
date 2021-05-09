@@ -63,7 +63,8 @@ $header-image: "./assets/images/brunch2.jpg";
   z-index: -1;
   transform: translate(20px, 10px);
   overflow: hidden;
-  h1 {font-size: 40px;}
+  
+  h1 {font-size: 40px; font-family: 'Indie Flower', cursive;}
   @media screen and (max-width: 1000px) {
     h1 {font-size: 30px;}
   }
