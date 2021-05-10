@@ -23,6 +23,7 @@
 
 <body>
 
+
   <!-------- CUSTOM CURSOR --------->
   <div class="cursor"></div>
 

@@ -35,6 +35,7 @@
     wp_enqueue_script('herbefolle_gsap_ScrollTrigger',    "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js", array(), '', true );
     wp_enqueue_script('herbefolle_gsap_TweenMax',         "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js", array(), '', true );
     wp_enqueue_script('herbefolle_custom_javascript_main', get_template_directory_uri() . "/assets/javascript/main.js", array(), '' , true);
+    wp_enqueue_script('herbefolle_jquery_backdetect', get_template_directory_uri() . "/assets/javascript/jquery.backDetect.js", array(), '' , true);
     
 
   }

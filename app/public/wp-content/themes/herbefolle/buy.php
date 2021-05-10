@@ -43,7 +43,9 @@
     <section class="buy__section">
       <div class="">
         Cliquez sur le bouton ci dessous, un email pré-rempli va s'ouvrir. 
-        <a href=" mailto:contact@lherbefolle.net?subject=Pr%C3%A9commande%20sur%20le%20site%20de%20l'Herbe%20Folle&body=Bonjour%20Denis%2C%20je%20souhaiterais%20vous%20commander%20un%20plat%20!%0D%0A%0D%0AVoici%20le%20d%C3%A9tail%3A%0D%0A%0D%0A-%20Jour%20souhait%C3%A9%0D%0A-%20Repas%20du%20midi%2C%20ou%20du%20soir%2C%20ou%20brunch%20(si%20applicable)%0D%0A-%20Nombre%20de%20portions%20(pr%C3%A9cisez%20si%20enfant%20ou%20adulte)%0D%0A-%20Mode%20de%20livraison%20souhait%C3%A9%20(voir%20conditions)%0D%0A%0D%0APourriez%20vous%20me%20confirmer%20la%20disponibilit%C3%A9%20%3F%0D%0AMerci%20d'avance%20et%20bonne%20journ%C3%A9e%20! "><div class="btn--buy">&rarr;  Envoyer un email</div></a>
+        <p></p>
+        <button class="btn--buy" onclick=' window.location = " mailto:contact@lherbefolle.net " '><i class="far fa-envelope-open" style="font-size:24px"></i>&#8239; &#8239; Envoyer un email</button>
+
       </div>
     </section>
     <div class="buy__left"><h1>En ligne</h1></div>

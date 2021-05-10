@@ -1164,6 +1164,9 @@ nav {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: black;
   border: 2px solid black;
   padding: 8px 10px;
@@ -1173,6 +1176,7 @@ nav {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   width: 250px;
+  background-color: transparent;
 }
 
 .btn--buy:hover {
@@ -1596,6 +1600,10 @@ nav-links:
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+#preloader {
+  display: none !important;
 }
 
 body, html {
