@@ -1,25 +1,25 @@
-# ![MOCKUP](./readme_images/mockup.jpg)
-# 🌿 l'HERBE FOLLE 🌿 - http://www.lherbefolle.net
+![MOCKUP](./readme_images/mockup.jpg)
+# 🌿 l'HERBE FOLLE 🌿 
 ## MY FIRST CUSTOM WORDPRESS THEME, MADE FROM SCRATCH . 
-<table>
-<tr>
-<td>
-  
-  L'herbe Folle is a restaurant based in Aix en Provence, France. 
-  The existing website was based on Wordpress, with a basic theme downloaded from the Wordpress theme gallery (Rinzai). Not really fancy and seen a thousand times. 
-  During May 2021, I've completely redesigned the website and added more impacting content and learned how to make my first custom Wordpress theme from scratch. 
-</td>
-</tr>
-</table>
+
+L'herbe Folle is a restaurant based in Aix en Provence, France. 
+The existing website was based on Wordpress, with a basic theme downloaded from the Wordpress theme gallery (Rinzai). Not really fancy and seen a thousand times. 
+During May 2021, I've completely redesigned the website and added more impacting content and learned how to make my first custom Wordpress theme from scratch. 
+
+[>>> VISIT THE WEBSITE](https://lherbefolle.net)
+
+<p>&nbsp;</p>
 
 
 ## KEYPOINTS
-- Content and flat design made from scratch (HTML, CSS, Javascript)
-- Fully responsive
-- 6 pages, including 3 with dynamic content. 
-- Page transition animation
-- GSAP animated, with Scroll triggered and parallax effects on 2 pages. 
+- ✅ Made with Wordpress and ❤️ .
+- ✅ Content redaction and flat design made from scratch (HTML, CSS, Javascript) with Local by Flywheel. 
+- ✅ Fully responsive (custom media queries).
+- ✅ 6 PHP pages, including 3 with dynamic content. 
+- ✅ Page transition animation (plugin customization). 
+- ✅ GSAP animated, with Scroll triggered and parallax effects on 2 pages. 
 
+<p>&nbsp;</p>
 
 ### 🔖 The Landing Page (static)
 ________________________________________________________________
@@ -114,5 +114,5 @@ plugins.
 - Dark mode ready
 - Online store and payment (if needed by the client in the future). 
 
- © [Nicolas HODEE 2021](https://www.nicolashodee.com/)
+ Made with ❤️ by [Nicolas HODEE](https://www.nicolashodee.com/) - All rights reserved. 
 
