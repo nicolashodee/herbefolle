@@ -1,5 +1,5 @@
 # ![MOCKUP](./readme_images/mockup.jpg)
-# l'HERBE FOLLE - http://www.lherbefolle.net
+# 🌿 l'HERBE FOLLE 🌿 - http://www.lherbefolle.net
 ## MY FIRST CUSTOM WORDPRESS THEME, MADE FROM SCRATCH . 
 <table>
 <tr>
