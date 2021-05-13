@@ -14,13 +14,13 @@
 
 
 ## KEYPOINTS
-________________________________________________________________
 - Content and flat design made from scratch (HTML, CSS, Javascript)
 - Fully responsive
 - 6 pages, including 3 with dynamic content. 
 - Page transition animation
 - GSAP animated, with Scroll triggered and parallax effects on 2 pages. 
-## THE WEBSITE (6 pages)
+
+
 ### 🔖 The Landing Page (static)
 ________________________________________________________________
 Fully responsive, with hover effects displaying titles above images. Content animation done during page load with GSAP. Fixed footer appearing below the main content. 
@@ -104,13 +104,11 @@ Features I'm proud of :
 <p>&nbsp;</p>
 
 ## Librairies used 
-________________________________________________________________
 - [GSAP](http://www.w3schools.com/jquery/jquery_ref_ajax.asp) - GSAP simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
 - [FontAwesome](https://developers.google.com/chart/interactive/docs/quick_start) - For icons.
 plugins.
 
 ## To-do
-________________________________________________________________
 - Content optimization for faster page loads 
 - Page animation to improve (tricky with wordpress)
 - Dark mode ready
