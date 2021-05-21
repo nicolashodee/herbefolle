@@ -784,7 +784,7 @@
   cursor: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) and (max-device-width: 800px) {
   .homepage-overlay {
     cursor: auto;
   }
@@ -1600,10 +1600,6 @@ nav-links:
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-#preloader {
-  display: none !important;
 }
 
 body, html {

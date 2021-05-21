@@ -26,6 +26,9 @@
 
 /* OVERLAY EFFECT */
 
+
+
+  
 .homepage-overlay {
   display: flex;
   flex-flow: row nowrap;
@@ -43,7 +46,7 @@
   padding: 35px;
   text-align: center;
   cursor: none;
-  @media only screen and (max-width: 800px) { 
+  @media only screen and (max-width: 800px) and (max-device-width: 800px){ 
     cursor: auto;
   }
 }
