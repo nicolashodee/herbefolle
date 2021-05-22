@@ -784,7 +784,7 @@
   cursor: none;
 }
 
-@media only screen and (max-width: 800px) and (max-device-width: 800px) {
+@media only screen and (max-width: 1000px) and (max-device-width: 1000px) {
   .homepage-overlay {
     cursor: auto;
   }
@@ -812,7 +812,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) and (max-device-width: 1000px) {
   .desktop {
     display: none;
   }

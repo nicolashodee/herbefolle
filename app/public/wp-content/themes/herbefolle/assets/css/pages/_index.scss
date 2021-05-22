@@ -46,7 +46,7 @@
   padding: 35px;
   text-align: center;
   cursor: none;
-  @media only screen and (max-width: 800px) and (max-device-width: 800px){ 
+  @media only screen and (max-width: 1000px) and (max-device-width: 1000px){ 
     cursor: auto;
   }
 }
@@ -61,7 +61,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) and (max-device-width: 1000px) {
   .desktop {
     display: none;
   }
